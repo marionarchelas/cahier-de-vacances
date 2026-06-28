@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6ème → 5ème | Cahier de Vacances</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav>
+    <a href="../index.html">🏠 Accueil</a>
+    <span class="sep">›</span>
+    <span class="current">6<sup>e</sup> → 5<sup>e</sup></span>
+  </nav>
+
+  <div class="hero">
+    <h1>🎒 Révisions 6<sup>e</sup> → 5<sup>e</sup></h1>
+    <p>Choisis une matière pour commencer à réviser</p>
+  </div>
+
+  <div class="container">
+    <div class="level-grid">
+      <a href="maths/index.html" class="level-card">
+        <div class="emoji">🔢</div>
+        <h2>Mathématiques</h2>
+        <p>15 chapitres de révision : proportionnalité, géométrie, fractions, calcul…</p>
+        <br>
+        <span class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;" id="maths-btn">Réviser</span>
+      </a>
+
+      <div class="level-card" style="opacity:.5;cursor:not-allowed;">
+        <div class="emoji">🔬</div>
+        <h2>Sciences</h2>
+        <p>Bientôt disponible</p>
+        <br>
+        <span class="btn btn-outline" style="width:100%;justify-content:center;margin-top:8px;pointer-events:none;">Bientôt</span>
+      </div>
+
+      <div class="level-card" style="opacity:.5;cursor:not-allowed;">
+        <div class="emoji">📖</div>
+        <h2>Français</h2>
+        <p>Bientôt disponible</p>
+        <br>
+        <span class="btn btn-outline" style="width:100%;justify-content:center;margin-top:8px;pointer-events:none;">Bientôt</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show maths progress in button
+    const topics = ['proportionnalite','gestion-donnees','distances-cercles','droites-paralleles',
+      'triangles-quadrilateraux','symetrie-axiale','axes-symetrie','espace','angles',
+      'aires-perimetres','volumes','nombres-entiers','fractions','nombres-decimaux','operations-decimaux'];
+    const done = topics.filter(t => localStorage.getItem('6e-maths-' + t + '-done') === 'true').length;
+    document.getElementById('maths-btn').textContent = done > 0 ? `Continuer (${done}/${topics.length})` : 'Commencer';
+  </script>
+</body>
+</html>

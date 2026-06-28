@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangles et quadrilatères | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Triangles et quadrilatères</span>
+</nav>
+<div class="hero"><h1>🔺 Triangles et quadrilatères</h1><p>Construction, propriétés, losange, rectangle, carré</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Triangle ABC</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Trace un triangle ABC tel que <strong>AB = 7 cm ; BC = 5 cm ; CA = 6 cm</strong>.</p>
+      <p>Le dessin à main levée ci-dessous est tracé. Marion est absente.</p>
+    </div>
+    <div class="question">
+      <p><strong>a. Que lui dire pour qu'elle reproduise la figure ?</strong> (programme de construction)</p>
+    </div>
+    <textarea class="answer-input" id="e1a" style="min-height:120px;" placeholder="Étape 1 : …&#10;Étape 2 : …&#10;Étape 3 : …"></textarea>
+    <div class="question" style="margin-top:14px;">
+      <p><strong>b. Construis le triangle avec tes instruments en respectant les mesures indiquées.</strong></p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;">
+      <input type="checkbox" id="c1b" style="width:20px;height:20px;accent-color:var(--success);">
+      <span>J'ai construit le triangle ABC ✓</span>
+    </label>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p><strong>a. Programme de construction :</strong></p>
+      <ol style="padding-left:20px;line-height:2;">
+        <li>Trace un segment [AB] de 7 cm.</li>
+        <li>Trace un arc de cercle de centre A et de rayon 6 cm.</li>
+        <li>Trace un arc de cercle de centre B et de rayon 5 cm.</li>
+        <li>Nomme C le point d'intersection des deux arcs (du bon côté).</li>
+        <li>Relie A à C et B à C pour former le triangle.</li>
+      </ol>
+      <p><strong>b.</strong> Vérifie avec un rapporteur que les longueurs sont respectées.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Reproduire des figures</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Reproduis les figures suivantes avec tes instruments en respectant les mesures et codages. (Travail sur ta feuille)</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>Figure 1 : Triangle rectangle avec hypoténuse 5,3 cm, côtés 2,8 cm et 4,5 cm</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>Figure 2 : Quadrilatère ABCD avec AB = 3,4 cm, BC = 4,2 cm, CD = 3,5 cm, DA = 3,3 cm</span>
+      </label>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Conseils de construction</button>
+    <div class="correction-box" id="corr2">
+      <h4>💡 Méthode générale</h4>
+      <ol style="padding-left:20px;line-height:2;">
+        <li>Commence par tracer la base (le segment le plus long).</li>
+        <li>Pour chaque autre sommet, utilise le compas pour reporter les longueurs.</li>
+        <li>Utilise l'équerre pour les angles droits.</li>
+        <li>Vérifie les mesures à la règle une fois le tracé terminé.</li>
+        <li>Code les côtés égaux avec des tirets, les angles droits avec un carré.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Quadrilatères particuliers</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Dessine une figure à main levée, puis trace avec tes instruments :</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div>
+        <label style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+          <strong>a. Un losange</strong> dont les côtés mesurent 2,5 cm et l'une des diagonales 4 cm.
+        </label>
+        <button class="btn btn-outline" style="font-size:.85rem;padding:6px 12px;" onclick="toggleCorr('ca')">Méthode losange</button>
+        <div class="correction-box" id="ca">
+          <p>Trace la diagonale [AC] = 4 cm. Son milieu O est le centre du losange. Place B et D à 2,5 cm de A et C (en vérifiant AB = BC = CD = DA = 2,5 cm avec le compas). Les diagonales sont perpendiculaires en O.</p>
+        </div>
+      </div>
+      <div>
+        <label style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+          <strong>b. Un rectangle</strong> de longueur 4,5 cm et de largeur 3 cm.
+        </label>
+        <button class="btn btn-outline" style="font-size:.85rem;padding:6px 12px;" onclick="toggleCorr('cb')">Méthode rectangle</button>
+        <div class="correction-box" id="cb">
+          <p>Trace [AB] = 4,5 cm. Avec l'équerre, trace AD ⊥ AB avec AD = 3 cm. Puis BC ⊥ AB avec BC = 3 cm. Relie D et C : DC = 4,5 cm. Vérifie les angles droits.</p>
+        </div>
+      </div>
+      <div>
+        <label style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+          <strong>c. Un carré</strong> de côté 3,5 cm.
+        </label>
+        <button class="btn btn-outline" style="font-size:.85rem;padding:6px 12px;" onclick="toggleCorr('cc')">Méthode carré</button>
+        <div class="correction-box" id="cc">
+          <p>C'est un rectangle dont tous les côtés sont égaux. Trace [AB] = 3,5 cm. Avec l'équerre : AD ⊥ AB, AD = 3,5 cm. BC ⊥ AB, BC = 3,5 cm. DC = 3,5 cm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="symetrie-axiale.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-triangles-quadrilateraux-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

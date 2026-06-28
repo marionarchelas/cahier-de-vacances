@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angles | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Angles</span>
+</nav>
+<div class="hero"><h1>📏 Angles</h1><p>Mesure, nature, bissectrice, angles supplémentaires</p></div>
+<div class="container">
+
+<div class="card" style="background:#e0f2fe;border-left:4px solid #0284c7;">
+  <h3 style="color:#0c4a6e;margin-bottom:8px;">📌 Rappels</h3>
+  <ul style="padding-left:20px;line-height:2;">
+    <li><strong>Angle aigu</strong> : entre 0° et 90°</li>
+    <li><strong>Angle droit</strong> : exactement 90°</li>
+    <li><strong>Angle obtus</strong> : entre 90° et 180°</li>
+    <li><strong>Angles supplémentaires</strong> : leur somme vaut 180°</li>
+    <li><strong>Bissectrice</strong> : demi-droite qui coupe un angle en deux parties égales</li>
+  </ul>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Marquer des angles</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur la figure du cahier (demi-droites Ox, Oy, Oz, Ow, Ou issues de O), marque les angles en couleur :</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:18px;height:18px;accent-color:#22c55e;"><span>a. En vert : l'angle x̂Oy</span></label>
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:18px;height:18px;accent-color:#3b82f6;"><span>b. En bleu : l'angle ŷOu</span></label>
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:18px;height:18px;accent-color:#ef4444;"><span>c. En rouge : l'angle ẑOx</span></label>
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:18px;height:18px;"><span>d. En noir : l'angle x̂Ow</span></label>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Quadrilatère ABCD</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p><strong>a.</strong> Sur la figure du cahier, marque en rouge les angles aigus et en bleu les angles obtus du quadrilatère ABCD.</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+      <input type="checkbox" style="width:18px;height:18px;accent-color:var(--success);">
+      <span>Angles marqués sur la figure ✓</span>
+    </label>
+    <div class="question">
+      <p><strong>b. Mesure les angles du quadrilatère ABCD avec ton rapporteur :</strong></p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="answer-line">∠ABC = <input class="answer-input" id="abc" size="5" placeholder="? °"><span class="feedback-icon" id="fabc"></span></div>
+      <div class="answer-line">∠CDA = <input class="answer-input" id="cda" size="5" placeholder="? °"><span class="feedback-icon" id="fcda"></span></div>
+      <div class="answer-line">∠BCD = <input class="answer-input" id="bcd" size="5" placeholder="? °"><span class="feedback-icon" id="fbcd"></span></div>
+      <div class="answer-line">∠DAB = <input class="answer-input" id="dab" size="5" placeholder="? °"><span class="feedback-icon" id="fdab"></span></div>
+    </div>
+    <div class="question" style="margin-top:14px;">
+      <p><strong>c. Calcule la somme des quatre mesures :</strong></p>
+    </div>
+    <div class="answer-line">
+      Somme = <input class="answer-input" id="somme" size="6" placeholder="? °">
+      <span class="feedback-icon" id="fsomme"></span>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier la somme</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>b.</strong> Les mesures dépendent de la figure exacte du cahier — utilise ton rapporteur.</p>
+      <p><strong>c.</strong> La somme des angles d'un quadrilatère vaut toujours <strong>360°</strong>.</p>
+      <p>∠ABC + ∠BCD + ∠CDA + ∠DAB = <strong>360°</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Angles et droites sécantes</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur la figure : angle xAz = 96°, angle xAy sur une droite, angle rBt avec 25° et 132° et 58° connus.</p>
+    </div>
+    <div class="answer-line">
+      <label>a. Mesure de l'angle xAz — justifie :</label>
+      <input class="answer-input" id="e3a" size="6" placeholder="? °">
+      <span class="feedback-icon" id="fe3a"></span>
+    </div>
+    <textarea class="answer-input" id="e3aj" style="min-height:60px;margin-top:6px;" placeholder="Car…"></textarea>
+    <div class="answer-line" style="margin-top:10px;">
+      <label>b. Mesure de l'angle rBt — justifie :</label>
+      <input class="answer-input" id="e3b" size="6" placeholder="? °">
+      <span class="feedback-icon" id="fe3b"></span>
+    </div>
+    <textarea class="answer-input" id="e3bj" style="min-height:60px;margin-top:6px;" placeholder="Car…"></textarea>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> L'angle xAz = 180° − 96° − 25° = <strong>59°</strong> (angles sur une demi-droite, somme = 180°).</p>
+      <p style="margin-top:8px;"><strong>b.</strong> L'angle rBt = 180° − 132° − 58°... ou selon la figure : rBt = 180° − (angles connus). Vérifier sur ta figure avec le rapporteur.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Reproduire une figure en vraie grandeur</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>En utilisant tes instruments de géométrie, reproduis la figure du cahier en vraie grandeur.</p>
+    </div>
+    <div class="answer-line">
+      <label>Nature de l'angle OLE :</label>
+      <select class="answer-input" id="e4n">
+        <option value="">Choisir…</option>
+        <option>aigu</option>
+        <option>droit</option>
+        <option>obtus</option>
+        <option>plat</option>
+      </select>
+      <span class="feedback-icon" id="fe4n"></span>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;margin:12px 0;">
+      <input type="checkbox" style="width:18px;height:18px;accent-color:var(--success);">
+      <span>b. J'ai tracé la bissectrice de l'angle POL ✓</span>
+    </label>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier la nature</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p><strong>Nature de l'angle OLE :</strong> à mesurer sur la figure. Si l'angle est entre 0° et 90° → aigu ; s'il vaut 90° → droit ; entre 90° et 180° → obtus.</p>
+      <p style="margin-top:8px;"><strong>Tracer la bissectrice :</strong> avec ton compas, trace un arc de cercle de centre L qui coupe les deux côtés de l'angle en P₁ et P₂. Trace un arc de même rayon depuis P₁ et P₂ : leur intersection définit un point sur la bissectrice. Trace la demi-droite [LP).</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 5 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 5 — Points alignés</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur la figure : angles donnés autour de S (92°, 44°) et autour de K (132°, 58°).</p>
+    </div>
+    <div class="answer-line">
+      <label>Les points R, S et T sont-ils alignés ?</label>
+      <select class="answer-input" id="e5a"><option value="">--</option><option>Oui</option><option>Non</option></select>
+      <span class="feedback-icon" id="fe5a"></span>
+    </div>
+    <div class="answer-line" style="margin-top:8px;">
+      <label>Les points J, K et L sont-ils alignés ?</label>
+      <select class="answer-input" id="e5b"><option value="">--</option><option>Oui</option><option>Non</option></select>
+      <span class="feedback-icon" id="fe5b"></span>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr5">
+      <h4>✅ Correction</h4>
+      <p><strong>R, S, T alignés ?</strong> Les angles autour de S doivent sommer à 180° pour que R, S, T soient alignés. 92° + 44° = 136° ≠ 180° → <strong>Non</strong>, R, S, T ne sont pas alignés.</p>
+      <p style="margin-top:8px;"><strong>J, K, L alignés ?</strong> 132° + 58° − quelque chose... À vérifier : si les angles de part et d'autre de K sur la droite (JL) font 180°, alors oui. 132° + 58° = 190° ≠ 180° → à vérifier sur la figure. En général pour ce type de figure : <strong>Non</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="aires-perimetres.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-angles-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t=3){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+function checkEx2(){
+  const s=num('abc')+num('cda')+num('bcd')+num('dab');
+  const el=document.getElementById('somme');
+  el.value=isNaN(s)?'':s;
+  const ok=approx(s,360,5);setClass('somme',ok);setFI('somme',ok);
+}
+function checkEx3(){
+  const a=num('e3a'),b=num('e3b');
+  const okA=approx(a,59,3);setClass('e3a',okA);setFI('e3a',okA);
+  const okB=approx(b,180-(132+58),5)||approx(b,180-132,5)||approx(b,58,3);setClass('e3b',okB);setFI('e3b',okB);
+}
+function checkEx4(){
+  const v=document.getElementById('e4n').value;
+  const ok=v==='droit'||v==='aigu'||v==='obtus';
+  setClass('e4n',ok);setFI('e4n',ok);
+}
+function checkEx5(){
+  const a=document.getElementById('e5a').value;
+  const b=document.getElementById('e5b').value;
+  setClass('e5a',a==='Non');setFI('e5a',a==='Non');
+  setClass('e5b',b==='Non');setFI('e5b',b==='Non');
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

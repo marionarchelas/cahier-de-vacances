@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proportionnalité | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Proportionnalité</span>
+</nav>
+<div class="hero"><h1>📊 Proportionnalité</h1><p>Tableaux de proportionnalité, graphiques et pourcentages</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Graphique : cycliste</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur le graphique, on a représenté la distance parcourue par un cycliste en fonction de la durée de son trajet (le graphique passe par l'origine et est une droite).</p>
+      <p><strong>a. Complète le tableau à l'aide du graphique</strong> (le cycliste parcourt 6 km en 10 minutes) :</p>
+    </div>
+    <table>
+      <tr><th>Durée (min)</th><td>10</td><td>20</td><td>35</td><td>60</td></tr>
+      <tr><th>Distance (km)</th>
+        <td><input class="answer-input" id="e1a1" size="4" placeholder="?"></td>
+        <td><input class="answer-input" id="e1a2" size="4" placeholder="?"></td>
+        <td><input class="answer-input" id="e1a3" size="4" placeholder="?"></td>
+        <td><input class="answer-input" id="e1a4" size="4" placeholder="?"></td>
+      </tr>
+    </table>
+    <div class="question" style="margin-top:16px;">
+      <p><strong>b. Ce tableau représente-t-il une situation de proportionnalité ? Justifie.</strong></p>
+      <textarea class="answer-input" id="e1b" placeholder="Écris ta réponse ici…"></textarea>
+    </div>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> Le cycliste parcourt 6 km en 10 min → coefficient = 0,6 km/min</p>
+      <table><tr><th>Durée (min)</th><td>10</td><td>20</td><td>35</td><td>60</td></tr>
+      <tr><th>Distance (km)</th><td><strong>6</strong></td><td><strong>12</strong></td><td><strong>21</strong></td><td><strong>36</strong></td></tr></table>
+      <p style="margin-top:8px;"><strong>b.</strong> Oui, c'est une situation de proportionnalité : le rapport distance ÷ durée est constant (= 0,6 pour toutes les colonnes). Le graphique est une droite passant par l'origine.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Tableaux de proportionnalité</div>
+  <div class="exercise-body">
+    <div class="question"><p>Complète les tableaux de proportionnalité.</p></div>
+
+    <p><strong>Tableau 1 (coefficient × 7) :</strong></p>
+    <table>
+      <tr><td>5</td><td><input class="answer-input" id="t1a" size="4" placeholder="?"></td><td>9</td></tr>
+      <tr><td><input class="answer-input" id="t1b" size="4" placeholder="?"></td><td>70</td><td><input class="answer-input" id="t1c" size="4" placeholder="?"></td></tr>
+    </table>
+    <br>
+    <p><strong>Tableau 2 (coefficient × 1,5) :</strong></p>
+    <table>
+      <tr><td>4</td><td>7</td><td>12</td></tr>
+      <tr><td><input class="answer-input" id="t2a" size="4" placeholder="?"></td><td><input class="answer-input" id="t2b" size="4" placeholder="?"></td><td><input class="answer-input" id="t2c" size="4" placeholder="?"></td></tr>
+    </table>
+    <br>
+    <p><strong>Tableau 3 — Trouve le coefficient :</strong></p>
+    <table>
+      <tr><td><input class="answer-input" id="t3a" size="4" placeholder="?"></td><td>8</td><td>10,5</td></tr>
+      <tr><td>18</td><td>32</td><td><input class="answer-input" id="t3b" size="5" placeholder="?"></td></tr>
+    </table>
+    <br>
+    <p><strong>Tableau 4 — Trouve le coefficient :</strong></p>
+    <table>
+      <tr><td>4</td><td><input class="answer-input" id="t4a" size="4" placeholder="?"></td><td>7,2</td></tr>
+      <tr><td>2,4</td><td>3,9</td><td><input class="answer-input" id="t4b" size="4" placeholder="?"></td></tr>
+    </table>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>Tableau 1 (×7) :</strong></p>
+      <table><tr><td>5</td><td><strong>10</strong></td><td>9</td></tr><tr><td><strong>35</strong></td><td>70</td><td><strong>63</strong></td></tr></table>
+      <p>(10 = 70 ÷ 7 ; 35 = 5 × 7 ; 63 = 9 × 7)</p>
+      <p style="margin-top:8px;"><strong>Tableau 2 (×1,5) :</strong></p>
+      <table><tr><td>4</td><td>7</td><td>12</td></tr><tr><td><strong>6</strong></td><td><strong>10,5</strong></td><td><strong>18</strong></td></tr></table>
+      <p style="margin-top:8px;"><strong>Tableau 3 (×4) :</strong> 18÷4 = <strong>4,5</strong> ; 10,5×4 = <strong>42</strong></p>
+      <p style="margin-top:8px;"><strong>Tableau 4 (×0,6) :</strong> 3,9÷0,6 = <strong>6,5</strong> ; 7,2×0,6 = <strong>4,32</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Problème : Ali filme</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Ali a filmé <strong>119 520 images</strong> à raison de <strong>24 images par seconde</strong>, puis il a filmé encore pendant <strong>54 minutes</strong>. Combien de temps, <strong>en heures et minutes</strong>, a-t-il filmé au total ?</p>
+    </div>
+    <div class="answer-line">
+      <label>Durée 1re partie (min) :</label>
+      <input class="answer-input" id="e3a" size="6" placeholder="?">
+      <span class="feedback-icon" id="f3a"></span>
+    </div>
+    <div class="answer-line">
+      <label>Durée totale :</label>
+      <input class="answer-input" id="e3b" size="8" placeholder="? h ? min">
+      <span class="feedback-icon" id="f3b"></span>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p>119 520 images ÷ 24 images/s = <strong>4 980 secondes</strong></p>
+      <p>4 980 s ÷ 60 = <strong>83 minutes</strong></p>
+      <p>Total = 83 + 54 = <strong>137 minutes = 2 h 17 min</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — L'or en carats</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Le carat est une mesure de pureté : 1 carat = 1/24 de la masse. Par ex. de l'or à 15 carats → 15 g d'or pur dans 24 g d'alliage.</p>
+      <p><strong>a. Complète le tableau (% arrondi au dixième) :</strong></p>
+    </div>
+    <table>
+      <tr><th>Carat</th><td>24</td><td>22</td><td>20</td><td>18</td><td>14</td><td>10</td><td>9</td></tr>
+      <tr><th>% d'or</th><td>100</td>
+        <td><input class="answer-input" id="c1" size="5" placeholder="?"></td>
+        <td><input class="answer-input" id="c2" size="5" placeholder="?"></td>
+        <td><input class="answer-input" id="c3" size="5" placeholder="?"></td>
+        <td><input class="answer-input" id="c4" size="5" placeholder="?"></td>
+        <td><input class="answer-input" id="c5" size="5" placeholder="?"></td>
+        <td><input class="answer-input" id="c6" size="5" placeholder="?"></td>
+      </tr>
+    </table>
+    <div class="question" style="margin-top:16px;">
+      <p><strong>b. Poids d'or pour un bracelet de 22 carats pesant 6,6 g (au centième) :</strong></p>
+      <div class="answer-line"><input class="answer-input" id="e4b" size="8" placeholder="? g"><span class="feedback-icon" id="f4b"></span></div>
+      <p style="margin-top:10px;"><strong>c. Poids d'or pour un collier de 9 carats pesant 2,8 g :</strong></p>
+      <div class="answer-line"><input class="answer-input" id="e4c" size="8" placeholder="? g"><span class="feedback-icon" id="f4c"></span></div>
+      <p style="margin-top:10px;"><strong>d. Un bijou de 60 g contient 45 g d'or. Quel est son nombre de carats ?</strong></p>
+      <div class="answer-line"><input class="answer-input" id="e4d" size="6" placeholder="? carats"><span class="feedback-icon" id="f4d"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> % = carat ÷ 24 × 100</p>
+      <table>
+        <tr><th>Carat</th><td>24</td><td>22</td><td>20</td><td>18</td><td>14</td><td>10</td><td>9</td></tr>
+        <tr><th>% d'or</th><td>100</td><td><b>91,7</b></td><td><b>83,3</b></td><td><b>75</b></td><td><b>58,3</b></td><td><b>41,7</b></td><td><b>37,5</b></td></tr>
+      </table>
+      <p style="margin-top:8px;"><strong>b.</strong> 6,6 × 22/24 = 6,6 × 0,9167 ≈ <strong>6,05 g</strong></p>
+      <p><strong>c.</strong> 2,8 × 9/24 = 2,8 × 0,375 = <strong>1,05 g</strong></p>
+      <p><strong>d.</strong> 45/60 × 24 = 0,75 × 24 = <strong>18 carats</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE ACTIONS -->
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="gestion-donnees.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+
+</div><!-- /container -->
+<script>
+const PAGE_KEY = '6e-maths-proportionnalite-done';
+
+function toggleCorr(id) {
+  document.getElementById(id).classList.toggle('visible');
+}
+function mark(id, ok) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.classList.toggle('correct', ok);
+  el.classList.toggle('incorrect', !ok);
+  const fi = document.getElementById('f' + id.replace(/^[a-z]+/,''));
+  if (fi) fi.textContent = ok ? '✅' : '❌';
+}
+function num(id) { return parseFloat(document.getElementById(id).value.replace(',','.')); }
+function approx(a,b,tol=0.15) { return Math.abs(a-b) <= tol; }
+
+function checkEx1() {
+  [[1,6],[2,12],[3,21],[4,36]].forEach(([i,v])=>{
+    const el = document.getElementById('e1a'+i);
+    const ok = approx(parseFloat(el.value.replace(',','.')), v, 0.1);
+    el.classList.toggle('correct',ok); el.classList.toggle('incorrect',!ok);
+  });
+}
+function checkEx2() {
+  const checks = {t1a:10,t1b:35,t1c:63,t2a:6,t2b:10.5,t2c:18,t3a:4.5,t3b:42,t4a:6.5,t4b:4.32};
+  Object.entries(checks).forEach(([id,val])=>{
+    const el=document.getElementById(id);
+    const ok=approx(parseFloat(el.value.replace(',','.')),val,0.05);
+    el.classList.toggle('correct',ok); el.classList.toggle('incorrect',!ok);
+  });
+}
+function checkEx3() {
+  mark('e3a', approx(num('e3a'),83,1));
+  const raw = document.getElementById('e3b').value.toLowerCase().replace(/\s/g,'');
+  const ok3b = raw.includes('2h17') || raw.includes('137') || raw.includes('2h17min');
+  document.getElementById('e3b').classList.toggle('correct',ok3b);
+  document.getElementById('e3b').classList.toggle('incorrect',!ok3b);
+}
+function checkEx4() {
+  const ans = {c1:91.7,c2:83.3,c3:75,c4:58.3,c5:41.7,c6:37.5};
+  Object.entries(ans).forEach(([id,val])=>{
+    const el=document.getElementById(id);
+    const ok=approx(parseFloat(el.value.replace(',','.')),val,0.2);
+    el.classList.toggle('correct',ok); el.classList.toggle('incorrect',!ok);
+  });
+  mark('e4b', approx(num('e4b'),6.05,0.05));
+  mark('e4c', approx(num('e4c'),1.05,0.05));
+  mark('e4d', approx(num('e4d'),18,0.1));
+}
+
+// Done toggle
+const dc = document.getElementById('done-check');
+const dl = document.getElementById('done-label');
+dc.checked = localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked) dl.classList.add('checked');
+function toggleDone() {
+  localStorage.setItem(PAGE_KEY, dc.checked?'true':'false');
+  dl.classList.toggle('checked', dc.checked);
+}
+</script>
+</body>
+</html>

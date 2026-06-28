@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symétrie axiale | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Symétrie axiale</span>
+</nav>
+<div class="hero"><h1>🪞 Symétrie axiale</h1><p>Construction des symétriques de points et de figures</p></div>
+<div class="container">
+
+<div class="card" style="background:#e0f2fe;border-left:4px solid #0284c7;">
+  <h3 style="color:#0c4a6e;margin-bottom:8px;">📌 Rappel de méthode</h3>
+  <p>Le symétrique d'un point A par rapport à un axe (d) est le point A' tel que :</p>
+  <ul style="padding-left:20px;margin-top:8px;line-height:1.8;">
+    <li>(d) est la <strong>médiatrice</strong> du segment [AA']</li>
+    <li>A et A' sont à <strong>égale distance</strong> de (d)</li>
+    <li>[AA'] est <strong>perpendiculaire</strong> à (d)</li>
+  </ul>
+  <p style="margin-top:8px;"><strong>Construction :</strong> trace la perpendiculaire à (d) passant par A, puis reporte la même distance de l'autre côté.</p>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Symétriques de points par rapport à (d)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur chaque figure du cahier, construis le symétrique des points par rapport à la droite (d). Coche quand c'est fait.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>a. Symétrique du point A (axe vertical)</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>b. Symétriques des points D, E, F (axe horizontal)</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>c. Symétriques des points G, H, I (axe oblique)</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>d. Symétriques des points J, K, L (axe oblique)</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Identifier des symétriques</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur la figure (points A, B, C, D, E, F, G, H, K sur un axe (d)) :</p>
+    </div>
+    <div class="answer-line">
+      <label>a. Le point</label>
+      <input class="answer-input" id="e2a1" size="3" placeholder="?">
+      <label>est le symétrique du point</label>
+      <input class="answer-input" id="e2a2" size="3" placeholder="?">
+      <label>par rapport à (d).</label>
+      <span class="feedback-icon" id="fe2a"></span>
+    </div>
+    <div class="answer-line">
+      <label>b. Le point</label>
+      <input class="answer-input" id="e2b1" size="3" placeholder="?">
+      <label>est l'image du point</label>
+      <input class="answer-input" id="e2b2" size="3" placeholder="?">
+      <label>par la symétrie d'axe (d).</label>
+      <span class="feedback-icon" id="fe2b"></span>
+    </div>
+    <div class="question" style="margin-top:12px;">
+      <p><strong>c. On ne peut pas affirmer que les autres points ont un symétrique sur la figure — pourquoi ?</strong></p>
+    </div>
+    <textarea class="answer-input" id="e2c" style="min-height:70px;" placeholder="Écris ta réponse…"></textarea>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> Le point <strong>F</strong> est le symétrique du point <strong>A</strong> par rapport à (d) (à vérifier sur ta figure).</p>
+      <p><strong>b.</strong> Le point <strong>H</strong> est l'image du point <strong>C</strong> par la symétrie d'axe (d).</p>
+      <p><strong>c.</strong> Les autres points n'ont pas leur image représentée sur la figure : leur symétrique existe mais n'est pas dessiné — il serait en dehors du cadre de la figure.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Symétrique du point A</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Trace le symétrique du point A par rapport à l'axe (d) sur ta feuille du cahier.</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;">
+      <input type="checkbox" id="c3" style="width:20px;height:20px;accent-color:var(--success);">
+      <span>J'ai tracé le symétrique A' ✓</span>
+    </label>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Symétrique de A par rapport à l'axe (xy)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>L'axe (xy) forme un angle de 40° avec la droite MA. M est sur l'axe. Construis A', le symétrique de A par rapport à (xy).</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+      <input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);">
+      <span>a. J'ai construit A' ✓</span>
+    </label>
+
+    <div class="answer-line">
+      <label>b. Mesure de l'angle yMA' :</label>
+      <input class="answer-input" id="e4b" size="6" placeholder="? °">
+      <span class="feedback-icon" id="fe4b"></span>
+    </div>
+    <div class="question" style="margin-top:8px;">
+      <p>Justification :</p>
+    </div>
+    <textarea class="answer-input" id="e4bj" style="min-height:60px;" placeholder="Car…"></textarea>
+
+    <div class="answer-line" style="margin-top:12px;">
+      <label>c. Longueur du segment [A'M] :</label>
+      <input class="answer-input" id="e4c" size="8" placeholder="? cm">
+      <span class="feedback-icon" id="fe4c"></span>
+    </div>
+    <textarea class="answer-input" id="e4cj" style="min-height:60px;" placeholder="Justification : car…"></textarea>
+    <br><br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier b</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p><strong>b.</strong> L'angle yMA' = <strong>40°</strong>.<br>
+      Justification : par la symétrie axiale, l'axe (xy) est la bissectrice de l'angle AMA'. Donc l'angle xMA = l'angle xMA' = 40°, ainsi l'angle yMA' = 40°.</p>
+      <p style="margin-top:8px;"><strong>c.</strong> [A'M] = [AM].<br>
+      Justification : par la symétrie axiale, M est sur l'axe (d), donc M est le milieu de [AA'], ce qui implique MA = MA'.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="axes-symetrie.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-symetrie-axiale-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t=1){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function checkEx4(){
+  const v=parseFloat(document.getElementById('e4b').value.replace(',','.'));
+  const ok=approx(v,40,2);
+  setClass('e4b',ok);setFI('e4b',ok);
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

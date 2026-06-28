@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion de données | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Gestion de données</span>
+</nav>
+<div class="hero"><h1>📈 Gestion de données</h1><p>Tableaux à double entrée, graphiques et diagrammes</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Animaux domestiques</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Le tableau suivant présente les résultats d'une enquête sur les animaux domestiques :</p>
+      <table>
+        <tr><th></th><th>Chien OUI</th><th>Chien NON</th></tr>
+        <tr><th>Chat OUI</th><td>56</td><td>344</td></tr>
+        <tr><th>Chat NON</th><td>405</td><td>165</td></tr>
+      </table>
+      <p style="margin-top:12px;">Combien de personnes…</p>
+    </div>
+    <div class="answer-line"><label>a. ont un chien mais pas de chat :</label>
+      <input class="answer-input" id="e1a" size="6" placeholder="?"><span class="feedback-icon" id="fe1a"></span></div>
+    <div class="answer-line"><label>b. ont un chat mais pas de chien :</label>
+      <input class="answer-input" id="e1b" size="6" placeholder="?"><span class="feedback-icon" id="fe1b"></span></div>
+    <div class="answer-line"><label>c. ont un chien :</label>
+      <input class="answer-input" id="e1c" size="6" placeholder="?"><span class="feedback-icon" id="fe1c"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> Chien OUI + Chat NON = <strong>405</strong></p>
+      <p><strong>b.</strong> Chat OUI + Chien NON = <strong>344</strong></p>
+      <p><strong>c.</strong> Chien OUI (avec ou sans chat) = 56 + 405 = <strong>461</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Poids de Jérôme (bébé)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Le graphique donne le poids (en kg) de Jérôme de la naissance à 2 ans. Les courbes rouges indiquent le poids minimum et maximum conseillés.</p>
+      <p>D'après le graphique (valeurs approximatives) :</p>
+    </div>
+    <div class="question">
+      <p><strong>a. À quels âges Jérôme est-il au-dessus du poids maximum conseillé ?</strong></p>
+      <textarea class="answer-input" id="e2a" placeholder="Écris ta réponse…"></textarea>
+    </div>
+    <div class="question">
+      <p><strong>b. À quel âge est-il en dessous du poids minimum conseillé ?</strong></p>
+      <textarea class="answer-input" id="e2b" placeholder="Écris ta réponse…" style="min-height:60px;"></textarea>
+    </div>
+    <div class="question">
+      <p><strong>c. Complète le tableau à l'aide du graphique :</strong></p>
+      <table>
+        <tr><th>Âge (mois)</th><td>0</td><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td></tr>
+        <tr><th>Poids (kg)</th>
+          <td><input class="answer-input" id="p0" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p3" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p6" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p9" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p12" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p15" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p18" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p21" size="3" placeholder="?"></td>
+          <td><input class="answer-input" id="p24" size="3" placeholder="?"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="question">
+      <p><strong>d. De combien de kg son poids a-t-il augmenté entre ses deux anniversaires (1 an et 2 ans) ?</strong></p>
+      <div class="answer-line"><input class="answer-input" id="e2d" size="6" placeholder="? kg"><span class="feedback-icon" id="fe2d"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction (valeurs approx. à lire sur le graphique)</h4>
+      <p><strong>a.</strong> Jérôme est au-dessus du maximum conseillé vers <strong>3 mois et 6 mois</strong>.</p>
+      <p><strong>b.</strong> Il est en dessous du minimum conseillé vers <strong>9 mois</strong>.</p>
+      <p><strong>c.</strong> Valeurs approximatives (à ajuster selon ta lecture du graphique) :</p>
+      <table>
+        <tr><th>Âge (mois)</th><td>0</td><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td></tr>
+        <tr><th>Poids (kg)</th><td>≈3,5</td><td>≈6,5</td><td>≈8</td><td>≈8,5</td><td>≈10</td><td>≈10,5</td><td>≈11</td><td>≈11,5</td><td>≈12</td></tr>
+      </table>
+      <p style="margin-top:8px;"><strong>d.</strong> Augmentation ≈ 12 − 10 = <strong>2 kg</strong> (varie selon la lecture du graphique).</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — IMC des Français (1997 et 2012)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Les diagrammes circulaires donnent la répartition de l'IMC des Français en 1997 et 2012.</p>
+      <table>
+        <tr><th>IMC</th><th>Classification</th><th>1997</th><th>2012</th></tr>
+        <tr><td>&lt; 18,5</td><td>Maigreur</td><td>0,3 %</td><td>0,3 %</td></tr>
+        <tr><td>18,5–24,9</td><td>Corpulence normale</td><td>57,5 %</td><td>49,2 %</td></tr>
+        <tr><td>25–29,9</td><td>Surpoids</td><td>29,8 %</td><td>32,3 %</td></tr>
+        <tr><td>30–39,9</td><td>Obésité modérée</td><td>8,2 %</td><td>13,8 %</td></tr>
+        <tr><td>≥ 40</td><td>Obésité morbide</td><td>1,2 %</td><td>3,5 %... ?</td></tr>
+      </table>
+    </div>
+    <div class="answer-line"><label>a. % maigres en 1997 :</label>
+      <input class="answer-input" id="e3a" size="6" placeholder="? %"><span class="feedback-icon" id="fe3a"></span></div>
+    <div class="answer-line"><label>b. % corpulence normale en 1997 :</label>
+      <input class="answer-input" id="e3b" size="6" placeholder="? %"><span class="feedback-icon" id="fe3b"></span></div>
+    <div class="answer-line"><label>c. % surpoids en 2012 :</label>
+      <input class="answer-input" id="e3c" size="6" placeholder="? %"><span class="feedback-icon" id="fe3c"></span></div>
+    <div class="question" style="margin-top:12px;">
+      <p><strong>d. À quoi correspond 8,2 % dans le premier diagramme ?</strong></p>
+      <textarea class="answer-input" id="e3d" placeholder="Écris ta réponse…" style="min-height:60px;"></textarea>
+      <p style="margin-top:8px;"><strong>e. À quoi correspond 3,5 % dans le deuxième diagramme ?</strong></p>
+      <textarea class="answer-input" id="e3e" placeholder="Écris ta réponse…" style="min-height:60px;"></textarea>
+      <p style="margin-top:8px;"><strong>f. Compare les pourcentages d'obèses (IMC ≥ 30) en 1997 et en 2012.</strong></p>
+      <textarea class="answer-input" id="e3f" placeholder="Écris ta réponse…" style="min-height:60px;"></textarea>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier a, b, c</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> <strong>0,3 %</strong> (maigreur en 1997)</p>
+      <p><strong>b.</strong> <strong>57,5 %</strong> (corpulence normale en 1997)</p>
+      <p><strong>c.</strong> <strong>32,3 %</strong> (surpoids en 2012)</p>
+      <p><strong>d.</strong> 8,2 % représente le pourcentage d'individus en <strong>obésité modérée (IMC 30–39,9) en 1997</strong>.</p>
+      <p><strong>e.</strong> 3,5 % représente le pourcentage d'individus en <strong>obésité morbide (IMC ≥ 40) en 2012</strong>.</p>
+      <p><strong>f.</strong> En 1997 : obèses = 8,2 + 1,2 = <strong>9,4 %</strong>. En 2012 : obèses = 13,8 + 3,5 = <strong>17,3 %</strong>. Le taux d'obésité a presque doublé entre 1997 et 2012.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="distances-cercles.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+
+<script>
+const PAGE_KEY = '6e-maths-gestion-donnees-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t=0.2){return Math.abs(a-b)<=t;}
+function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function checkEx1(){
+  setClass('e1a',approx(num('e1a'),405,0.5));
+  setClass('e1b',approx(num('e1b'),344,0.5));
+  setClass('e1c',approx(num('e1c'),461,0.5));
+}
+function checkEx3(){
+  setClass('e3a',approx(num('e3a'),0.3,0.1));
+  setClass('e3b',approx(num('e3b'),57.5,0.5));
+  setClass('e3c',approx(num('e3c'),32.3,0.5));
+}
+const dc=document.getElementById('done-check');
+const dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distances et cercles | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Distances et cercles</span>
+</nav>
+<div class="hero"><h1>⭕ Distances et cercles</h1><p>Rayon, diamètre, corde, appartenance à un cercle</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Vrai ou Faux</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Les points M, N et O sont les centres respectifs des cercles (C₁), (C₂) et (C₃). Réponds par Vrai ou Faux.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="answer-line"><label style="flex:1;">a. [AC] est un diamètre du cercle (C₂).</label>
+        <select class="answer-input" id="e1a"><option value="">--</option><option>Vrai</option><option>Faux</option></select>
+        <span class="feedback-icon" id="fe1a"></span></div>
+      <div class="answer-line"><label style="flex:1;">b. A et C sont les points d'intersection des cercles (C₁) et (C₂).</label>
+        <select class="answer-input" id="e1b"><option value="">--</option><option>Vrai</option><option>Faux</option></select>
+        <span class="feedback-icon" id="fe1b"></span></div>
+      <div class="answer-line"><label style="flex:1;">c. [CD] est une corde de deux cercles.</label>
+        <select class="answer-input" id="e1c"><option value="">--</option><option>Vrai</option><option>Faux</option></select>
+        <span class="feedback-icon" id="fe1c"></span></div>
+      <div class="answer-line"><label style="flex:1;">d. Le point A appartient aux trois cercles.</label>
+        <select class="answer-input" id="e1d"><option value="">--</option><option>Vrai</option><option>Faux</option></select>
+        <span class="feedback-icon" id="fe1d"></span></div>
+      <div class="answer-line"><label style="flex:1;">e. MC est le rayon du cercle (C₁).</label>
+        <select class="answer-input" id="e1e"><option value="">--</option><option>Vrai</option><option>Faux</option></select>
+        <span class="feedback-icon" id="fe1e"></span></div>
+      <div class="answer-line"><label style="flex:1;">f. Le cercle (C₂) passe par les points A, B et C.</label>
+        <select class="answer-input" id="e1f"><option value="">--</option><option>Vrai</option><option>Faux</option></select>
+        <span class="feedback-icon" id="fe1f"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p>a. <strong>Vrai</strong> — [AC] passe par le centre N, c'est bien un diamètre de (C₂).</p>
+      <p>b. <strong>Vrai</strong> — A et C sont les deux points communs aux cercles (C₁) et (C₂).</p>
+      <p>c. <strong>Vrai</strong> — [CD] est une corde des cercles (C₂) et (C₃).</p>
+      <p>d. <strong>Faux</strong> — A appartient à (C₁) et (C₂), mais pas forcément à (C₃).</p>
+      <p>e. <strong>Faux</strong> — M est le centre de (C₁), donc MC serait un rayon de (C₁) seulement si C est sur (C₁).</p>
+      <p>f. <strong>Vrai</strong> — (C₂) de centre N passe par A, B et C qui sont sur ce cercle.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Programme de construction</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Écris un programme de construction pour reproduire la figure (deux cercles de même centre O, avec un point T sur le grand cercle et P sur le petit), en commençant par « Place deux points A et O. »</p>
+    </div>
+    <textarea class="answer-input" id="e2" style="min-height:120px;" placeholder="Étape 1 : Place deux points A et O.&#10;Étape 2 : …"></textarea>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Exemple de programme de construction</h4>
+      <ol style="padding-left:20px;line-height:2;">
+        <li>Place deux points A et O.</li>
+        <li>Trace le cercle (C₁) de centre O passant par A.</li>
+        <li>Place un point T sur le cercle (C₁).</li>
+        <li>Place un point P à l'intérieur du cercle (C₁).</li>
+        <li>Trace le cercle (C₂) de centre O et de rayon OP.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Tracés de cercles</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Ces exercices se font sur ta feuille avec ton compas. Lis les instructions, trace la figure, puis coche quand c'est fait.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" id="c3a" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>a. Le cercle (γ₁) de centre O passant par A.</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" id="c3b" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>b. Le cercle (γ₂) de centre B et de rayon 1,6 cm.</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" id="c3c" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>c. Le cercle (γ₃) de centre C et de rayon CO.</span>
+      </label>
+      <label style="display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" id="c3d" style="width:20px;height:20px;accent-color:var(--success);">
+        <span>d. Le cercle (γ₄) de diamètre [AD] — le rayon est donc AD ÷ 2.</span>
+      </label>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Rappels de méthode</button>
+    <div class="correction-box" id="corr3">
+      <h4>💡 Méthode</h4>
+      <ul>
+        <li><strong>Cercle passant par un point P :</strong> ouvre le compas de O à P, puis trace le cercle.</li>
+        <li><strong>Cercle de rayon donné :</strong> règle le compas sur la valeur indiquée à la règle.</li>
+        <li><strong>Cercle de diamètre [AD] :</strong> le centre est le milieu de [AD] et le rayon = AD/2.</li>
+        <li><strong>Rayon CO :</strong> mesure la distance CO à la règle, puis règle le compas sur cette valeur.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Points intérieurs / extérieurs</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>La figure est composée de deux cercles : l'un de centre A et rayon 4 cm, l'autre de centre B et rayon 5 cm. Des points sont placés sur la figure (U, V, W, Y, Z, M, N, R, S, T…).</p>
+      <p><strong>a. Classe les points dans le tableau :</strong></p>
+    </div>
+    <table>
+      <tr><th>Distance à A &lt; 4 cm</th><th>Distance à A &gt; 4 cm</th></tr>
+      <tr>
+        <td><textarea class="answer-input" id="e4a1" style="min-height:60px;" placeholder="Points intérieurs au cercle A…"></textarea></td>
+        <td><textarea class="answer-input" id="e4a2" style="min-height:60px;" placeholder="Points extérieurs au cercle A…"></textarea></td>
+      </tr>
+    </table>
+    <div class="question" style="margin-top:12px;">
+      <p><strong>b. Cite les points à moins de 4 cm de A ET à plus de 5 cm de B :</strong></p>
+      <textarea class="answer-input" id="e4b1" style="min-height:50px;" placeholder="…"></textarea>
+      <p style="margin-top:8px;"><strong>Cite les points à plus de 4 cm de A ET à moins de 5 cm de B :</strong></p>
+      <textarea class="answer-input" id="e4b2" style="min-height:50px;" placeholder="…"></textarea>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Méthode</button>
+    <div class="correction-box" id="corr4">
+      <h4>💡 Méthode</h4>
+      <p>Pour savoir si un point P est à l'intérieur ou à l'extérieur d'un cercle de centre O et rayon r :</p>
+      <ul>
+        <li>Si OP &lt; r → P est <strong>à l'intérieur</strong> du cercle.</li>
+        <li>Si OP = r → P est <strong>sur</strong> le cercle.</li>
+        <li>Si OP &gt; r → P est <strong>à l'extérieur</strong> du cercle.</li>
+      </ul>
+      <p>Mesure les distances au compas ou à la règle pour chaque point de la figure.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="droites-paralleles.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+
+<script>
+const PAGE_KEY = '6e-maths-distances-cercles-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function setClass(id,ok){
+  const el=document.getElementById(id);
+  el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);
+  const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';
+}
+const answers={e1a:'Vrai',e1b:'Vrai',e1c:'Vrai',e1d:'Faux',e1e:'Faux',e1f:'Vrai'};
+function checkEx1(){
+  Object.entries(answers).forEach(([id,val])=>{
+    setClass(id, document.getElementById(id).value===val);
+  });
+}
+const dc=document.getElementById('done-check');
+const dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

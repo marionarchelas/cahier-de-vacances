@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractions | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Fractions</span>
+</nav>
+<div class="hero"><h1>½ Fractions</h1><p>Fractions égales, placement sur une droite, comparaison, calculs</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Placer des fractions sur des axes</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Place les points sur les axes gradués de ton cahier, puis réponds aux questions.</p>
+      <p>a. A = 3/4 ; B = 5/4 ; C = 7/4 &nbsp;|&nbsp; b. D = 5/6 ; E = 10/6 ; F = 7/6 &nbsp;|&nbsp; c. G = 9/12 ; H = 20/12 ; I = 10/12</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+      <input type="checkbox" style="width:18px;height:18px;accent-color:var(--success);">
+      <span>J'ai placé tous les points sur les axes ✓</span>
+    </label>
+    <div class="question"><p><strong>d. Quels sont les points situés à la même abscisse ?</strong></p></div>
+    <textarea class="answer-input" id="e1d" style="min-height:60px;" placeholder="Les points … et … sont à la même abscisse car …"></textarea>
+    <div class="question" style="margin-top:10px;"><p><strong>e. Quelles égalités de fractions peux-tu écrire ?</strong></p></div>
+    <textarea class="answer-input" id="e1e" style="min-height:60px;" placeholder="Ex : 3/4 = 9/12 …"></textarea>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p><strong>d.</strong> Les points A (3/4) et G (9/12) sont à la même abscisse car 3/4 = 9/12. D (5/6) et I (10/12) aussi car 5/6 = 10/12. E (10/6) et H (20/12) aussi.</p>
+      <p><strong>e.</strong> 3/4 = 9/12 &nbsp;|&nbsp; 5/6 = 10/12 &nbsp;|&nbsp; 10/6 = 20/12 &nbsp;|&nbsp; 7/4 ≠ 7/6</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Élèves demi-pensionnaires</div>
+  <div class="exercise-body">
+    <div class="question"><p>Dans un collège de <strong>840 élèves</strong>, <strong>85 %</strong> sont demi-pensionnaires.</p></div>
+    <div class="answer-line">a. Pourcentage d'élèves externes = <input class="answer-input" id="e2a" size="6" placeholder="? %"><span class="feedback-icon" id="fe2a"></span></div>
+    <div class="question" style="margin-top:12px;"><p><strong>b. Calcule le nombre d'élèves externes de deux façons :</strong></p></div>
+    <div class="answer-line">Méthode 1 (× par %) : <input class="answer-input" id="e2b1" size="8" placeholder="? élèves"><span class="feedback-icon" id="fe2b1"></span></div>
+    <div class="answer-line" style="margin-top:8px;">Méthode 2 (fraction) : <input class="answer-input" id="e2b2" size="8" placeholder="? élèves"><span class="feedback-icon" id="fe2b2"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> 100 − 85 = <strong>15 %</strong> d'externes</p>
+      <p><strong>b. Méthode 1 :</strong> 840 × 0,15 = <strong>126 élèves</strong></p>
+      <p><strong>b. Méthode 2 :</strong> 840 × 15/100 = 840 ÷ 100 × 15 = 8,4 × 15 = <strong>126 élèves</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Fractions égales</div>
+  <div class="exercise-body">
+    <div class="question"><p>Complète les fractions égales :</p></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+      <div class="answer-line">2/3 = <input class="answer-input" id="f1" size="4" placeholder="?">/24<span class="feedback-icon" id="ff1"></span></div>
+      <div class="answer-line">3/9 = <input class="answer-input" id="f2" size="4" placeholder="?">/81<span class="feedback-icon" id="ff2"></span></div>
+      <div class="answer-line">9/7 = <input class="answer-input" id="f3" size="4" placeholder="?">/49<span class="feedback-icon" id="ff3"></span></div>
+      <div class="answer-line">1/9 = <input class="answer-input" id="f4" size="4" placeholder="?">/18<span class="feedback-icon" id="ff4"></span></div>
+      <div class="answer-line">9/6 = <input class="answer-input" id="f5" size="4" placeholder="?">/24<span class="feedback-icon" id="ff5"></span></div>
+      <div class="answer-line">9/6 = <input class="answer-input" id="f6" size="4" placeholder="?">/36<span class="feedback-icon" id="ff6"></span></div>
+      <div class="answer-line">7/1 = <input class="answer-input" id="f7" size="4" placeholder="?">/8<span class="feedback-icon" id="ff7"></span></div>
+      <div class="answer-line">3/3 = <input class="answer-input" id="f8" size="4" placeholder="?">/15<span class="feedback-icon" id="ff8"></span></div>
+      <div class="answer-line"><input class="answer-input" id="f9" size="4" placeholder="?">/6 = 6<span class="feedback-icon" id="ff9"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+        <p>2/3 = <strong>16</strong>/24</p>
+        <p>3/9 = <strong>27</strong>/81</p>
+        <p>9/7 = <strong>63</strong>/49</p>
+        <p>1/9 = <strong>2</strong>/18</p>
+        <p>9/6 = <strong>36</strong>/24</p>
+        <p>9/6 = <strong>54</strong>/36</p>
+        <p>7/1 = <strong>56</strong>/8</p>
+        <p>3/3 = <strong>5</strong>/5... non → 3/3=1=5/5. <br>Ou : 3/3=<strong>15</strong>/15 si dénominateur cible est 15.</p>
+        <p><strong>36</strong>/6 = 6</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4a — Bonbons -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4a — Partage de bonbons</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Luc a reçu une boîte de bonbons. Il en a mangé <strong>3/6</strong>, il en a donné <strong>8/24</strong> à Tom et <strong>7/21</strong> à Nadia.</p>
+      <p><strong>Qui a eu la plus grosse part ?</strong></p>
+    </div>
+    <div class="answer-line">
+      <select class="answer-input" id="e4a_rep">
+        <option value="">Choisir…</option>
+        <option>Luc (a mangé le plus)</option>
+        <option>Tom (a reçu le plus)</option>
+        <option>Nadia (a reçu le plus)</option>
+        <option>Tom et Nadia ont eu la même part</option>
+      </select>
+      <span class="feedback-icon" id="fe4a_rep"></span>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4a()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4a')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4a">
+      <h4>✅ Correction</h4>
+      <p>Convertissons en fractions simples :</p>
+      <ul>
+        <li>Luc mange 3/6 = <strong>1/2</strong></li>
+        <li>Tom reçoit 8/24 = <strong>1/3</strong></li>
+        <li>Nadia reçoit 7/21 = <strong>1/3</strong></li>
+      </ul>
+      <p>1/2 &gt; 1/3 → <strong>Luc a mangé la plus grosse part.</strong></p>
+      <p>Tom et Nadia ont reçu la même quantité (1/3 chacun).</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4b — Cinéma -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4b — Place de cinéma</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Le tarif plein d'une place de cinéma est <strong>8,40 €</strong>. Les enfants de moins de 8 ans ne paient que les <strong>deux tiers</strong> de ce tarif. Tony vient d'avoir 7 ans. Combien coûte sa place ?</p>
+    </div>
+    <div class="answer-line">Prix de la place de Tony = <input class="answer-input" id="e4b" size="8" placeholder="? €"><span class="feedback-icon" id="fe4b"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4b()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4b')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4b">
+      <h4>✅ Correction</h4>
+      <p>Tony a 7 ans &lt; 8 ans → tarif réduit = 2/3 du tarif plein</p>
+      <p>Prix = 8,40 × 2/3 = 8,40 ÷ 3 × 2 = 2,80 × 2 = <strong>5,60 €</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="nombres-decimaux.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-fractions-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+
+function checkEx2(){
+  const okA=approx(num('e2a'),15,0.5);setClass('e2a',okA);setFI('e2a',okA);
+  const okB1=approx(num('e2b1'),126,0.5);setClass('e2b1',okB1);setFI('e2b1',okB1);
+  const okB2=approx(num('e2b2'),126,0.5);setClass('e2b2',okB2);setFI('e2b2',okB2);
+}
+function checkEx3(){
+  const correct={f1:16,f2:27,f3:63,f4:2,f5:36,f6:54,f7:56,f8:5,f9:36};
+  Object.entries(correct).forEach(([id,v])=>{
+    const ok=approx(num(id),v,0.1);setClass(id,ok);setFI(id,ok);
+  });
+}
+function checkEx4a(){
+  const v=document.getElementById('e4a_rep').value;
+  const ok=v==='Luc (a mangé le plus)';setClass('e4a_rep',ok);setFI('e4a_rep',ok);
+}
+function checkEx4b(){
+  const ok=approx(num('e4b'),5.6,0.05);setClass('e4b',ok);setFI('e4b',ok);
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

@@ -1,0 +1,789 @@
+﻿Nombre de pages: 17
+
+=== PAGE 1 ===
+Consignes travail mathématiques
+pour une entrée réussie en 5°
+I. Revoir les notions
+Utiliser les e-cahiers de vacances d’Yvan Monka pour revoir les concepts, les méthodes et
+s’entrainer sur des exercices de base
+https://www.maths-et-tiques.fr/index.php/prepare-ton-entree-
+en-5e
+II. Exercices complémentaires
+Les exercices proposés dans la partie précédente peuvent être complétés par thèmes avec
+les exercices des pages suivantes pour aborder la 5° encore plus sereinement
+BON COURAGE !
+L’équipe de Mathématiques
+
+=== PAGE 2 ===
+e
+CAHIER DE VACANCES 6
+ᵉ
+5
+VERS LA
+2019-2020
+Arnaud DURAND, basé sur les exercices de Sesamaths
+Corrigé du cahier :
+
+=== PAGE 3 ===
+Proportionnalité
+Exercice 1 Sur le graphique, on a représenté la Exercice 3 Ali a filmé 119 520 images puis il a filmé
+distance parcourue par un cycliste en fonction de la pendant 54 minutes. Combien de temps, en heures
+durée de son trajet. et minutes, a-t-il filmé au total ?
+....................................................................................
+24
+Distance en km
+....................................................................................
+18
+....................................................................................
+12
+6
+Durée en min Exercice 4 Le carat est une mesure de pureté de
+métaux précieux tel que l'or. Un carat représente un
+0 5 10 15 20 25 30 35 40 45 50 55 60
+vingt-quatrième de la masse totale d'un alliage. Par
+a. Complète le tableau à l'aide du graphique. exemple, de l'or à 15 carats signifie que dans 24 g
+de l'alliage, on a 15 g d'or pur.
+Durée (min) 10 20 35 60
+a. Complète ce tableau de proportionnalité en
+Distance arrondissant au dixième.
+12 20 22
+(km)
+Carat 24 22 20 18 14 10 9
+b. Ce tableau représente-t-il une situation de % d'or 100
+proportionnalité ? Justifie puis conclus.
+b. Quel est, en grammes, le poids d'or (arrondi au
+.................................................................................... centième) pour un bracelet de 22 carats pesant
+6,6 g ?
+....................................................................................
+....................................................................................
+....................................................................................
+....................................................................................
+....................................................................................
+c. Quel est, en grammes, le poids d'or pour un
+collier de 9 carats pesant 2,8 g ?
+....................................................................................
+Exercice 2 Complète les tableaux de
+proportionnalité.
+....................................................................................
+5 8 9 ....................................................................................
+× 7
+70 d. Un bijou en or pesant 60 g contient 45 g d'or pur.
+Quel est le nombre de carats de ce bijou ?
+....................................................................................
+4 7 12
+× 1,5
+....................................................................................
+15
+....................................................................................
+6 8 10,5
+× ....
+18 32
+4 5,5 7,2
+× ....
+2,4 3,9
+
+=== PAGE 4 ===
+Gestion de données
+Exercice 1 Le tableau suivant présente les résultats Exercice 3 Les diagrammes suivants représentent la
+d'une enquête sur les animaux domestiques. répartition (en %) des indices de masse corporelle
+Chien (IMC) des Français en 1997 et en 2012 (d'après
+l'enquête ObÉpi).
+OUI NON
+00,,33 %% 1,2 %
+Chat OUI 56 344 4,2% 8,2 % IM 3,5% 13,8
+NON 405 165 %
+C
+moins de 18,5
+Combien de personnes :
+18,5 à 24,9
+a. ont un chien mais pas de chat ? ........................... 57,5 29,8 % 25 à 29,9
+49,2% 32,3%
+% 30 à 39,9
+b. ont un chat mais pas de chien ? ...........................
+40 et plus
+c. ont un chien ? .......................................................
+1997 2012
+Exercice 2
+IMC Classification
+Le graphique suivant donne le poids (en kg) de
+Moins de 18,5 Maigreur
+Jérôme. Les courbes en rouge représentent les
+poids minimum et maximum conseillés. 18,5 à 24,9 Corpulence normale
+14
+25 à 29,9 Surpoids
+13
+12
+30 à 39,9 Obésité modérée
+11
+10 40 et plus Obésité morbide
+9
+8
+a. Quel est le pourcentage des individus classifiés
+7
+6 « maigres » en 1997 ?
+5
+4 ....................................................................................
+3
+....................................................................................
+2
+Naissance3 mois 6 mois 9 mois 1 an 15 mois 18 mois 21 mois 2 ans b. Quel est le pourcentage des individus ayant une
+a. À quels âges, Jérôme est-il au-dessus du poids corpulence normale en 1997 ?
+maximum conseillé ?
+....................................................................................
+....................................................................................
+c. Quel est le pourcentage des individus étant en
+surpoids en 2012 ?
+....................................................................................
+b. À quel âge, Jérôme est-il en dessous du poids ....................................................................................
+minimum conseillé ?
+d. À quoi correspond le nombre 8,2 % dans le
+premier diagramme ?
+....................................................................................
+c. Complète le tableau à l'aide du graphique. ....................................................................................
+Âge ....................................................................................
+en 0 3 6 9 12 15 18 21 24
+e. À quoi correspond le nombre 3,5 % dans le
+mois
+deuxième diagramme ?
+Poids
+en kg ....................................................................................
+....................................................................................
+d. De combien de kilogrammes son poids a-t-il
+augmenté entre ses deux anniversaires ?
+....................................................................................
+.................................................................................... f. Un individu est obèse quand son IMC est
+supérieur ou égal à 30. Compare les pourcentages
+des individus obèses en 1997 et en 2012.
+........................
+
+=== PAGE 5 ===
+Distances et cercles
+Exercice 1 Les points M, N et O sont les centres Exercice 3 Trace :
+respectifs des cercles (C₁), (C₂) et (C₃).
+a. le cercle ( ) de centre O passant par A.
+1
+(C ) E
+2
+b. le cercle ( ) de centre B et de rayon 1,6 cm.
+2
+(C )
+A
+N 3
+(C ) B c. le cercle ( 3 ) de centre C et de rayon CO.
+1
+C
+d. le cercle ( ) de diamètre [AD].
+4
+O
+F M
+A B
+D
+Réponds par Vrai ou Faux
+O
+a. [AC] est un diamètre du cercle (C 2 ). ........
+b. A et C sont les points d'intersection
+des cercles (C ) et (C ). ........
+1 2
+c. [CD] est une corde de deux cercles. ........
+D C
+d. Le point A appartient aux trois cercles. ........
+e. MC est le rayon du cercle (C 1 ). ........
+f. Le cercle (C ) passe par les points A, B et
+2
+C. ........
+Exercice 4 La figure est composée de deux cercles,
+Exercice 2 l'un de centre A et rayon 4 cm et l'autre de centre B
+et de rayon 5 cm.
+Écris un programme de
+A O
+construction, qui permet de
+T P
+reproduire cette figure,
+commençant par « Place deux points A et O. » V
+N
+B
+.................................................................................... U Y
+W A
+....................................................................................
+S
+.................................................................................... M R Z
+....................................................................................
+a. Classe les points dans le tableau ci-dessous.
+....................................................................................
+Distance à A inférieure Distance à A
+à 4 cm supérieure à 4 cm
+b. Cite tous les points situés :
+• à moins de 4 cm de A et à plus de 5 cm de B.
+....................................................................................
+• à plus de 4 cm de A et à moins de 5 cm de B.
+....................................................................................
+
+=== PAGE 6 ===
+Droites parallèles et perpendiculaires
+Exercice 1 Exercice 4
+F L
+A B D
+A
+D
+B
+T
+I
+C
+E C E
+H R Q
+F Complète les phrases :
+G
+Complète le tableau : a. Les droites (QR) et (FR) forment un
+Droites .............................................................. .
+perpendiculaires Droites parallèles
+b. La droite (LR) est ................................ à la droite
+(FQ) passant par le point T.
+c. Les droites (LQ) et (TR) sont
+.......................................................................... .
+d. La droite (FR) semble
+............................................................. à la droite
+(LQ).
+Exercice 2
+B e. La droite (RQ) semble être ................................ à
+F
+la droite (FL) passant
+Lucas dit que sur cette D C par le point R.
+figure il y a trois paires
+de droites A
+E f. La droite (AC) est ................................. à la droite
+perpendiculaires. Es-tu
+d'accord avec lui ? Si (BD).
+non, dis pourquoi ?
+g. Les droites (AC) et (DE) semblent
+................................. entre elles.
+...................................................................................
+h. La droite (AC) est ................................. à la droite
+Exercice 3 Construis les médiatrices des trois côtés
+(BD) passant par le point A.
+du triangle en utilisant ta règle et ton équerre, puis
+code la figure.
+i. La droite (DE) et la droite (AB) forment un
+................................. .
+j. Les droites (BC) et (DE) sont ................................
+
+=== PAGE 7 ===
+Triangles et quadrilatères
+Exercice 1 Trace un triangle ABC tel que AB = 7 cm ; Exercice 2 Reproduis les dessins suivants avec tes
+BC = 5 cm et CA = 6 cm. instruments, en respectant les mesures et les
+codages indiqués.
+T
+m
+m
+53
+A
+Le dessin suivant est tracé à main levée. 2 8
+m
+a. Marion est absente. m
+Que lui dire pour qu'elle reproduise A cette R
+m
+figure ?
+2
+c 3 ,4
+5, c
+m
+6
+cm
+B
+m
+D
+8
+c C
+4 ,2
+cm
+C
+3, 3 ,5
+c
+m
+b. Construis-la avec les instruments en respectant E A
+les mesures indiquées. P
+Exercice 3 40° y
+Dessine une figure M
+x
+à main levée, puis
+trace avec tes
+instruments les
+figures décrites ci-
+dessous.
+a. Un losange dont les côtés mesurent 2,5 cm et
+D
+l'une des diagonales 4 cm.
+b. Un rectangle de longueur 4,5 cm et de largeur
+3 cm.
+c. Un carré de côté 3,5 cm.
+
+=== PAGE 8 ===
+Symétrie axiale
+Exercice 1 Sur chaque figure ci-dessous, construis les Exercice 3 Trace le symétrique de du point A.
+symétriques des points par rapport à la droite (d).
+(d)
+a. c.
+G (d)
+(d)
+C A
+A
+A I
+H
+B
+(d)
+A
+b. d.
+E J
+Exercice 4
+D K
+a. Construis le
+F
+symétrique A' du
+(d)
+point A par 40° y
+L
+rapport à l'axe
+(xy). M
+(d) x
+Exercice 2
+(d) B
+C
+a. Le point ..... est le G
+E b. Quelle est la
+symétrique du point ..... mesure de yMA' ? Justifie ta réponse.
+K
+D
+par rapport à l'axe (d). ....................................................................................
+A
+b. Le point ..... est ....................................................................................
+F H
+l'image du point ..... par c. Quelle est la longueur du segment [A'M] ? Justifie
+ta réponse.
+la symétrie d'axe (d).
+....................................................................................
+c. On ne peut pas affirmer que les autres points ont un
+symétrique sur la figure, pourquoi ? ....................................................................................
+.............................................................................................
+.............................................................................................
+.............................................................................................
+
+=== PAGE 9 ===
+Axes de symétrie
+Exercice 1 Pour chaque lettre de l'alphabet, trace Exercice 2 Repasse en rouge tous les axes de
+l'axe (ou les axes) de symétrie lorsqu'il(s) existe(nt). symétrie des figures suivantes.
+A B C D
+a. Carré b. Losange c. Rectangle
+E F G H I
+d. Triangle e. Triangle f. Triangle
+isocèle équilatéral quelconque
+J K L M N
+Exercice 3 A 5 cm D
+O P Q R On considère le
+rectangle 6
+cm
+suivant :
+B C
+S T U V
+a. Donne la longueur du segment [BC]. Justifie
+ta réponse.
+.........................................................................
+.........................................................................
+W X Y Z .........................................................................
+.........................................................................
+b. Donne la longueur du segment [BD].
+Justifie.
+.........................................................................
+.........................................................................
+.........................................................................
+c. Les diagonales de ce rectangle se coupent
+en O. Quelle est la longueur du segment
+[AO] ? Justifie.
+.........................................................................
+.........................................................................
+
+=== PAGE 10 ===
+Espace
+Exercice 1 En collant des petits cubes identiques de Exercice 2 Dans chaque cas, complète le dessin de façon
+couleur blanche, on forme un objet dont voici une à obtenir la représentation en perspective cavalière d'un
+vue de face et une vue de derrière. parallélépipède rectangle.
+a. b.
+Vue de face Vue de derrière
+c. d.
+a. Combien de cubes composent cet objet ?
+....................................................................................
+b. On peint entièrement l'objet en jaune puis on
+décolle tous les cubes. Quel est le nombre total de
+faces jaunes ?
+....................................................................................
+c. Quel est le nombre total de faces qui sont restées
+blanches ?
+Exercice 3 Reproduis le dessin de la face avant sur les
+....................................................................................
+deux autres faces visibles du cube.
+d. Dessine la vue de gauche en perspective de cet
+objet.
+Cube modèle
+
+=== PAGE 11 ===
+Angles
+Exercice 1 Sur cette figure, marque : Exercice 4 En utilisant les instruments de géométrie,
+a. en vert, l'angle
+^xOy. reproduis ci-dessous cette figure en vraie grandeur.
+b. en bleu, l'angle ^yOu. x y
+c. en rouge, l'angle
+^zOx.
+t
+O
+d. en noir, l'angle
+^xOw.
+w
+z
+Exercice 2 u
+D
+C
+A
+B
+a. Marque, en rouge, les angles aigus et, en bleu,
+les angles obtus.
+b. À l'aide de ton rapporteur, mesure les angles du
+quadrilatère ABCD.
+ ABC = ..................  CDA= ..................
+^ BCD= ..................  DAB= ..................
+c. Calcule la somme des quatre mesures trouvées.
+
+a. Quelle est la nature de l'angle OLE?
+....................................................................................
+....................................................................................
+.................................................................................... b. Trace la bissectrice de l'angle  POL. (la demi-
+Exercice 3
+t
+droite qui coupe l’angle en 2 parties égales)
+z
+96° M
+25°
+x y Exercice 5
+A r s
+B 132°
+58°
+J
+a. Calcule la mesure de l'angle xAz. Justifie.
+U K L
+V
+....................................................................................
+92°
+44°
+b. Quelle est la mesure de l'angle rBt ? Justifie. R
+S T
+.....................................................
+Les points R,S et T sont-ils alignés ? ..................
+Les points J,K et L sont-ils alignés ?..................
+
+=== PAGE 12 ===
+Aires et périmètres
+Exercice 1 Exercice 4 Calcule la longueur réelle du parcours au
+Soit un rectangle de largeur l, de longueur L, de mètre près.
+périmètre P et d'aire A. Complète le tableau.
+l 4 cm 5 dm 1 m ....................................................................................
+L 5 cm 1,2 m 10 hm ....................................................................................
+....................................................................................
+P 36 hm 4,8 m
+....................................................................................
+A
+500 m
+Exercice 2 Calcule l'aire de chaque grand triangle.
+a. 6,6 cm
+6
+4, 6
+c
+m
+4, 4
+c
+m ,9
+cm
+5,4
+cm
+m
+c
+2 7 ,
+3
+@
+,
+op 3 tions c
+m
+b. 6,6 cm
+a. ...............................................................................
+....................................................................................
+b. Méthode 1 : ........................................................... Exercice 5
+Calcule l'aire de chaque portion de disque. (Donne
+.................................................................................... une valeur approchée au dixième près.)
+a. b. c.
+Méthode 2 : ................................................................
+5 cm
+....................................................................................
+3,2 cm 1,9 cm
+Exercice 3
+Calcule le périmètre puis l'aire (donne à chaque fois a. ...............................................................................
+la valeur exacte puis une valeur approchée au
+....................................................................................
+dixième près) des figures décrites ci-dessous.
+a. un cercle de rayon 4 m. b. ...............................................................................
+....................................................................................
+....................................................................................
+c. ...............................................................................
+....................................................................................
+b. un cercle de diamètre 4,3 hm. ....................................................................................
+....................................................................................
+....................................................................................
+
+=== PAGE 13 ===
+Volumes
+Exercice 1 Détermine le volume de chaque solide Exercice 3 Calcule le volume des solides suivants
+en prenant pour unité le petit cube. composés de parallélépipèdes
+rectangles accolés.
+a. 1 unité
+de volume
+..............................
+(u.v.)
+..............................
+..............................
+b.
+..............................
+..............................
+c.
+75 mm
+..............................
+....................................................................................
+....................................................................................
+Exercice 4 Pour transporter des marchandises par
+bateau ou camion, on utilise des containers dont la
+Solide a. b. c. longueur est de 12 m, la largeur de 2,5 m et la
+hauteur de 2,5 m.
+Volume en u.v.
+a. Calcule le volume d'un container en mètres
+cubes.
+....................................................................................
+....................................................................................
+b. Exprime ses dimensions en décimètres.
+Exercice 2
+a. Détermine le volume des cubes L = ................… l = .................... h = ....................
+en centimètres cubes.
+c. Donne son volume en décamètres cubes.
+....................................................................................
+....................................................................................
+1 cm
+…............................. …........................
+Exercice 5
+…............................. …........................
+Un aquarium d'une capacité de 20 L a pour longueur
+b. Louise a commencé la construction d'un cube,
+40 cm et pour largeur 20 cm.
+combien lui manque-t-il de petits cubes
+pour terminer son empilement ?
+Calcule sa hauteur en centimètres.
+...........................................
+....................................................
+...........................................
+....................................................
+...........................................
+...........................................
+...........................................
+mm
+49
+mm
+23
+32 mm
+m
+m
+40
+
+=== PAGE 14 ===
+Nombres entiers
+Exercice 1 Effectue la division euclidienne Exercice 6 Pour le C.D.I. du collège, la
+1 4 1 8 documentaliste reçoit 370 livres qu'elle doit ranger
+sur des étagères. Elle ne peut transporter que 13
+livres à la fois.
+Combien de voyages au minimum devra-t-elle faire ?
+Combien de livres transportera-t-elle au dernier
+Exercice 2 voyage ?
+On a 116  (16 × 7)  4.
+....................................................................................
+Quels sont le quotient entier et le reste dans la
+division euclidienne de 116 par 16 ?
+....................................................................................
+....................................................................................
+Exercice 7 Écris la liste des diviseurs de :
+a. 12 :
+Quels sont le quotient entier et le reste dans la
+b. 72 :
+division euclidienne de 116 par 7 ?
+Écris la liste des dix premiers multiples de :
+.................................................................................... c. 10 :
+Exercice 3 Effectue la division décimale d. 3 :
+1 7 2, 2 3
+Exercice 8
+a. 157 326 est-il divisible par 2 ? Justifie.
+....................................................................................
+b. 157 326 est-il divisible par 3 ? Justifie.
+....................................................................................
+....................................................................................
+Exercice 4 Calculer
+A  55 ─ (9  2) × 3 ─ 4 c. 157 326 est-il divisible par 5 ? Justifie.
+.................................................................................... ....................................................................................
+.................................................................................... Exercice 9 Nombres croisés
+Exercice 5 Pauline a effectué les divisions Horizontalement
+décimales suivantes mais elle a oublié de placer la 1 2 3 4 A - Multiple de 3 et de 5.
+virgule au quotient. Diviseur de 25.
+A
+Aide-la en ajoutant chaque virgule manquante. B - Multiple de 10. Diviseur de
+tous les nombres.
+B
+Quotient décimal exact ou C - Diviseur de 222 autre que
+Division approché par défaut C lui-même.
+D - Multiple de 5 (mais pas de
+D 10) si on lui ajoute 1. Multiple
+220  25 8 8
+de 12 et 7.
+Verticalement
+2 548  5 5 0 9 6
+1 - Nombre palindrome.
+1 404  96 1 4 6 2 5 2 - Multiple de 100 si on lui
+enlève 1.
+6 875  52 1 3 2 2 3 - Multiple de 2 et de 3.
+4 - Multiple de 17.
+250  11 2 2 7 2
+1 857  36 5 1 5 8
+
+=== PAGE 15 ===
+Fractions
+Exercice 1 Exercice 3 Complète.
+Place les points suivants sur les axes gradués
+2 ..... 3 ..... 9 ..... 1 .....
+correspondants.
+= = = =
+3 24 9 81 7 49 9 18
+(3) (5) (7)
+a. A B C
+4 4 4 9 ..... 9 ..... 7 .....
+= = 7 = =
+6 24 6 36 1 8
+3 ..... .....
+3 = = 6 =
+0 1 2 1 15 6
+Exercice 4 Luc a reçu une boîte de bonbons. Il en a
+(5) (10) (7)
+3 8
+b. D E F mangé les , il en a donné les à Tom et les
+6 6 6
+9 24
+7
+à Nadia. Qui a eu la plus grosse part ?
+21
+....................................................................................
+0 1 2
+....................................................................................
+( 9 ) (20) (10) ....................................................................................
+c. G H I
+12 12 12
+....................................................................................
+0 1 2 Exercice 4 Le tarif plein d'une place de cinéma est
+8,40 €. Les enfants de moins de 8 ans ne paient que
+les deux tiers de ce tarif. Combien coûte la place de
+d. Quels sont les points situés à la même abscisse ? Tony, qui vient d'avoir 7 ans ?
+....................................................................................
+............................................................................................
+....................................................................................
+e. Quelles égalités de fractions peux-tu écrire ?
+....................................................................................
+............................................................................................
+Exercice 2 Dans un collège de 840 élèves, 85 % d'entre
+eux sont demi-pensionnaires.
+a. Quel est le pourcentage d'élèves externes ?
+............................................................................................
+............................................................................................
+............................................................................................
+b. Calcule de deux façons différentes le nombre d'élèves
+externes.
+............................................................................................
+............................................................................................
+............................................................................................
+
+=== PAGE 16 ===
+Nombres décimaux
+Exercice 1 Complète les graduations en couleur. Exercice 3 Kamel veut acheter trois stylos à 1,01 €
+pièce et un cahier à 1,99 €. Il a 5 € dans sa poche.
+Sans calculatrice et sans poser d'opérations, dis si
+0 ….. ….. ….. 1 Kamel pourra réaliser cet achat.
+0 ….. ….. 0,1 ....................................................................................
+....................................................................................
+1,5 ….. ….. 1,6
+....................................................................................
+0 ….. ….. 5 Exercice 4 Amélie avait 85 € d'argent de poche
+avant d'aller faire les soldes. Elle a acheté deux tee-
+0 ….. 1 ….. shirts à 19,80 € l'un. Combien d'argent de poche lui
+reste-t-il ?
+....................................................................................
+....................................................................................
+Exercice 2
+Tu dois placer les points A, B, C, ... selon les indications du
+tableau ci-dessous. Par exemple, le point A est sur la
+première ligne et son abscisse est 5. Exercice 5 Complète les deux carrés ci-dessous
+pour que les sommes de chaque ligne, de chaque
+Ligne a. a. b. c. c. d. e. e. e. colonne et de chaque diagonale soient égales.
+Point A B C D E F G H I
+a. 7,5 b. 1,6 1,3
+Abscisse 5 9 3,5 0,5 0,9 4,4 3,11 3,15 3,19
+4,5 2,5 1,1 0,8
+1,5 0,9 0,6
+a.
+0 10
+0,4 1,4 0,1
+b.
+0 5
+c.
+0 1
+d.
+3 5
+e.
+3,1 3,2
+f. Trace la ligne brisée ABCEIFHGDA.
+Ce dessin représente ……………………...
+
+=== PAGE 17 ===
+Opérations sur les nombres décimaux
+Exercice 1 Calcule mentalement. Exercice 4 Sachant que 65 × 132  8 580,
+a. 5,378 × 100  ........... f. 87 × 100  ............... détermine les résultats des calculs suivants.
+b. 0,065 × 10  ........... g. 0,58 × 10  ............... a. 6,5 × 13,2 
+c. 79,2 × 1 000  .......... h. 934 × 10  ............... b. 650 × 132 
+d. 71,47 × 100  .......... i. 11,11 × 1 000  .......... c. 0,65 × 0,132 
+e. 0,34 × 1 000  .......... j. 0,05 × 10 000  ......... d. 0,065 × 1 320 
+Complète par 10 ; 100 ; 1 000 ; ... . Exercice 5 Entoure le résultat juste, sans poser
+l'opération ni utiliser de calculatrice.
+a. 5,45 × ..….....  5 450
+2,5 × 4,4 8,444 11 33,5 2,2
+b. 2,98 × ..….....  29,8
+10,3 × 7,5 77,29 68,412 77,25 7,25
+c. 2,34 × ...…....  234
+11,6 × 29,8 354,578 321,12 512,88 345,68
+d. 0,345 × .….......  3,45
+346 × 0,97 3 263,62 36,62 335,62 348,62
+e. 0,014 × ..…......  1,4
+1,03 × 698,4 7 233,352 719,352 687,352 68,352
+f. 0,32 × ..…......  320
+Exercice 6
+Exercice 2 Calcule mentalement. Trace un chemin d'une case verte vers une case
+rouge sachant que :
+a. 120 × 0,1  .............. d. 300 × 0,001  ........... Si tu vas vers la droite, le nombre doit être plus
+grand.
+b. 34 × 0,001  .............. e. 2 000 × 0,01  ........... Si tu vas vers la gauche, il doit être plus petit.
+c. 335 × 0,01  .............. f. 560 × 0,1  ...........
+Complète par 0,1 ; 0,01 ; 0,001 ; ... .
+a. 3,4 × .…......  0,034
+b. 345 × .....….  0,034 5
+c. .......…... × 27  0,027
+d. .......…... × 0,6  0,0
+Exercice 3 Calcule mentalement.
+a. 120 ÷ 10  ............... d. 300 ÷ 1000  ............
+b. 34 ÷ 100  ................. e. 2 000 ÷ 100  ............
+c. 335 ÷ 10  ................. f. 560 ÷ 100  ..........
+Complète par 10 ; 100 ; 1 000 ; ... .
+a. 3,4 ÷ .…......  0,034
+b. 345 ÷ .....….  0,034 5

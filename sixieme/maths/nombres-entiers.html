@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombres entiers | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Nombres entiers</span>
+</nav>
+<div class="hero"><h1>🔢 Nombres entiers</h1><p>Division euclidienne, diviseurs, multiples, critères de divisibilité</p></div>
+<div class="container">
+
+<div class="card" style="background:#fef9c3;border-left:4px solid #eab308;">
+  <h3 style="color:#713f12;margin-bottom:10px;">📌 Rappels</h3>
+  <ul style="padding-left:20px;line-height:2;">
+    <li><strong>Division euclidienne :</strong> dividende = diviseur × quotient + reste (0 ≤ reste &lt; diviseur)</li>
+    <li><strong>Divisible par 2 :</strong> dernier chiffre pair (0, 2, 4, 6, 8)</li>
+    <li><strong>Divisible par 3 :</strong> somme des chiffres divisible par 3</li>
+    <li><strong>Divisible par 5 :</strong> se termine par 0 ou 5</li>
+    <li><strong>Divisible par 9 :</strong> somme des chiffres divisible par 9</li>
+  </ul>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Division euclidienne de 1 418</div>
+  <div class="exercise-body">
+    <div class="question"><p>Effectue la division euclidienne de 1 418 par 7.</p></div>
+    <div class="answer-line">Quotient = <input class="answer-input" id="e1q" size="6" placeholder="?"><span class="feedback-icon" id="fe1q"></span></div>
+    <div class="answer-line">Reste = <input class="answer-input" id="e1r" size="6" placeholder="?"><span class="feedback-icon" id="fe1r"></span></div>
+    <div class="answer-line" style="margin-top:8px;">Vérification : 1418 = 7 × <input class="answer-input" id="e1v" size="6" placeholder="?"> + <input class="answer-input" id="e1vr" size="4" placeholder="?"></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p>1418 ÷ 7 : 7 × 202 = 1414, reste 4</p>
+      <p>→ Quotient = <strong>202</strong>, Reste = <strong>4</strong></p>
+      <p>Vérification : 1418 = 7 × <strong>202</strong> + <strong>4</strong> ✓</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Quotient et reste</div>
+  <div class="exercise-body">
+    <div class="question"><p>On sait que : 116 = (16 × 7) + 4</p></div>
+    <p><strong>Division de 116 par 16 :</strong></p>
+    <div class="answer-line">Quotient entier = <input class="answer-input" id="e2a_q" size="4" placeholder="?"><span class="feedback-icon" id="fe2a_q"></span>
+    Reste = <input class="answer-input" id="e2a_r" size="4" placeholder="?"><span class="feedback-icon" id="fe2a_r"></span></div>
+    <p style="margin-top:10px;"><strong>Division de 116 par 7 :</strong></p>
+    <div class="answer-line">Quotient entier = <input class="answer-input" id="e2b_q" size="4" placeholder="?"><span class="feedback-icon" id="fe2b_q"></span>
+    Reste = <input class="answer-input" id="e2b_r" size="4" placeholder="?"><span class="feedback-icon" id="fe2b_r"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p>116 = 16 × <strong>7</strong> + <strong>4</strong> → quotient = <strong>7</strong>, reste = <strong>4</strong></p>
+      <p>116 = 7 × <strong>16</strong> + <strong>4</strong> → quotient = <strong>16</strong>, reste = <strong>4</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Calcul avec priorités</div>
+  <div class="exercise-body">
+    <div class="question"><p>Calcule A = 55 − (9 + 2) × 3 − 4 en respectant les priorités opératoires.</p></div>
+    <div class="answer-line">A = <input class="answer-input" id="e4" size="8" placeholder="?"><span class="feedback-icon" id="fe4"></span></div>
+    <textarea class="answer-input" id="e4detail" style="min-height:80px;margin-top:8px;" placeholder="Détaille tes calculs…"></textarea>
+    <br><br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p>A = 55 − (9 + 2) × 3 − 4</p>
+      <p>= 55 − <strong>11</strong> × 3 − 4 &nbsp;&nbsp; (parenthèses d'abord)</p>
+      <p>= 55 − <strong>33</strong> − 4 &nbsp;&nbsp; (multiplication avant soustraction)</p>
+      <p>= <strong>18</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 5 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 5 — Placer la virgule</div>
+  <div class="exercise-body">
+    <div class="question"><p>Pauline a oublié de placer la virgule au quotient. Aide-la en ajoutant la virgule manquante.</p></div>
+    <table>
+      <tr><th>Division</th><th>Quotient sans virgule</th><th>Quotient correct</th><th>✓</th></tr>
+      <tr><td>220 ÷ 25</td><td>88</td><td><input class="answer-input" id="d1" size="8" placeholder="?"></td><td id="fd1"></td></tr>
+      <tr><td>2 548 ÷ 5</td><td>5096</td><td><input class="answer-input" id="d2" size="8" placeholder="?"></td><td id="fd2"></td></tr>
+      <tr><td>1 404 ÷ 96</td><td>14625</td><td><input class="answer-input" id="d3" size="8" placeholder="?"></td><td id="fd3"></td></tr>
+      <tr><td>6 875 ÷ 52</td><td>13221</td><td><input class="answer-input" id="d4" size="8" placeholder="?"></td><td id="fd4"></td></tr>
+      <tr><td>250 ÷ 11</td><td>2272</td><td><input class="answer-input" id="d5" size="8" placeholder="?"></td><td id="fd5"></td></tr>
+      <tr><td>1 857 ÷ 36</td><td>5158</td><td><input class="answer-input" id="d6" size="8" placeholder="?"></td><td id="fd6"></td></tr>
+    </table>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr5">
+      <h4>✅ Correction</h4>
+      <table>
+        <tr><th>Division</th><th>Quotient correct</th></tr>
+        <tr><td>220 ÷ 25</td><td><strong>8,8</strong></td></tr>
+        <tr><td>2 548 ÷ 5</td><td><strong>509,6</strong></td></tr>
+        <tr><td>1 404 ÷ 96</td><td><strong>14,625</strong></td></tr>
+        <tr><td>6 875 ÷ 52</td><td><strong>132,21…</strong></td></tr>
+        <tr><td>250 ÷ 11</td><td><strong>22,72…</strong></td></tr>
+        <tr><td>1 857 ÷ 36</td><td><strong>51,58…</strong></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- EX 6 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 6 — Problème : livres au CDI</div>
+  <div class="exercise-body">
+    <div class="question"><p>La documentaliste reçoit <strong>370 livres</strong> et ne peut transporter que <strong>13 livres à la fois</strong>.</p></div>
+    <div class="answer-line">Nombre de voyages minimum = <input class="answer-input" id="e6v" size="5" placeholder="?"><span class="feedback-icon" id="fe6v"></span></div>
+    <div class="answer-line">Livres transportés au dernier voyage = <input class="answer-input" id="e6r" size="5" placeholder="?"><span class="feedback-icon" id="fe6r"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx6()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr6')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr6">
+      <h4>✅ Correction</h4>
+      <p>370 ÷ 13 : 13 × 28 = 364, reste 6</p>
+      <p>→ 28 voyages complets + 1 voyage avec 6 livres = <strong>29 voyages</strong></p>
+      <p>Au dernier voyage : <strong>6 livres</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 7 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 7 — Diviseurs et multiples</div>
+  <div class="exercise-body">
+    <div class="question"><p>Liste des diviseurs :</p></div>
+    <div class="answer-line"><label>Diviseurs de 12 :</label>
+      <input class="answer-input" id="div12" style="width:100%;max-width:400px;" placeholder="1, 2, …">
+      <span class="feedback-icon" id="fdiv12"></span></div>
+    <div class="answer-line"><label>Diviseurs de 72 :</label>
+      <input class="answer-input" id="div72" style="width:100%;max-width:500px;" placeholder="1, 2, …">
+      <span class="feedback-icon" id="fdiv72"></span></div>
+    <div class="question" style="margin-top:12px;"><p>10 premiers multiples :</p></div>
+    <div class="answer-line"><label>Multiples de 10 :</label>
+      <input class="answer-input" id="mul10" style="width:100%;max-width:500px;" placeholder="0, 10, …">
+      <span class="feedback-icon" id="fmul10"></span></div>
+    <div class="answer-line"><label>Multiples de 3 :</label>
+      <input class="answer-input" id="mul3" style="width:100%;max-width:500px;" placeholder="0, 3, …">
+      <span class="feedback-icon" id="fmul3"></span></div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr7')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr7">
+      <h4>✅ Correction</h4>
+      <p><strong>Diviseurs de 12 :</strong> 1, 2, 3, 4, 6, 12</p>
+      <p><strong>Diviseurs de 72 :</strong> 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72</p>
+      <p><strong>Multiples de 10 :</strong> 0, 10, 20, 30, 40, 50, 60, 70, 80, 90</p>
+      <p><strong>Multiples de 3 :</strong> 0, 3, 6, 9, 12, 15, 18, 21, 24, 27</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 8 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 8 — Critères de divisibilité (157 326)</div>
+  <div class="exercise-body">
+    <div class="question"><p>Le nombre considéré est <strong>157 326</strong>.</p></div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="answer-line">
+        <label>a. Divisible par 2 ?</label>
+        <select class="answer-input" id="e8a"><option value="">--</option><option>Oui</option><option>Non</option></select>
+        <span class="feedback-icon" id="fe8a"></span>
+      </div>
+      <div><textarea class="answer-input" id="e8aj" style="min-height:50px;" placeholder="Justification…"></textarea></div>
+      <div class="answer-line">
+        <label>b. Divisible par 3 ?</label>
+        <select class="answer-input" id="e8b"><option value="">--</option><option>Oui</option><option>Non</option></select>
+        <span class="feedback-icon" id="fe8b"></span>
+      </div>
+      <div><textarea class="answer-input" id="e8bj" style="min-height:50px;" placeholder="Justification…"></textarea></div>
+      <div class="answer-line">
+        <label>c. Divisible par 5 ?</label>
+        <select class="answer-input" id="e8c"><option value="">--</option><option>Oui</option><option>Non</option></select>
+        <span class="feedback-icon" id="fe8c"></span>
+      </div>
+      <div><textarea class="answer-input" id="e8cj" style="min-height:50px;" placeholder="Justification…"></textarea></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx8()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr8')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr8">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> <strong>Oui</strong> — le dernier chiffre est 6 (pair), donc 157 326 est divisible par 2.</p>
+      <p><strong>b.</strong> <strong>Oui</strong> — somme des chiffres : 1+5+7+3+2+6 = <strong>24</strong>, et 24 est divisible par 3.</p>
+      <p><strong>c.</strong> <strong>Non</strong> — le dernier chiffre est 6, il ne se termine ni par 0 ni par 5.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="fractions.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-nombres-entiers-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+
+function checkEx1(){
+  const okQ=approx(num('e1q'),202,0.5);setClass('e1q',okQ);setFI('e1q',okQ);
+  const okR=approx(num('e1r'),4,0.5);setClass('e1r',okR);setFI('e1r',okR);
+}
+function checkEx2(){
+  [[['e2a_q',7],['e2a_r',4]],[['e2b_q',16],['e2b_r',4]]].flat().forEach(([id,v])=>{
+    const ok=approx(num(id),v,0.5);setClass(id,ok);setFI(id,ok);
+  });
+}
+function checkEx4(){
+  const ok=approx(num('e4'),18,0.5);setClass('e4',ok);setFI('e4',ok);
+}
+function checkEx5(){
+  const correct={d1:8.8,d2:509.6,d3:14.625,d4:132.21,d5:22.72,d6:51.58};
+  Object.entries(correct).forEach(([id,v])=>{
+    const ok=approx(num(id),v,0.05);
+    const el=document.getElementById(id);
+    el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);
+    document.getElementById('f'+id).textContent=ok?'✅':'❌';
+  });
+}
+function checkEx6(){
+  const okV=approx(num('e6v'),29,0.5);setClass('e6v',okV);setFI('e6v',okV);
+  const okR=approx(num('e6r'),6,0.5);setClass('e6r',okR);setFI('e6r',okR);
+}
+function checkEx8(){
+  const ans={e8a:'Oui',e8b:'Oui',e8c:'Non'};
+  Object.entries(ans).forEach(([id,v])=>{const ok=document.getElementById(id).value===v;setClass(id,ok);setFI(id,ok);});
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

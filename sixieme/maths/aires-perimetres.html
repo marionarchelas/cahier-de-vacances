@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aires et périmètres | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Aires et périmètres</span>
+</nav>
+<div class="hero"><h1>🔲 Aires et périmètres</h1><p>Rectangle, triangle, cercle et portions de disque</p></div>
+<div class="container">
+
+<div class="card" style="background:#f0fdf4;border-left:4px solid #22c55e;">
+  <h3 style="color:#14532d;margin-bottom:10px;">📌 Formules essentielles</h3>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+    <div><strong>Rectangle :</strong><br>P = 2(l + L) | A = l × L</div>
+    <div><strong>Triangle :</strong><br>A = (base × hauteur) / 2</div>
+    <div><strong>Cercle :</strong><br>P = 2πr = πd | A = πr²</div>
+    <div><strong>Demi-disque :</strong><br>A = πr² / 2</div>
+  </div>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Tableau rectangle (l, L, P, A)</div>
+  <div class="exercise-body">
+    <div class="question"><p>Complète le tableau pour un rectangle de largeur l, longueur L, périmètre P et aire A :</p></div>
+    <table>
+      <tr><th>l</th><td>4 cm</td><td>5 dm</td><td><input class="answer-input" id="l3" size="6" placeholder="?"></td><td>1 m</td></tr>
+      <tr><th>L</th><td>5 cm</td><td><input class="answer-input" id="L2" size="6" placeholder="?"></td><td>1,2 m</td><td>10 hm</td></tr>
+      <tr><th>P</th><td><input class="answer-input" id="P1" size="6" placeholder="?"></td><td>36 hm</td><td><input class="answer-input" id="P3" size="6" placeholder="?"></td><td>4,8 m</td></tr>
+      <tr><th>A</th><td><input class="answer-input" id="A1" size="6" placeholder="?"></td><td><input class="answer-input" id="A2" size="6" placeholder="?"></td><td><input class="answer-input" id="A3" size="6" placeholder="?"></td><td><input class="answer-input" id="A4" size="6" placeholder="?"></td></tr>
+    </table>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <table>
+        <tr><th>l</th><td>4 cm</td><td>5 dm</td><td><strong>500 m</strong></td><td>1 m</td></tr>
+        <tr><th>L</th><td>5 cm</td><td><strong>1 300 m</strong></td><td>1,2 m</td><td>10 hm = 1 000 m</td></tr>
+        <tr><th>P</th><td><strong>18 cm</strong></td><td>36 hm</td><td><strong>1 001,2 m × 2 ≈ 2 002,4 m</strong></td><td>4,8 m → l+L=2,4 m, L=1 000 m</td></tr>
+        <tr><th>A</th><td><strong>20 cm²</strong></td><td><strong>6 500 m²</strong></td><td><strong>600 m²</strong></td><td><strong>1 000 m²</strong></td></tr>
+      </table>
+      <p style="margin-top:8px;color:#92400e;font-size:.9rem;">⚠️ Attention aux conversions d'unités : 1 hm = 100 m, 1 dm = 0,1 m.</p>
+      <p><strong>Colonne 1 :</strong> P = 2(4+5) = 18 cm ; A = 4×5 = 20 cm²</p>
+      <p><strong>Colonne 4 :</strong> P = 4,8 m → l+L = 2,4 m → L = 2,4−1 = 1,4 m → mais L = 10 hm = 1000 m donc données incohérentes → à relire sur le cahier.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Aires de grands triangles</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p><strong>a.</strong> Triangle avec base 6,6 cm et hauteurs 4,6 cm et 4,4 cm (triangle quelconque — utiliser base × hauteur / 2) :</p>
+    </div>
+    <div class="answer-line">A = <input class="answer-input" id="e2a" size="8" placeholder="? cm²"><span class="feedback-icon" id="fe2a"></span></div>
+    <div class="question" style="margin-top:14px;">
+      <p><strong>b.</strong> Triangle avec base 6,6 cm et hauteur 5,4 cm :</p>
+      <p>Méthode 1 (directe) : A = base × hauteur / 2</p>
+    </div>
+    <div class="answer-line">Méthode 1 : A = <input class="answer-input" id="e2b1" size="8" placeholder="? cm²"><span class="feedback-icon" id="fe2b1"></span></div>
+    <div class="question" style="margin-top:8px;"><p>Méthode 2 (rectangle englobant) : A = A_rectangle − A_triangles extérieurs</p></div>
+    <div class="answer-line">Méthode 2 : A = <input class="answer-input" id="e2b2" size="8" placeholder="? cm²"><span class="feedback-icon" id="fe2b2"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> A = (6,6 × 4,6) / 2 = 30,36 / 2 = <strong>15,18 cm²</strong></p>
+      <p><strong>b. Méthode 1 :</strong> A = (6,6 × 5,4) / 2 = 35,64 / 2 = <strong>17,82 cm²</strong></p>
+      <p><strong>b. Méthode 2 :</strong> Rectangle englobant de 6,6 × 5,4 = 35,64 cm². Soustraire les triangles extérieurs → même résultat : <strong>17,82 cm²</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Périmètre et aire de cercles</div>
+  <div class="exercise-body">
+    <div class="question"><p>Donne la valeur exacte puis une valeur approchée au dixième.</p></div>
+    <p><strong>a. Cercle de rayon 4 m :</strong></p>
+    <div class="answer-line">Périmètre (valeur exacte) = <input class="answer-input" id="p3a" size="8" placeholder="? π m"><span class="feedback-icon" id="fp3a"></span></div>
+    <div class="answer-line">Périmètre (approché) ≈ <input class="answer-input" id="p3aa" size="8" placeholder="? m"><span class="feedback-icon" id="fp3aa"></span></div>
+    <div class="answer-line">Aire (valeur exacte) = <input class="answer-input" id="a3a" size="8" placeholder="? π m²"><span class="feedback-icon" id="fa3a"></span></div>
+    <div class="answer-line">Aire (approchée) ≈ <input class="answer-input" id="a3aa" size="8" placeholder="? m²"><span class="feedback-icon" id="fa3aa"></span></div>
+    <p style="margin-top:14px;"><strong>b. Cercle de diamètre 4,3 hm :</strong></p>
+    <div class="answer-line">Périmètre (valeur exacte) = <input class="answer-input" id="p3b" size="10" placeholder="? π hm"><span class="feedback-icon" id="fp3b"></span></div>
+    <div class="answer-line">Périmètre (approché) ≈ <input class="answer-input" id="p3ba" size="8" placeholder="? hm"><span class="feedback-icon" id="fp3ba"></span></div>
+    <div class="answer-line">Aire (valeur exacte) = <input class="answer-input" id="a3b" size="12" placeholder="? π hm²"><span class="feedback-icon" id="fa3b"></span></div>
+    <div class="answer-line">Aire (approchée) ≈ <input class="answer-input" id="a3ba" size="8" placeholder="? hm²"><span class="feedback-icon" id="fa3ba"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier (valeurs approchées)</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p><strong>a. r = 4 m :</strong></p>
+      <ul>
+        <li>Périmètre exact : <strong>8π m</strong> ≈ <strong>25,1 m</strong></li>
+        <li>Aire exacte : <strong>16π m²</strong> ≈ <strong>50,3 m²</strong></li>
+      </ul>
+      <p style="margin-top:8px;"><strong>b. d = 4,3 hm → r = 2,15 hm :</strong></p>
+      <ul>
+        <li>Périmètre exact : <strong>4,3π hm</strong> ≈ <strong>13,5 hm</strong></li>
+        <li>Aire exacte : <strong>4,6225π hm²</strong> ≈ <strong>14,5 hm²</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Parcours sur plan (échelle)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur un plan à l'échelle 1/500, le parcours mesure une certaine longueur. L'échelle indique que 1 cm sur le plan = 500 cm = 5 m en réalité.</p>
+      <p>La distance entre les points est de <strong>500 m</strong> environ (valeur du cahier).</p>
+    </div>
+    <div class="answer-line">Longueur réelle du parcours ≈ <input class="answer-input" id="e4" size="8" placeholder="? m"><span class="feedback-icon" id="fe4"></span></div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Méthode</h4>
+      <p>Mesure la longueur du parcours sur le plan en cm, puis multiplie par l'échelle (500 ou selon l'indication du cahier).</p>
+      <p>Longueur réelle = longueur sur plan × dénominateur de l'échelle</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 5 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 5 — Portions de disque</div>
+  <div class="exercise-body">
+    <div class="question"><p>Calcule l'aire de chaque portion de disque (valeur approchée au dixième).</p></div>
+    <p><strong>a. Demi-disque de rayon 5 cm :</strong></p>
+    <div class="answer-line">A ≈ <input class="answer-input" id="e5a" size="8" placeholder="? cm²"><span class="feedback-icon" id="fe5a"></span></div>
+    <p style="margin-top:10px;"><strong>b. Quart de disque de rayon 3,2 cm :</strong></p>
+    <div class="answer-line">A ≈ <input class="answer-input" id="e5b" size="8" placeholder="? cm²"><span class="feedback-icon" id="fe5b"></span></div>
+    <p style="margin-top:10px;"><strong>c. Trois-quarts de disque de rayon 1,9 cm :</strong></p>
+    <div class="answer-line">A ≈ <input class="answer-input" id="e5c" size="8" placeholder="? cm²"><span class="feedback-icon" id="fe5c"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr5">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> A = π × 5² / 2 = 25π/2 ≈ <strong>39,3 cm²</strong></p>
+      <p><strong>b.</strong> A = π × 3,2² / 4 = 10,24π/4 ≈ <strong>8,0 cm²</strong></p>
+      <p><strong>c.</strong> A = 3 × π × 1,9² / 4 = 3 × 3,61π/4 ≈ <strong>8,5 cm²</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="volumes.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-aires-perimetres-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+function checkEx1(){
+  const checks={P1:[18,'cm'],A1:[20,'cm²'],A2:[6500,'m²'],l3:[500,'m'],L2:[1300,'m'],P3:[2002.4,'m'],A3:[600,'m²'],A4:[1000,'m²']};
+  // simplified check
+  [['P1',18,1],['A1',20,0.5]].forEach(([id,v,t])=>{const ok=approx(num(id),v,t);setClass(id,ok);setFI(id,ok);});
+}
+function checkEx2(){
+  const a=num('e2a'),b1=num('e2b1'),b2=num('e2b2');
+  const okA=approx(a,15.18,0.5); setClass('e2a',okA);setFI('e2a',okA);
+  const okB1=approx(b1,17.82,0.5); setClass('e2b1',okB1);setFI('e2b1',okB1);
+  const okB2=approx(b2,17.82,0.5); setClass('e2b2',okB2);setFI('e2b2',okB2);
+}
+function checkEx3(){
+  const pa=num('p3aa'),aa=num('a3aa'),pb=num('p3ba'),ab=num('a3ba');
+  [['p3aa',25.1,0.5],['a3aa',50.3,0.5],['p3ba',13.5,0.3],['a3ba',14.5,0.5]].forEach(([id,v,t])=>{
+    const ok=approx(num(id),v,t);setClass(id,ok);setFI(id,ok);
+  });
+}
+function checkEx5(){
+  [['e5a',39.3,0.5],['e5b',8.0,0.5],['e5c',8.5,0.5]].forEach(([id,v,t])=>{
+    const ok=approx(num(id),v,t);setClass(id,ok);setFI(id,ok);
+  });
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

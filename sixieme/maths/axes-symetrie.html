@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axes de symétrie | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Axes de symétrie</span>
+</nav>
+<div class="hero"><h1>✨ Axes de symétrie</h1><p>Lettres de l'alphabet, figures géométriques, rectangle</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Axes de symétrie des lettres</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Pour chaque lettre, trace l'axe (ou les axes) de symétrie lorsqu'il(s) existe(nt) sur ta feuille. Indique ici le nombre d'axes.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px;">
+      <div>A : <input class="answer-input" id="lA" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flA"></span></div>
+      <div>B : <input class="answer-input" id="lB" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flB"></span></div>
+      <div>C : <input class="answer-input" id="lC" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flC"></span></div>
+      <div>D : <input class="answer-input" id="lD" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flD"></span></div>
+      <div>E : <input class="answer-input" id="lE" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flE"></span></div>
+      <div>H : <input class="answer-input" id="lH" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flH"></span></div>
+      <div>I : <input class="answer-input" id="lI" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flI"></span></div>
+      <div>M : <input class="answer-input" id="lM" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flM"></span></div>
+      <div>O : <input class="answer-input" id="lO" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flO"></span></div>
+      <div>T : <input class="answer-input" id="lT" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flT"></span></div>
+      <div>U : <input class="answer-input" id="lU" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flU"></span></div>
+      <div>V : <input class="answer-input" id="lV" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flV"></span></div>
+      <div>W : <input class="answer-input" id="lW" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flW"></span></div>
+      <div>X : <input class="answer-input" id="lX" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flX"></span></div>
+      <div>Y : <input class="answer-input" id="lY" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="flY"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction — axes de symétrie des lettres majuscules</h4>
+      <table>
+        <tr><th>Lettre</th><th>Nb d'axes</th><th>Direction</th></tr>
+        <tr><td>A</td><td>1</td><td>vertical</td></tr>
+        <tr><td>B</td><td>1</td><td>horizontal</td></tr>
+        <tr><td>C</td><td>1</td><td>horizontal</td></tr>
+        <tr><td>D</td><td>1</td><td>horizontal</td></tr>
+        <tr><td>E</td><td>1</td><td>horizontal</td></tr>
+        <tr><td>H</td><td>2</td><td>horizontal + vertical</td></tr>
+        <tr><td>I</td><td>2</td><td>horizontal + vertical</td></tr>
+        <tr><td>M</td><td>1</td><td>vertical</td></tr>
+        <tr><td>O</td><td>∞</td><td>toutes directions</td></tr>
+        <tr><td>T</td><td>1</td><td>vertical</td></tr>
+        <tr><td>U</td><td>1</td><td>vertical</td></tr>
+        <tr><td>V</td><td>1</td><td>vertical</td></tr>
+        <tr><td>W</td><td>1</td><td>vertical</td></tr>
+        <tr><td>X</td><td>2</td><td>horizontal + vertical</td></tr>
+        <tr><td>Y</td><td>1</td><td>vertical</td></tr>
+      </table>
+      <p style="margin-top:8px;"><em>Note : les réponses peuvent varier légèrement selon la police utilisée (ex. B, C, D, E peuvent n'avoir aucun axe en écriture cursive).</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Axes de symétrie des figures</div>
+  <div class="exercise-body">
+    <div class="question"><p>Repasse en rouge tous les axes de symétrie des figures suivantes sur ton cahier, puis complète :</p></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:10px;">
+      <div>a. Carré : <input class="answer-input" id="f2a" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="ff2a"></span></div>
+      <div>b. Losange : <input class="answer-input" id="f2b" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="ff2b"></span></div>
+      <div>c. Rectangle : <input class="answer-input" id="f2c" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="ff2c"></span></div>
+      <div>d. Triangle isocèle : <input class="answer-input" id="f2d" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="ff2d"></span></div>
+      <div>e. Triangle équilatéral : <input class="answer-input" id="f2e" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="ff2e"></span></div>
+      <div>f. Triangle quelconque : <input class="answer-input" id="f2f" size="3" placeholder="nb"> axe(s)<span class="feedback-icon" id="ff2f"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p>a. <strong>Carré : 4 axes</strong> (2 médianes + 2 diagonales)</p>
+      <p>b. <strong>Losange : 2 axes</strong> (les 2 diagonales)</p>
+      <p>c. <strong>Rectangle : 2 axes</strong> (les 2 médianes parallèles aux côtés)</p>
+      <p>d. <strong>Triangle isocèle : 1 axe</strong> (la médiane issue du sommet principal)</p>
+      <p>e. <strong>Triangle équilatéral : 3 axes</strong> (les 3 médianes/hauteurs/médiatrices)</p>
+      <p>f. <strong>Triangle quelconque : 0 axe</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Rectangle ABCD (5 cm × 6 cm)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Rectangle ABCD avec AD = 6 cm, AB = 5 cm (A en haut gauche, D en haut droite, B en bas gauche, C en bas droite).</p>
+    </div>
+    <div class="answer-line">
+      <label>a. Longueur de [BC] :</label>
+      <input class="answer-input" id="e3a" size="6" placeholder="? cm">
+      <span class="feedback-icon" id="fe3a"></span>
+    </div>
+    <textarea class="answer-input" id="e3aj" style="min-height:50px;margin-top:6px;" placeholder="Justification…"></textarea>
+    <div class="answer-line" style="margin-top:10px;">
+      <label>b. Longueur de [BD] (diagonale) :</label>
+      <input class="answer-input" id="e3b" size="6" placeholder="? cm">
+      <span class="feedback-icon" id="fe3b"></span>
+    </div>
+    <textarea class="answer-input" id="e3bj" style="min-height:50px;margin-top:6px;" placeholder="Justification…"></textarea>
+    <div class="answer-line" style="margin-top:10px;">
+      <label>c. Longueur de [AO] (O = intersection des diagonales) :</label>
+      <input class="answer-input" id="e3c" size="6" placeholder="? cm">
+      <span class="feedback-icon" id="fe3c"></span>
+    </div>
+    <textarea class="answer-input" id="e3cj" style="min-height:50px;margin-top:6px;" placeholder="Justification…"></textarea>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> BC = AD = <strong>6 cm</strong> (côtés opposés d'un rectangle sont égaux).</p>
+      <p style="margin-top:8px;"><strong>b.</strong> Dans le triangle rectangle ABD : BD² = AB² + AD² = 5² + 6² = 25 + 36 = 61, donc BD = √61 ≈ <strong>7,81 cm</strong>.</p>
+      <p style="margin-top:8px;"><strong>c.</strong> Les diagonales d'un rectangle se coupent en leur milieu et sont égales, donc AO = BD/2 = √61/2 ≈ <strong>3,9 cm</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="espace.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-axes-symetrie-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t=0.1){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(pre,id,ok){const fi=document.getElementById(pre+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseInt(document.getElementById(id).value);}
+function numF(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+
+const letters={lA:1,lB:1,lC:1,lD:1,lE:1,lH:2,lI:2,lM:1,lO:99,lT:1,lU:1,lV:1,lW:1,lX:2,lY:1};
+function checkEx1(){
+  Object.entries(letters).forEach(([id,val])=>{
+    const v=parseInt(document.getElementById(id).value);
+    const ok=id==='lO'?(v>=2):v===val;
+    setClass(id,ok);setFI('f',id,ok);
+  });
+}
+const figs={f2a:4,f2b:2,f2c:2,f2d:1,f2e:3,f2f:0};
+function checkEx2(){
+  Object.entries(figs).forEach(([id,val])=>{
+    const ok=parseInt(document.getElementById(id).value)===val;
+    setClass(id,ok);setFI('f',id,ok);
+  });
+}
+function checkEx3(){
+  const a=numF('e3a'),b=numF('e3b'),c=numF('e3c');
+  const okA=approx(a,6,0.1); setClass('e3a',okA); setFI('f','e3a',okA);
+  const okB=approx(b,7.81,0.1)||approx(b,7.8,0.1); setClass('e3b',okB); setFI('f','e3b',okB);
+  const okC=approx(c,3.9,0.1)||approx(c,3.905,0.1); setClass('e3c',okC); setFI('f','e3c',okC);
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

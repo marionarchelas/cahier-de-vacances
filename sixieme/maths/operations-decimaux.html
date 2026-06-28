@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opérations sur les décimaux | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Opérations sur les décimaux</span>
+</nav>
+<div class="hero"><h1>✖️ Opérations sur les décimaux</h1><p>Multiplier et diviser par 10, 100, 1 000 — calcul mental et estimation</p></div>
+<div class="container">
+
+<div class="card" style="background:#fef9c3;border-left:4px solid #eab308;">
+  <h3 style="color:#713f12;margin-bottom:10px;">📌 Règles</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+    <div><strong>× 10</strong> → décimale avance d'un rang vers la droite<br><strong>× 100</strong> → deux rangs | <strong>× 1 000</strong> → trois rangs</div>
+    <div><strong>÷ 10</strong> → décimale recule d'un rang vers la gauche<br><strong>÷ 100</strong> → deux rangs | <strong>÷ 1 000</strong> → trois rangs</div>
+  </div>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Calcul mental : multiplier par 10, 100, 1 000</div>
+  <div class="exercise-body">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="answer-line">a. 5,378 × 100 = <input class="answer-input" id="e1a" size="8" placeholder="?"><span class="feedback-icon" id="fe1a"></span></div>
+      <div class="answer-line">f. 87 × 100 = <input class="answer-input" id="e1f" size="8" placeholder="?"><span class="feedback-icon" id="fe1f"></span></div>
+      <div class="answer-line">b. 0,065 × 10 = <input class="answer-input" id="e1b" size="8" placeholder="?"><span class="feedback-icon" id="fe1b"></span></div>
+      <div class="answer-line">g. 0,58 × 10 = <input class="answer-input" id="e1g" size="8" placeholder="?"><span class="feedback-icon" id="fe1g"></span></div>
+      <div class="answer-line">c. 79,2 × 1 000 = <input class="answer-input" id="e1c" size="8" placeholder="?"><span class="feedback-icon" id="fe1c"></span></div>
+      <div class="answer-line">h. 934 × 10 = <input class="answer-input" id="e1h" size="8" placeholder="?"><span class="feedback-icon" id="fe1h"></span></div>
+      <div class="answer-line">d. 71,47 × 100 = <input class="answer-input" id="e1d" size="8" placeholder="?"><span class="feedback-icon" id="fe1d"></span></div>
+      <div class="answer-line">i. 11,11 × 1 000 = <input class="answer-input" id="e1i" size="8" placeholder="?"><span class="feedback-icon" id="fe1i"></span></div>
+      <div class="answer-line">e. 0,34 × 1 000 = <input class="answer-input" id="e1e" size="8" placeholder="?"><span class="feedback-icon" id="fe1e"></span></div>
+      <div class="answer-line">j. 0,05 × 10 000 = <input class="answer-input" id="e1j" size="8" placeholder="?"><span class="feedback-icon" id="fe1j"></span></div>
+    </div>
+    <div class="question" style="margin-top:16px;"><p><strong>Complète par 10 ; 100 ; 1 000 ; … :</strong></p></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="answer-line">a. 5,45 × <input class="answer-input" id="m1a" size="6" placeholder="?"> = 5 450<span class="feedback-icon" id="fm1a"></span></div>
+      <div class="answer-line">d. 0,345 × <input class="answer-input" id="m1d" size="6" placeholder="?"> = 3,45<span class="feedback-icon" id="fm1d"></span></div>
+      <div class="answer-line">b. 2,98 × <input class="answer-input" id="m1b" size="6" placeholder="?"> = 29,8<span class="feedback-icon" id="fm1b"></span></div>
+      <div class="answer-line">e. 0,014 × <input class="answer-input" id="m1e" size="6" placeholder="?"> = 1,4<span class="feedback-icon" id="fm1e"></span></div>
+      <div class="answer-line">c. 2,34 × <input class="answer-input" id="m1c" size="6" placeholder="?"> = 234<span class="feedback-icon" id="fm1c"></span></div>
+      <div class="answer-line">f. 0,32 × <input class="answer-input" id="m1f" size="6" placeholder="?"> = 320<span class="feedback-icon" id="fm1f"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+        <p>a. 5,378 × 100 = <b>537,8</b></p><p>f. 87 × 100 = <b>8 700</b></p>
+        <p>b. 0,065 × 10 = <b>0,65</b></p><p>g. 0,58 × 10 = <b>5,8</b></p>
+        <p>c. 79,2 × 1 000 = <b>79 200</b></p><p>h. 934 × 10 = <b>9 340</b></p>
+        <p>d. 71,47 × 100 = <b>7 147</b></p><p>i. 11,11 × 1 000 = <b>11 110</b></p>
+        <p>e. 0,34 × 1 000 = <b>340</b></p><p>j. 0,05 × 10 000 = <b>500</b></p>
+      </div>
+      <p style="margin-top:8px;"><strong>Multiplicateurs :</strong> a.1000 | b.10 | c.100 | d.10 | e.100 | f.1000</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Multiplier par 0,1 ; 0,01 ; 0,001</div>
+  <div class="exercise-body">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="answer-line">a. 120 × 0,1 = <input class="answer-input" id="e2a" size="8" placeholder="?"><span class="feedback-icon" id="fe2a"></span></div>
+      <div class="answer-line">d. 300 × 0,001 = <input class="answer-input" id="e2d" size="8" placeholder="?"><span class="feedback-icon" id="fe2d"></span></div>
+      <div class="answer-line">b. 34 × 0,001 = <input class="answer-input" id="e2b" size="8" placeholder="?"><span class="feedback-icon" id="fe2b"></span></div>
+      <div class="answer-line">e. 2 000 × 0,01 = <input class="answer-input" id="e2e" size="8" placeholder="?"><span class="feedback-icon" id="fe2e"></span></div>
+      <div class="answer-line">c. 335 × 0,01 = <input class="answer-input" id="e2c" size="8" placeholder="?"><span class="feedback-icon" id="fe2c"></span></div>
+      <div class="answer-line">f. 560 × 0,1 = <input class="answer-input" id="e2f" size="8" placeholder="?"><span class="feedback-icon" id="fe2f"></span></div>
+    </div>
+    <div class="question" style="margin-top:16px;"><p><strong>Complète par 0,1 ; 0,01 ; 0,001 ; … :</strong></p></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="answer-line">a. 3,4 × <input class="answer-input" id="n2a" size="6" placeholder="?"> = 0,034<span class="feedback-icon" id="fn2a"></span></div>
+      <div class="answer-line">c. <input class="answer-input" id="n2c" size="6" placeholder="?"> × 27 = 0,027<span class="feedback-icon" id="fn2c"></span></div>
+      <div class="answer-line">b. 345 × <input class="answer-input" id="n2b" size="7" placeholder="?"> = 0,0345<span class="feedback-icon" id="fn2b"></span></div>
+      <div class="answer-line">d. <input class="answer-input" id="n2d" size="6" placeholder="?"> × 0,6 = 0,06<span class="feedback-icon" id="fn2d"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+        <p>a. 120 × 0,1 = <b>12</b></p><p>d. 300 × 0,001 = <b>0,3</b></p>
+        <p>b. 34 × 0,001 = <b>0,034</b></p><p>e. 2 000 × 0,01 = <b>20</b></p>
+        <p>c. 335 × 0,01 = <b>3,35</b></p><p>f. 560 × 0,1 = <b>56</b></p>
+      </div>
+      <p style="margin-top:8px;"><strong>Coefficients :</strong> a. 0,01 | b. 0,0001 | c. 0,001 | d. 0,1</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Diviser par 10, 100, 1 000</div>
+  <div class="exercise-body">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div class="answer-line">a. 120 ÷ 10 = <input class="answer-input" id="e3a" size="8" placeholder="?"><span class="feedback-icon" id="fe3a"></span></div>
+      <div class="answer-line">d. 300 ÷ 1 000 = <input class="answer-input" id="e3d" size="8" placeholder="?"><span class="feedback-icon" id="fe3d"></span></div>
+      <div class="answer-line">b. 34 ÷ 100 = <input class="answer-input" id="e3b" size="8" placeholder="?"><span class="feedback-icon" id="fe3b"></span></div>
+      <div class="answer-line">e. 2 000 ÷ 100 = <input class="answer-input" id="e3e" size="8" placeholder="?"><span class="feedback-icon" id="fe3e"></span></div>
+      <div class="answer-line">c. 335 ÷ 10 = <input class="answer-input" id="e3c" size="8" placeholder="?"><span class="feedback-icon" id="fe3c"></span></div>
+      <div class="answer-line">f. 560 ÷ 100 = <input class="answer-input" id="e3f" size="8" placeholder="?"><span class="feedback-icon" id="fe3f"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+        <p>a. 120 ÷ 10 = <b>12</b></p><p>d. 300 ÷ 1 000 = <b>0,3</b></p>
+        <p>b. 34 ÷ 100 = <b>0,34</b></p><p>e. 2 000 ÷ 100 = <b>20</b></p>
+        <p>c. 335 ÷ 10 = <b>33,5</b></p><p>f. 560 ÷ 100 = <b>5,6</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Utiliser 65 × 132 = 8 580</div>
+  <div class="exercise-body">
+    <div class="question"><p>Sachant que <strong>65 × 132 = 8 580</strong>, détermine :</p></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="answer-line">a. 6,5 × 13,2 = <input class="answer-input" id="e4a" size="8" placeholder="?"><span class="feedback-icon" id="fe4a"></span></div>
+      <div class="answer-line">c. 0,65 × 0,132 = <input class="answer-input" id="e4c" size="8" placeholder="?"><span class="feedback-icon" id="fe4c"></span></div>
+      <div class="answer-line">b. 650 × 132 = <input class="answer-input" id="e4b" size="8" placeholder="?"><span class="feedback-icon" id="fe4b"></span></div>
+      <div class="answer-line">d. 0,065 × 1 320 = <input class="answer-input" id="e4d" size="8" placeholder="?"><span class="feedback-icon" id="fe4d"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> 6,5 = 65 × 0,1 et 13,2 = 132 × 0,1 → produit = 8 580 × 0,01 = <b>85,8</b></p>
+      <p><strong>b.</strong> 650 = 65 × 10 → produit = 8 580 × 10 = <b>85 800</b></p>
+      <p><strong>c.</strong> 0,65 = 65 × 0,01 et 0,132 = 132 × 0,001 → produit = 8 580 × 0,00001 = <b>0,0858</b></p>
+      <p><strong>d.</strong> 0,065 = 65 × 0,001 et 1 320 = 132 × 10 → produit = 8 580 × 0,01 = <b>85,8</b></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 5 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 5 — Entoure le résultat juste</div>
+  <div class="exercise-body">
+    <div class="question"><p>Sans calculatrice, entoure (ou sélectionne) le bon résultat :</p></div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div>
+        <p><strong>2,5 × 4,4 = ?</strong></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <label><input type="radio" name="r1" value="8.444"> 8,444</label>
+          <label><input type="radio" name="r1" value="11"> 11</label>
+          <label><input type="radio" name="r1" value="33.5"> 33,5</label>
+          <label><input type="radio" name="r1" value="2.2"> 2,2</label>
+        </div>
+        <span class="feedback-icon" id="fr1"></span>
+      </div>
+      <div>
+        <p><strong>10,3 × 7,5 = ?</strong></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <label><input type="radio" name="r2" value="77.29"> 77,29</label>
+          <label><input type="radio" name="r2" value="68.412"> 68,412</label>
+          <label><input type="radio" name="r2" value="77.25"> 77,25</label>
+          <label><input type="radio" name="r2" value="7.25"> 7,25</label>
+        </div>
+        <span class="feedback-icon" id="fr2"></span>
+      </div>
+      <div>
+        <p><strong>11,6 × 29,8 = ?</strong></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <label><input type="radio" name="r3" value="354.578"> 354,578</label>
+          <label><input type="radio" name="r3" value="321.12"> 321,12</label>
+          <label><input type="radio" name="r3" value="512.88"> 512,88</label>
+          <label><input type="radio" name="r3" value="345.68"> 345,68</label>
+        </div>
+        <span class="feedback-icon" id="fr3"></span>
+      </div>
+      <div>
+        <p><strong>346 × 0,97 = ?</strong></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <label><input type="radio" name="r4" value="3263.62"> 3 263,62</label>
+          <label><input type="radio" name="r4" value="36.62"> 36,62</label>
+          <label><input type="radio" name="r4" value="335.62"> 335,62</label>
+          <label><input type="radio" name="r4" value="348.62"> 348,62</label>
+        </div>
+        <span class="feedback-icon" id="fr4"></span>
+      </div>
+      <div>
+        <p><strong>1,03 × 698,4 = ?</strong></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <label><input type="radio" name="r5" value="7233.352"> 7 233,352</label>
+          <label><input type="radio" name="r5" value="719.352"> 719,352</label>
+          <label><input type="radio" name="r5" value="687.352"> 687,352</label>
+          <label><input type="radio" name="r5" value="68.352"> 68,352</label>
+        </div>
+        <span class="feedback-icon" id="fr5"></span>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr5">
+      <h4>✅ Correction</h4>
+      <p>1. 2,5 × 4,4 = 2,5 × 4 + 2,5 × 0,4 = 10 + 1 = <b>11</b></p>
+      <p>2. 10,3 × 7,5 = 10 × 7,5 + 0,3 × 7,5 = 75 + 2,25 = <b>77,25</b></p>
+      <p>3. 11,6 × 29,8 ≈ 12 × 30 = 360 → résultat proche de 360 → <b>345,68</b></p>
+      <p>4. 346 × 0,97 = 346 − 346 × 0,03 = 346 − 10,38 = <b>335,62</b></p>
+      <p>5. 1,03 × 698,4 = 698,4 + 0,03 × 698,4 = 698,4 + 20,952 = <b>719,352</b></p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé — 🎉 Dernier chapitre !
+  </label>
+  <a href="index.html" class="btn btn-success">🏆 Voir ma progression</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-operations-decimaux-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseFloat(document.getElementById(id).value.replace(/\s/g,'').replace(',','.'));}
+
+const ex1={e1a:537.8,e1b:0.65,e1c:79200,e1d:7147,e1e:340,e1f:8700,e1g:5.8,e1h:9340,e1i:11110,e1j:500};
+const mult1={m1a:1000,m1b:10,m1c:100,m1d:10,m1e:100,m1f:1000};
+function checkEx1(){
+  Object.entries(ex1).forEach(([id,v])=>{const ok=approx(num(id),v,0.01);setClass(id,ok);setFI(id,ok);});
+  Object.entries(mult1).forEach(([id,v])=>{const ok=approx(num(id),v,1);setClass(id,ok);setFI(id,ok);});
+}
+const ex2={e2a:12,e2b:0.034,e2c:3.35,e2d:0.3,e2e:20,e2f:56};
+function checkEx2(){
+  Object.entries(ex2).forEach(([id,v])=>{const ok=approx(num(id),v,0.001);setClass(id,ok);setFI(id,ok);});
+  setClass('n2a',approx(num('n2a'),0.01,0.001));setFI('n2a',approx(num('n2a'),0.01,0.001));
+  setClass('n2b',approx(num('n2b'),0.0001,0.00001));setFI('n2b',approx(num('n2b'),0.0001,0.00001));
+  setClass('n2c',approx(num('n2c'),0.001,0.0001));setFI('n2c',approx(num('n2c'),0.001,0.0001));
+  setClass('n2d',approx(num('n2d'),0.1,0.01));setFI('n2d',approx(num('n2d'),0.1,0.01));
+}
+const ex3={e3a:12,e3b:0.34,e3c:33.5,e3d:0.3,e3e:20,e3f:5.6};
+function checkEx3(){Object.entries(ex3).forEach(([id,v])=>{const ok=approx(num(id),v,0.01);setClass(id,ok);setFI(id,ok);});}
+const ex4={e4a:85.8,e4b:85800,e4c:0.0858,e4d:85.8};
+function checkEx4(){Object.entries(ex4).forEach(([id,v])=>{const ok=approx(num(id),v,0.01);setClass(id,ok);setFI(id,ok);});}
+const correct5={r1:'11',r2:'77.25',r3:'345.68',r4:'335.62',r5:'719.352'};
+function checkEx5(){
+  Object.entries(correct5).forEach(([name,val])=>{
+    const sel=document.querySelector(`input[name="${name}"]:checked`);
+    const ok=sel&&sel.value===val;
+    document.getElementById('f'+name).textContent=ok?'✅':'❌';
+  });
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

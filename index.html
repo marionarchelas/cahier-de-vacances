@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cahier de Vacances Interactif</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%); }
+    .home-hero {
+      text-align: center;
+      padding: 60px 24px 20px;
+    }
+    .home-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+    .home-hero p {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      max-width: 520px;
+      margin: 0 auto 8px;
+    }
+    .sun { font-size: 3rem; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <div class="home-hero">
+    <div class="sun">☀️</div>
+    <h1>Cahier de Vacances<br>Interactif</h1>
+    <p>Révise pendant les vacances avec des exercices interactifs et des corrections immédiates !</p>
+  </div>
+
+  <div class="container">
+    <div class="level-grid">
+      <a href="sixieme/index.html" class="level-card">
+        <div class="emoji">🎒</div>
+        <h2>6<sup>e</sup> → 5<sup>e</sup></h2>
+        <p>Exercices de révision pour bien préparer ton entrée en 5<sup>e</sup></p>
+        <br>
+        <span class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">Commencer</span>
+      </a>
+
+      <div class="level-card" style="opacity:.55;cursor:not-allowed;">
+        <div class="emoji">📚</div>
+        <h2>Seconde → 1<sup>re</sup></h2>
+        <p>Bientôt disponible — exercices pour préparer la Première</p>
+        <br>
+        <span class="btn btn-outline" style="width:100%;justify-content:center;margin-top:8px;pointer-events:none;">Bientôt</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

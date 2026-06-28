@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Droites parallèles et perpendiculaires | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Droites parallèles &amp; perpendiculaires</span>
+</nav>
+<div class="hero"><h1>📐 Droites parallèles &amp; perpendiculaires</h1><p>Propriétés, construction, médiatrice</p></div>
+<div class="container">
+
+<!-- EX 4 (phrases à compléter) -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Compléter le tableau (figure)</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Sur une figure, on a des droites (AB), (CD), (EF), (GH)… Complète le tableau en indiquant si les paires de droites sont perpendiculaires ou parallèles (réponds avec les lettres des droites).</p>
+    </div>
+    <table>
+      <tr><th>Droites perpendiculaires</th><th>Droites parallèles</th></tr>
+      <tr>
+        <td><textarea class="answer-input" id="t1" style="min-height:80px;" placeholder="Ex: (AB) ⊥ (CD)…"></textarea></td>
+        <td><textarea class="answer-input" id="t2" style="min-height:80px;" placeholder="Ex: (EF) ∥ (GH)…"></textarea></td>
+      </tr>
+    </table>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction (basée sur la figure du cahier)</h4>
+      <p>Droites <strong>perpendiculaires</strong> : (AB) ⊥ (CD), (EF) ⊥ (GH) (à ajuster selon ta figure).</p>
+      <p>Droites <strong>parallèles</strong> : (AB) ∥ (EF) (à ajuster selon ta figure).</p>
+      <p><em>Rappel :</em> deux droites sont perpendiculaires si elles forment un angle de 90°. Deux droites sont parallèles si elles ne se coupent jamais.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Lucas et les paires de droites</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Lucas dit que sur sa figure il y a <strong>trois paires</strong> de droites perpendiculaires. Est-il d'accord avec toi ? Si non, explique pourquoi.</p>
+    </div>
+    <textarea class="answer-input" id="e2" style="min-height:80px;" placeholder="Écris ta réponse…"></textarea>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p>En regardant la figure : il y a en réalité <strong>deux paires</strong> de droites perpendiculaires (et non trois). Lucas a tort car il a probablement compté une paire de droites qui ne forment pas exactement 90°.</p>
+      <p><em>Méthode :</em> utilise ton équerre pour vérifier chaque angle entre les droites.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Médiatrices d'un triangle</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Construis les médiatrices des trois côtés d'un triangle ABC à la règle et à l'équerre, puis code la figure.</p>
+      <p style="color:var(--text-light);font-size:.9rem;">Rappel : la médiatrice d'un segment est la droite perpendiculaire en son milieu.</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;margin:10px 0;">
+      <input type="checkbox" id="c3" style="width:20px;height:20px;accent-color:var(--success);">
+      <span>J'ai tracé les trois médiatrices et codé la figure ✓</span>
+    </label>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Méthode de construction</button>
+    <div class="correction-box" id="corr3">
+      <h4>💡 Construction de la médiatrice d'un segment [AB]</h4>
+      <ol style="padding-left:20px;line-height:2;">
+        <li>Mesure [AB] et trouve son milieu M.</li>
+        <li>Avec l'équerre, trace la droite perpendiculaire à [AB] passant par M.</li>
+        <li>Répète pour les côtés [BC] et [CA].</li>
+        <li>Les trois médiatrices se coupent en un même point : le <strong>circumcentre</strong> du triangle.</li>
+        <li>Code les angles droits (petit carré) et les demi-segments égaux (tirets).</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Compléter les phrases</div>
+  <div class="exercise-body">
+    <div class="question"><p>Complète les phrases suivantes avec les mots : <em>perpendiculaire, parallèle, angle droit, parallèles</em>.</p></div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div><label>a. Les droites (QR) et (FR) forment un</label>
+        <input class="answer-input" id="e4a" size="15" placeholder="…"><span class="feedback-icon" id="fe4a"></span></div>
+      <div><label>b. La droite (LR) est</label>
+        <input class="answer-input" id="e4b" size="15" placeholder="…">
+        <label>à la droite (FQ) passant par T.</label><span class="feedback-icon" id="fe4b"></span></div>
+      <div><label>c. Les droites (LQ) et (TR) sont</label>
+        <input class="answer-input" id="e4c" size="15" placeholder="…"><span class="feedback-icon" id="fe4c"></span></div>
+      <div><label>d. La droite (FR) semble</label>
+        <input class="answer-input" id="e4d" size="15" placeholder="…">
+        <label>à la droite (LQ).</label><span class="feedback-icon" id="fe4d"></span></div>
+      <div><label>e. La droite (RQ) semble être</label>
+        <input class="answer-input" id="e4e" size="15" placeholder="…">
+        <label>à la droite (FL) passant par R.</label><span class="feedback-icon" id="fe4e"></span></div>
+      <div><label>f. La droite (AC) est</label>
+        <input class="answer-input" id="e4f" size="15" placeholder="…">
+        <label>à la droite (BD).</label><span class="feedback-icon" id="fe4f"></span></div>
+      <div><label>g. Les droites (AC) et (DE) semblent</label>
+        <input class="answer-input" id="e4g" size="15" placeholder="…">
+        <label>entre elles.</label><span class="feedback-icon" id="fe4g"></span></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p>a. angle <strong>droit</strong></p>
+      <p>b. <strong>perpendiculaire</strong></p>
+      <p>c. <strong>parallèles</strong></p>
+      <p>d. <strong>parallèle</strong></p>
+      <p>e. <strong>perpendiculaire</strong></p>
+      <p>f. <strong>perpendiculaire</strong></p>
+      <p>g. <strong>parallèles</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="triangles-quadrilateraux.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+
+<script>
+const PAGE_KEY = '6e-maths-droites-paralleles-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function norm(s){return s.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);setFI(id,ok);}
+const answers4={e4a:['droit','angle droit'],e4b:['perpendiculaire'],e4c:['paralleles','parallèles'],e4d:['parallele','parallèle'],e4e:['perpendiculaire'],e4f:['perpendiculaire'],e4g:['paralleles','parallèles']};
+function checkEx4(){
+  Object.entries(answers4).forEach(([id,vals])=>{
+    const v=norm(document.getElementById(id).value);
+    setClass(id,vals.some(a=>v.includes(norm(a))));
+  });
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

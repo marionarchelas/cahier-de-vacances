@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths 6e→5e | Cahier de Vacances</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav>
+    <a href="../../index.html">🏠 Accueil</a>
+    <span class="sep">›</span>
+    <a href="../index.html">6<sup>e</sup> → 5<sup>e</sup></a>
+    <span class="sep">›</span>
+    <span class="current">Mathématiques</span>
+  </nav>
+
+  <div class="hero">
+    <h1>🔢 Mathématiques</h1>
+    <p>15 chapitres de révision pour entrer en 5<sup>e</sup> sereinement</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Resource link -->
+    <div class="card" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:200px;">
+        <h3 style="margin-bottom:6px;">📘 e-Cahiers de vacances d'Yvan Monka</h3>
+        <p style="color:var(--text-light);font-size:.9rem;">Revoir les concepts et les méthodes avant de faire les exercices</p>
+      </div>
+      <a class="resource-link" href="https://www.maths-et-tiques.fr/index.php/prepare-ton-entree-en-5e" target="_blank" rel="noopener">
+        🔗 Accéder aux fiches de révision
+      </a>
+    </div>
+
+    <!-- Progress -->
+    <div class="card progress-section">
+      <div class="progress-label">
+        <span>🎯 Ma progression</span>
+        <span id="progress-text">0 / 15 chapitres</span>
+      </div>
+      <div class="progress-bar-outer">
+        <div class="progress-bar-inner" id="progress-bar" style="width:0%"></div>
+      </div>
+    </div>
+
+    <!-- Topic grid -->
+    <div class="topic-grid" id="topic-grid">
+      <!-- filled by JS -->
+    </div>
+  </div>
+
+  <script>
+    const topics = [
+      { id:'proportionnalite',        icon:'📊', title:'Proportionnalité',                  sub:'Tableaux, graphiques, pourcentages' },
+      { id:'gestion-donnees',         icon:'📈', title:'Gestion de données',                 sub:'Diagrammes, tableaux, moyennes' },
+      { id:'distances-cercles',       icon:'⭕', title:'Distances et cercles',               sub:'Rayon, diamètre, corde, position' },
+      { id:'droites-paralleles',      icon:'📐', title:'Droites parallèles & perpend.',      sub:'Propriétés, construction, médiatrice' },
+      { id:'triangles-quadrilateraux',icon:'🔺', title:'Triangles et quadrilatères',         sub:'Construction, losange, rectangle, carré' },
+      { id:'symetrie-axiale',         icon:'🪞', title:'Symétrie axiale',                   sub:'Symétriques de points et figures' },
+      { id:'axes-symetrie',           icon:'✨', title:'Axes de symétrie',                  sub:'Lettres, figures, rectangle' },
+      { id:'espace',                  icon:'📦', title:'Espace',                            sub:'Solides, cubes, perspective cavalière' },
+      { id:'angles',                  icon:'📏', title:'Angles',                            sub:'Mesure, aigu, obtus, bissectrice' },
+      { id:'aires-perimetres',        icon:'🔲', title:'Aires et périmètres',               sub:'Rectangle, cercle, triangle' },
+      { id:'volumes',                 icon:'🧊', title:'Volumes',                           sub:'Parallélépipède, cube, capacité' },
+      { id:'nombres-entiers',         icon:'🔢', title:'Nombres entiers',                   sub:'Division euclidienne, diviseurs, multiples' },
+      { id:'fractions',               icon:'½',  title:'Fractions',                         sub:'Fractions égales, comparaison, opérations' },
+      { id:'nombres-decimaux',        icon:'🔢', title:'Nombres décimaux',                  sub:'Graduation, comparaison, opérations' },
+      { id:'operations-decimaux',     icon:'✖️', title:'Opérations sur décimaux',           sub:'× et ÷ par 10, 100, 1000…' },
+    ];
+
+    const grid = document.getElementById('topic-grid');
+    let doneCount = 0;
+
+    topics.forEach((t, i) => {
+      const isDone = localStorage.getItem('6e-maths-' + t.id + '-done') === 'true';
+      if (isDone) doneCount++;
+      const card = document.createElement('a');
+      card.href = t.id + '.html';
+      card.className = 'topic-card';
+      card.innerHTML = `
+        <div class="topic-icon">${t.icon}</div>
+        <h3>${i+1}. ${t.title}</h3>
+        <div class="topic-sub">${t.sub}</div>
+        ${isDone ? '<div class="done-badge">✓</div>' : ''}
+      `;
+      grid.appendChild(card);
+    });
+
+    const pct = Math.round(doneCount / topics.length * 100);
+    document.getElementById('progress-bar').style.width = pct + '%';
+    document.getElementById('progress-text').textContent = doneCount + ' / ' + topics.length + ' chapitres';
+  </script>
+</body>
+</html>

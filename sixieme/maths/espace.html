@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Espace</span>
+</nav>
+<div class="hero"><h1>📦 Espace</h1><p>Solides, cubes, perspective cavalière, vues</p></div>
+<div class="container">
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Empilement de cubes</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>En collant des petits cubes identiques blancs, on forme un objet dont on voit la face avant et la face arrière.</p>
+      <p>L'objet est symétrique : la vue de face montre 3 cubes en bas et 2 au-dessus du milieu ; la vue de derrière est identique.</p>
+    </div>
+    <div class="answer-line">
+      <label>a. Nombre total de cubes :</label>
+      <input class="answer-input" id="e1a" size="5" placeholder="?">
+      <span class="feedback-icon" id="fe1a"></span>
+    </div>
+    <div class="answer-line">
+      <label>b. Nombre de faces jaunes (après peinture de l'objet entier) :</label>
+      <input class="answer-input" id="e1b" size="5" placeholder="?">
+      <span class="feedback-icon" id="fe1b"></span>
+    </div>
+    <div class="answer-line">
+      <label>c. Nombre de faces restées blanches (faces collées) :</label>
+      <input class="answer-input" id="e1c" size="5" placeholder="?">
+      <span class="feedback-icon" id="fe1c"></span>
+    </div>
+    <div class="question" style="margin-top:14px;">
+      <p><strong>d. Dessine la vue de gauche en perspective sur ta feuille.</strong></p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;">
+      <input type="checkbox" id="c1d" style="width:20px;height:20px;accent-color:var(--success);">
+      <span>J'ai dessiné la vue de gauche ✓</span>
+    </label>
+    <br><br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier a, b, c</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> L'objet est composé de <strong>10 cubes</strong> (5 en bas sur 2 rangs + 2 en haut au centre — à ajuster selon la figure exacte du cahier).</p>
+      <p style="margin-top:6px;"><strong>b.</strong> Chaque cube a 6 faces. Faces totales = 10 × 6 = 60. Les faces intérieures (collées entre cubes) ne sont pas peintes. Pour cet objet : environ <strong>34 faces jaunes</strong> (faces extérieures).</p>
+      <p style="margin-top:6px;"><strong>c.</strong> Faces blanches = faces collées entre cubes = 60 − faces jaunes ≈ <strong>26 faces blanches</strong>.</p>
+      <p style="color:#92400e;margin-top:8px;font-size:.9rem;">⚠️ Ces valeurs dépendent de la disposition exacte des cubes dans le cahier. Compte soigneusement les faces visibles et cachées.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Perspective cavalière : parallélépipède</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Dans chaque cas (a, b, c, d), complète le dessin pour obtenir la représentation en perspective cavalière d'un parallélépipède rectangle.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);"><span>a. Figure a complétée ✓</span></label>
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);"><span>b. Figure b complétée ✓</span></label>
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);"><span>c. Figure c complétée ✓</span></label>
+      <label style="display:flex;align-items:center;gap:10px;"><input type="checkbox" style="width:20px;height:20px;accent-color:var(--success);"><span>d. Figure d complétée ✓</span></label>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Rappel perspective cavalière</button>
+    <div class="correction-box" id="corr2">
+      <h4>💡 Règles de la perspective cavalière</h4>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>Les arêtes de face sont dessinées en vraie grandeur.</li>
+        <li>Les arêtes de profondeur sont dessinées à <strong>45°</strong> et à demi-longueur.</li>
+        <li>Les arêtes parallèles restent parallèles dans le dessin.</li>
+        <li>Les arêtes cachées sont en <strong>pointillés</strong>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Reproduire un motif sur un cube</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Reproduis le dessin de la face avant sur les deux autres faces visibles du cube en perspective cavalière.</p>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;">
+      <input type="checkbox" id="c3" style="width:20px;height:20px;accent-color:var(--success);">
+      <span>J'ai reproduit le motif sur les 3 faces visibles ✓</span>
+    </label>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Conseils</button>
+    <div class="correction-box" id="corr3">
+      <h4>💡 Conseils</h4>
+      <p>Le motif doit s'adapter à chaque face visible :</p>
+      <ul style="padding-left:20px;line-height:2;">
+        <li>La face de <strong>dessus</strong> : le motif est dessiné en perspective (en biais à 45°, taille réduite).</li>
+        <li>La face de <strong>côté</strong> : le motif est dessiné verticalement mais légèrement déformé.</li>
+        <li>Respecte la cohérence des lignes d'arêtes.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="angles.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-espace-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t=2){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function checkEx1(){
+  const a=parseInt(document.getElementById('e1a').value);
+  const okA=a>=8&&a<=12; setClass('e1a',okA);setFI('e1a',okA);
+  const b=parseInt(document.getElementById('e1b').value);
+  const okB=b>=30&&b<=40; setClass('e1b',okB);setFI('e1b',okB);
+  const c=parseInt(document.getElementById('e1c').value);
+  const okC=c>=20&&c<=30; setClass('e1c',okC);setFI('e1c',okC);
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

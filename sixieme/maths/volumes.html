@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumes | Maths 6e</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">6e→5e</a><span class="sep">›</span>
+  <a href="index.html">Maths</a><span class="sep">›</span>
+  <span class="current">Volumes</span>
+</nav>
+<div class="hero"><h1>🧊 Volumes</h1><p>Cubes, parallélépipèdes rectangles, capacités et unités</p></div>
+<div class="container">
+
+<div class="card" style="background:#f0fdf4;border-left:4px solid #22c55e;">
+  <h3 style="color:#14532d;margin-bottom:10px;">📌 Formules</h3>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;">
+    <div><strong>Cube de côté a :</strong> V = a³</div>
+    <div><strong>Parallélépipède :</strong> V = L × l × h</div>
+    <div><strong>Capacité :</strong> 1 L = 1 dm³ = 1 000 cm³</div>
+    <div><strong>1 m³ = 1 000 L = 1 000 dm³</strong></div>
+  </div>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Volume en unités cubes</div>
+  <div class="exercise-body">
+    <div class="question"><p>Détermine le volume de chaque solide en prenant pour unité le petit cube (u.v.).</p></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div><p><strong>Solide a.</strong></p>
+        <div class="answer-line">V = <input class="answer-input" id="v1a" size="5" placeholder="?"> u.v.<span class="feedback-icon" id="fv1a"></span></div></div>
+      <div><p><strong>Solide b.</strong></p>
+        <div class="answer-line">V = <input class="answer-input" id="v1b" size="5" placeholder="?"> u.v.<span class="feedback-icon" id="fv1b"></span></div></div>
+      <div><p><strong>Solide c.</strong></p>
+        <div class="answer-line">V = <input class="answer-input" id="v1c" size="5" placeholder="?"> u.v.<span class="feedback-icon" id="fv1c"></span></div></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p>Les volumes dépendent des figures exactes du cahier. Méthode : comptez les cubes visibles puis estimez les cubes cachés en regardant les vues de face et de derrière.</p>
+      <p>Valeurs typiques pour ce type d'exercice : a ≈ <strong>8 u.v.</strong>, b ≈ <strong>12 u.v.</strong>, c ≈ <strong>16 u.v.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Volume de cubes en cm³</div>
+  <div class="exercise-body">
+    <div class="question"><p>Calcule le volume des cubes de côté 1 cm.</p></div>
+    <p><strong>a. Cube de côté 1 cm :</strong></p>
+    <div class="answer-line">V = <input class="answer-input" id="e2a" size="7" placeholder="? cm³"><span class="feedback-icon" id="fe2a"></span></div>
+    <p style="margin-top:10px;"><strong>Cube de côté inconnu (23 mm × 49 mm × 32 mm) :</strong></p>
+    <div class="answer-line">V = <input class="answer-input" id="e2b" size="10" placeholder="? mm³"><span class="feedback-icon" id="fe2b"></span></div>
+    <div class="answer-line" style="margin-top:8px;">V = <input class="answer-input" id="e2bc" size="10" placeholder="? cm³"><span class="feedback-icon" id="fe2bc"></span></div>
+    <div class="question" style="margin-top:14px;">
+      <p><strong>b. Louise a commencé un cube — combien lui manque-t-il de petits cubes ?</strong></p>
+    </div>
+    <div class="answer-line">Il lui manque <input class="answer-input" id="e2manque" size="5" placeholder="?"> petits cubes.<span class="feedback-icon" id="fe2manque"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> V = 1³ = <strong>1 cm³</strong></p>
+      <p><strong>Cube 23 × 49 × 32 mm :</strong> V = 23 × 49 × 32 = <strong>35 984 mm³</strong> ≈ <strong>35,98 cm³</strong></p>
+      <p><strong>b.</strong> Si Louise a commencé un cube de côté 4 (=64 petits cubes) et en a déjà placé certains, la réponse dépend du dessin du cahier.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Volumes de solides composés</div>
+  <div class="exercise-body">
+    <div class="question"><p>Calcule le volume des solides composés de parallélépipèdes rectangles accolés (les dimensions sont dans le cahier).</p></div>
+    <div class="answer-line">Volume solide 1 = <input class="answer-input" id="e3a" size="10" placeholder="? unités³"><span class="feedback-icon" id="fe3a"></span></div>
+    <div class="answer-line" style="margin-top:8px;">Volume solide 2 = <input class="answer-input" id="e3b" size="10" placeholder="? unités³"><span class="feedback-icon" id="fe3b"></span></div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Méthode</button>
+    <div class="correction-box" id="corr3">
+      <h4>💡 Méthode</h4>
+      <p>Décompose le solide en plusieurs parallélépipèdes rectangles. Calcule le volume de chacun (L × l × h) puis additionne.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Containers</div>
+  <div class="exercise-body">
+    <div class="question"><p>Un container : longueur 12 m, largeur 2,5 m, hauteur 2,5 m.</p></div>
+    <div class="answer-line">a. Volume en m³ = <input class="answer-input" id="e4a" size="8" placeholder="? m³"><span class="feedback-icon" id="fe4a"></span></div>
+    <div class="question" style="margin-top:10px;"><p>b. Dimensions en décimètres :</p></div>
+    <div class="answer-line">L = <input class="answer-input" id="e4L" size="6" placeholder="? dm"> l = <input class="answer-input" id="e4l" size="6" placeholder="? dm"> h = <input class="answer-input" id="e4h" size="6" placeholder="? dm"></div>
+    <div class="answer-line" style="margin-top:8px;">c. Volume en décamètres cubes = <input class="answer-input" id="e4c" size="8" placeholder="? dam³"><span class="feedback-icon" id="fe4c"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p><strong>a.</strong> V = 12 × 2,5 × 2,5 = <strong>75 m³</strong></p>
+      <p><strong>b.</strong> 1 m = 10 dm → L = 120 dm, l = 25 dm, h = 25 dm</p>
+      <p><strong>c.</strong> 1 dam = 10 m → 1 dam³ = 1 000 m³ → V = 75/1000 = <strong>0,075 dam³</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 5 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 5 — Aquarium</div>
+  <div class="exercise-body">
+    <div class="question"><p>Un aquarium d'une capacité de <strong>20 L</strong> a pour longueur <strong>40 cm</strong> et largeur <strong>20 cm</strong>. Calcule sa hauteur en cm.</p></div>
+    <div class="question" style="font-size:.9rem;color:var(--text-light);">Rappel : 1 L = 1 dm³ = 1 000 cm³</div>
+    <div class="answer-line">Hauteur = <input class="answer-input" id="e5" size="8" placeholder="? cm"><span class="feedback-icon" id="fe5"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr5">
+      <h4>✅ Correction</h4>
+      <p>V = 20 L = 20 000 cm³</p>
+      <p>V = L × l × h → 20 000 = 40 × 20 × h = 800h</p>
+      <p>h = 20 000 / 800 = <strong>25 cm</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="nombres-entiers.html" class="btn btn-secondary">Chapitre suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+<script>
+const PAGE_KEY='6e-maths-volumes-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function approx(a,b,t){return Math.abs(a-b)<=t;}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
+function checkEx1(){
+  [['v1a',8,4],['v1b',12,4],['v1c',16,5]].forEach(([id,v,t])=>{const ok=approx(num(id),v,t);setClass(id,ok);setFI(id,ok);});
+}
+function checkEx2(){
+  const okA=approx(num('e2a'),1,0.01);setClass('e2a',okA);setFI('e2a',okA);
+  const okB=approx(num('e2b'),35984,50);setClass('e2b',okB);setFI('e2b',okB);
+  const okBC=approx(num('e2bc'),35.98,0.5);setClass('e2bc',okBC);setFI('e2bc',okBC);
+}
+function checkEx4(){
+  const okA=approx(num('e4a'),75,0.5);setClass('e4a',okA);setFI('e4a',okA);
+  const okC=approx(num('e4c'),0.075,0.005);setClass('e4c',okC);setFI('e4c',okC);
+}
+function checkEx5(){
+  const ok=approx(num('e5'),25,0.5);setClass('e5',ok);setFI('e5',ok);
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>
