@@ -150,29 +150,53 @@
   <div class="exercise-header">Exercice 5 — Carrés magiques décimaux</div>
   <div class="exercise-body">
     <div class="question">
-      <p>Complète les deux carrés ci-dessous pour que la somme de chaque ligne, colonne et diagonale soit la même.</p>
+      <p>Complète les deux carrés ci-dessous pour que les sommes de chaque ligne, de chaque colonne et de chaque diagonale soient égales.</p>
     </div>
-    <p><strong>Carré a (nombres autour de 7,5) :</strong></p>
-    <div style="display:inline-grid;grid-template-columns:repeat(3,60px);gap:4px;margin:10px 0;">
-      <input class="answer-input" id="ca1" size="4" placeholder="?">
-      <input class="answer-input" id="ca2" size="4" placeholder="?">
-      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;">7,5</span>
-      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;">4,5</span>
-      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;">2,5</span>
-      <input class="answer-input" id="ca3" size="4" placeholder="?">
-      <input class="answer-input" id="ca4" size="4" placeholder="?">
-      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;">1,5</span>
-      <input class="answer-input" id="ca5" size="4" placeholder="?">
+
+    <p><strong>Carré a :</strong></p>
+    <div style="display:inline-grid;grid-template-columns:repeat(3,64px);gap:4px;margin:10px 0 16px;">
+      <input class="answer-input" id="ca1" size="4" placeholder="?" style="text-align:center;">
+      <input class="answer-input" id="ca2" size="4" placeholder="?" style="text-align:center;">
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">7,5</span>
+      <input class="answer-input" id="ca3" size="4" placeholder="?" style="text-align:center;">
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">4,5</span>
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">2,5</span>
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">1,5</span>
+      <input class="answer-input" id="ca4" size="4" placeholder="?" style="text-align:center;">
+      <input class="answer-input" id="ca5" size="4" placeholder="?" style="text-align:center;">
     </div>
+
+    <p><strong>Carré b :</strong></p>
+    <div style="display:inline-grid;grid-template-columns:repeat(3,64px);gap:4px;margin:10px 0 16px;">
+      <input class="answer-input" id="cb1" size="4" placeholder="?" style="text-align:center;">
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">1,6</span>
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">1,3</span>
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">1,1</span>
+      <input class="answer-input" id="cb2" size="4" placeholder="?" style="text-align:center;">
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">0,8</span>
+      <input class="answer-input" id="cb3" size="4" placeholder="?" style="text-align:center;">
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">0,9</span>
+      <span style="display:flex;align-items:center;justify-content:center;font-weight:700;background:#e0f2fe;border-radius:4px;">0,6</span>
+    </div>
+
     <br>
     <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
     <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
     <div class="correction-box" id="corr5">
-      <h4>✅ Correction — Carré a</h4>
-      <p>La constante magique est 4,5 + 2,5 + 1,5 = <strong>8,5</strong> (ligne du milieu... à calculer selon les valeurs du cahier).</p>
-      <p>Valeurs données : 7,5 ; 4,5 ; 2,5 ; 1,5. Constante = ?</p>
-      <p>Logique : pour trouver les valeurs manquantes, utilise la somme de chaque ligne = constante.</p>
-      <p style="color:#92400e;">Reporte-toi aux valeurs exactes du cahier pour compléter le carré.</p>
+      <h4>✅ Correction</h4>
+      <p><strong>Carré a</strong> — constante magique S = 13,5</p>
+      <table>
+        <tr><td><b>5,5</b></td><td><b>0,5</b></td><td>7,5</td></tr>
+        <tr><td><b>6,5</b></td><td>4,5</td><td>2,5</td></tr>
+        <tr><td>1,5</td><td><b>8,5</b></td><td><b>3,5</b></td></tr>
+      </table>
+      <p style="margin-top:8px;"><strong>Carré b</strong> — constante magique S = 3,3</p>
+      <table>
+        <tr><td><b>0,4</b></td><td>1,6</td><td>1,3</td></tr>
+        <tr><td>1,1</td><td><b>1,4</b></td><td>0,8</td></tr>
+        <tr><td><b>1,8</b></td><td>0,9</td><td>0,6</td></tr>
+      </table>
+      <p style="color:#92400e;margin-top:6px;font-size:.9rem;">NB : si ton manuel indique des valeurs différentes pour le carré b, suis ton manuel.</p>
     </div>
   </div>
 </div>
@@ -212,7 +236,23 @@ function checkEx3(){
 function checkEx4(){
   const ok=approx(num('e4'),45.4,0.05);setClass('e4',ok);setFI('e4',ok);
 }
-function checkEx5(){/* carré magique — tolérance large */}
+function checkEx5(){
+  // Carré a : blancs = (0,0)=5.5, (0,1)=0.5, (1,0)=6.5, (2,1)=8.5, (2,2)=3.5
+  [{id:'ca1',v:5.5},{id:'ca2',v:0.5},{id:'ca3',v:6.5},{id:'ca4',v:8.5},{id:'ca5',v:3.5}].forEach(({id,v})=>{
+    const ok=approx(num(id),v,0.1); setClass(id,ok);
+  });
+  // Carré b : vérifier que toutes les sommes ligne/col/diag sont égales
+  const g=[
+    [parseFloat(document.getElementById('cb1').value.replace(',','.'))||0, 1.6, 1.3],
+    [1.1, parseFloat(document.getElementById('cb2').value.replace(',','.'))||0, 0.8],
+    [parseFloat(document.getElementById('cb3').value.replace(',','.'))||0, 0.9, 0.6]
+  ];
+  const sums=[g[0][0]+g[0][1]+g[0][2], g[1][0]+g[1][1]+g[1][2], g[2][0]+g[2][1]+g[2][2],
+              g[0][0]+g[1][0]+g[2][0], g[0][1]+g[1][1]+g[2][1], g[0][2]+g[1][2]+g[2][2],
+              g[0][0]+g[1][1]+g[2][2], g[0][2]+g[1][1]+g[2][0]];
+  const ref=sums[0]; const ok_b=sums.every(s=>Math.abs(s-ref)<0.15);
+  ['cb1','cb2','cb3'].forEach(id=>{ const el=document.getElementById(id); el.classList.toggle('correct',ok_b); el.classList.toggle('incorrect',!ok_b); });
+}
 const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
 dc.checked=localStorage.getItem(PAGE_KEY)==='true';
 if(dc.checked)dl.classList.add('checked');

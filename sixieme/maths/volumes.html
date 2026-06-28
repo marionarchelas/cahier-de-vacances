@@ -68,14 +68,10 @@
 <div class="exercise-section">
   <div class="exercise-header">Exercice 2 — Volume de cubes en cm³</div>
   <div class="exercise-body">
-    <div class="question"><p>Calcule le volume des cubes de côté 1 cm.</p></div>
-    <p><strong>a. Cube de côté 1 cm :</strong></p>
+    <div class="question"><p>a. Détermine le volume des cubes en centimètres cubes (en prenant le petit cube de côté 1 cm comme unité).</p></div>
     <div class="answer-line">V = <input class="answer-input" id="e2a" size="7" placeholder="? cm³"><span class="feedback-icon" id="fe2a"></span></div>
-    <p style="margin-top:10px;"><strong>Cube de côté inconnu (23 mm × 49 mm × 32 mm) :</strong></p>
-    <div class="answer-line">V = <input class="answer-input" id="e2b" size="10" placeholder="? mm³"><span class="feedback-icon" id="fe2b"></span></div>
-    <div class="answer-line" style="margin-top:8px;">V = <input class="answer-input" id="e2bc" size="10" placeholder="? cm³"><span class="feedback-icon" id="fe2bc"></span></div>
     <div class="question" style="margin-top:14px;">
-      <p><strong>b. Louise a commencé un cube — combien lui manque-t-il de petits cubes ?</strong></p>
+      <p><strong>b. Louise a commencé la construction d'un cube, combien lui manque-t-il de petits cubes pour terminer son empilement ?</strong></p>
     </div>
     <div class="answer-line">Il lui manque <input class="answer-input" id="e2manque" size="5" placeholder="?"> petits cubes.<span class="feedback-icon" id="fe2manque"></span></div>
     <br>
@@ -83,9 +79,8 @@
     <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
     <div class="correction-box" id="corr2">
       <h4>✅ Correction</h4>
-      <p><strong>a.</strong> V = 1³ = <strong>1 cm³</strong></p>
-      <p><strong>Cube 23 × 49 × 32 mm :</strong> V = 23 × 49 × 32 = <strong>35 984 mm³</strong> ≈ <strong>35,98 cm³</strong></p>
-      <p><strong>b.</strong> Si Louise a commencé un cube de côté 4 (=64 petits cubes) et en a déjà placé certains, la réponse dépend du dessin du cahier.</p>
+      <p><strong>a.</strong> Un petit cube de côté 1 cm a un volume de <strong>1 cm³</strong>.</p>
+      <p><strong>b.</strong> Pour former un cube 3×3×3 = 27 petits cubes. La réponse dépend du nombre de cubes déjà placés dans le dessin du cahier.</p>
     </div>
   </div>
 </div>
@@ -167,8 +162,6 @@ function checkEx1(){
 }
 function checkEx2(){
   const okA=approx(num('e2a'),1,0.01);setClass('e2a',okA);setFI('e2a',okA);
-  const okB=approx(num('e2b'),35984,50);setClass('e2b',okB);setFI('e2b',okB);
-  const okBC=approx(num('e2bc'),35.98,0.5);setClass('e2bc',okBC);setFI('e2bc',okBC);
 }
 function checkEx4(){
   const okA=approx(num('e4a'),75,0.5);setClass('e4a',okA);setFI('e4a',okA);

@@ -39,12 +39,17 @@
       <p><strong>a. Complète le tableau à l'aide du graphique</strong> (le cycliste parcourt 6 km en 10 minutes) :</p>
     </div>
     <table>
-      <tr><th>Durée (min)</th><td>10</td><td>20</td><td>35</td><td>60</td></tr>
+      <tr><th>Durée (min)</th><td>10</td><td>20</td><td>35</td><td>60</td>
+        <td><input class="answer-input" id="e1b1" size="4" placeholder="?"></td>
+        <td><input class="answer-input" id="e1b2" size="4" placeholder="?"></td>
+        <td><input class="answer-input" id="e1b3" size="4" placeholder="?"></td>
+      </tr>
       <tr><th>Distance (km)</th>
         <td><input class="answer-input" id="e1a1" size="4" placeholder="?"></td>
         <td><input class="answer-input" id="e1a2" size="4" placeholder="?"></td>
         <td><input class="answer-input" id="e1a3" size="4" placeholder="?"></td>
         <td><input class="answer-input" id="e1a4" size="4" placeholder="?"></td>
+        <td>12</td><td>20</td><td>22</td>
       </tr>
     </table>
     <div class="question" style="margin-top:16px;">
@@ -56,8 +61,11 @@
     <div class="correction-box" id="corr1">
       <h4>✅ Correction</h4>
       <p><strong>a.</strong> Le cycliste parcourt 6 km en 10 min → coefficient = 0,6 km/min</p>
-      <table><tr><th>Durée (min)</th><td>10</td><td>20</td><td>35</td><td>60</td></tr>
-      <tr><th>Distance (km)</th><td><strong>6</strong></td><td><strong>12</strong></td><td><strong>21</strong></td><td><strong>36</strong></td></tr></table>
+      <table>
+        <tr><th>Durée (min)</th><td>10</td><td>20</td><td>35</td><td>60</td><td><strong>20</strong></td><td><strong>33</strong></td><td><strong>37</strong></td></tr>
+        <tr><th>Distance (km)</th><td><strong>6</strong></td><td><strong>12</strong></td><td><strong>21</strong></td><td><strong>36</strong></td><td>12</td><td>20</td><td>22</td></tr>
+      </table>
+      <p style="margin-top:8px;">Lecture inverse du graphique : 12 km → 20 min ; 20 km → 33 min ; 22 km → 37 min (valeurs approchées lues sur le graphique).</p>
       <p style="margin-top:8px;"><strong>b.</strong> Oui, c'est une situation de proportionnalité : le rapport distance ÷ durée est constant (= 0,6 pour toutes les colonnes). Le graphique est une droite passant par l'origine.</p>
     </div>
   </div>
@@ -214,6 +222,12 @@ function checkEx1() {
   [[1,6],[2,12],[3,21],[4,36]].forEach(([i,v])=>{
     const el = document.getElementById('e1a'+i);
     const ok = approx(parseFloat(el.value.replace(',','.')), v, 0.1);
+    el.classList.toggle('correct',ok); el.classList.toggle('incorrect',!ok);
+  });
+  // Sens inverse : distance donnée → durée lue sur graphique
+  [[1,20,1.5],[2,33.3,1.5],[3,36.7,1.5]].forEach(([i,v,tol])=>{
+    const el = document.getElementById('e1b'+i);
+    const ok = approx(parseFloat(el.value.replace(',','.')), v, tol);
     el.classList.toggle('correct',ok); el.classList.toggle('incorrect',!ok);
   });
 }

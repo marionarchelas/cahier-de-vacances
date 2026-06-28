@@ -43,20 +43,20 @@
 
 <!-- EX 1 -->
 <div class="exercise-section">
-  <div class="exercise-header">Exercice 1 — Division euclidienne de 1 418</div>
+  <div class="exercise-header">Exercice 1 — Division euclidienne de 141 par 8</div>
   <div class="exercise-body">
-    <div class="question"><p>Effectue la division euclidienne de 1 418 par 7.</p></div>
+    <div class="question"><p>Effectue la division euclidienne de <strong>141</strong> par <strong>8</strong>.</p></div>
     <div class="answer-line">Quotient = <input class="answer-input" id="e1q" size="6" placeholder="?"><span class="feedback-icon" id="fe1q"></span></div>
     <div class="answer-line">Reste = <input class="answer-input" id="e1r" size="6" placeholder="?"><span class="feedback-icon" id="fe1r"></span></div>
-    <div class="answer-line" style="margin-top:8px;">Vérification : 1418 = 7 × <input class="answer-input" id="e1v" size="6" placeholder="?"> + <input class="answer-input" id="e1vr" size="4" placeholder="?"></div>
+    <div class="answer-line" style="margin-top:8px;">Vérification : 141 = 8 × <input class="answer-input" id="e1v" size="6" placeholder="?"> + <input class="answer-input" id="e1vr" size="4" placeholder="?"></div>
     <br>
     <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
     <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
     <div class="correction-box" id="corr1">
       <h4>✅ Correction</h4>
-      <p>1418 ÷ 7 : 7 × 202 = 1414, reste 4</p>
-      <p>→ Quotient = <strong>202</strong>, Reste = <strong>4</strong></p>
-      <p>Vérification : 1418 = 7 × <strong>202</strong> + <strong>4</strong> ✓</p>
+      <p>141 ÷ 8 : 8 × 17 = 136, reste 5</p>
+      <p>→ Quotient = <strong>17</strong>, Reste = <strong>5</strong></p>
+      <p>Vérification : 141 = 8 × <strong>17</strong> + <strong>5</strong> ✓</p>
     </div>
   </div>
 </div>
@@ -79,6 +79,25 @@
       <h4>✅ Correction</h4>
       <p>116 = 16 × <strong>7</strong> + <strong>4</strong> → quotient = <strong>7</strong>, reste = <strong>4</strong></p>
       <p>116 = 7 × <strong>16</strong> + <strong>4</strong> → quotient = <strong>16</strong>, reste = <strong>4</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Division décimale de 172,2 par 3</div>
+  <div class="exercise-body">
+    <div class="question"><p>Effectue la division décimale de <strong>172,2</strong> par <strong>3</strong>.</p></div>
+    <div class="answer-line">Quotient = <input class="answer-input" id="e3q" size="8" placeholder="?"><span class="feedback-icon" id="fe3q"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p>172,2 ÷ 3 :</p>
+      <p>3 × 57 = 171 → reste 1,2</p>
+      <p>1,2 ÷ 3 = 0,4</p>
+      <p>Quotient = <strong>57,4</strong></p>
     </div>
   </div>
 </div>
@@ -239,13 +258,16 @@ function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textCont
 function num(id){return parseFloat(document.getElementById(id).value.replace(',','.'));}
 
 function checkEx1(){
-  const okQ=approx(num('e1q'),202,0.5);setClass('e1q',okQ);setFI('e1q',okQ);
-  const okR=approx(num('e1r'),4,0.5);setClass('e1r',okR);setFI('e1r',okR);
+  const okQ=approx(num('e1q'),17,0.5);setClass('e1q',okQ);setFI('e1q',okQ);
+  const okR=approx(num('e1r'),5,0.5);setClass('e1r',okR);setFI('e1r',okR);
 }
 function checkEx2(){
   [[['e2a_q',7],['e2a_r',4]],[['e2b_q',16],['e2b_r',4]]].flat().forEach(([id,v])=>{
     const ok=approx(num(id),v,0.5);setClass(id,ok);setFI(id,ok);
   });
+}
+function checkEx3(){
+  const ok=approx(num('e3q'),57.4,0.05);setClass('e3q',ok);setFI('e3q',ok);
 }
 function checkEx4(){
   const ok=approx(num('e4'),18,0.5);setClass('e4',ok);setFI('e4',ok);
