@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anglais 1re | Cahier de Vacances</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">1re → Terminale</a><span class="sep">›</span>
+  <span class="current">Anglais</span>
+</nav>
+<div class="hero"><h1>🇬🇧 Anglais — 1re BFI</h1><p>Structures, vocabulaire et méthode pour préparer une année solide</p></div>
+
+<div class="container">
+
+  <div class="card" style="background:#eff6ff;border-left:4px solid #3b82f6;margin-bottom:24px;">
+    <p style="margin:0;color:#1e40af;">📖 Ressources complémentaires recommandées par votre prof :</p>
+    <ul style="margin:10px 0 0;color:#1e40af;padding-left:20px;">
+      <li><a href="https://www.bbc.co.uk/news" target="_blank" style="color:#1d4ed8;">BBC World News</a></li>
+      <li><a href="https://edition.cnn.com/specials/cnn10" target="_blank" style="color:#1d4ed8;">CNN 10</a></li>
+      <li><a href="https://www.naturalreaders.com/online/" target="_blank" style="color:#1d4ed8;">NaturalReaders</a> — prononciation</li>
+    </ul>
+  </div>
+
+  <div class="progress-bar" style="margin-bottom:24px;">
+    <div class="progress-bar-inner" id="progress-inner" style="width:0%"></div>
+  </div>
+  <p style="text-align:center;color:var(--text-light);margin-bottom:24px;" id="progress-label">0 / 3 chapitres terminés</p>
+
+  <div class="topic-grid">
+
+    <a href="structures-utiles.html" class="topic-card" id="card-struct">
+      <div class="emoji">🔗</div>
+      <h3>Structures utiles</h3>
+      <p>Connecteurs, emphase, inversions — les structures qui font la différence</p>
+    </a>
+
+    <a href="vocabulaire-enrichi.html" class="topic-card" id="card-vocab">
+      <div class="emoji">📝</div>
+      <h3>Vocabulaire enrichi</h3>
+      <p>Alternatives aux mots simples pour un niveau de langue soutenu</p>
+    </a>
+
+    <a href="methodo-travail.html" class="topic-card" id="card-methodo">
+      <div class="emoji">🗓️</div>
+      <h3>Méthodo & Travail</h3>
+      <p>Comment travailler efficacement toute l'année — guide et checklist</p>
+    </a>
+
+  </div>
+</div>
+<script>
+const chapters=[
+  {key:'1re-anglais-structures-utiles-done',id:'card-struct'},
+  {key:'1re-anglais-vocabulaire-enrichi-done',id:'card-vocab'},
+  {key:'1re-anglais-methodo-done',id:'card-methodo'},
+];
+let done=0;
+chapters.forEach(({key,id})=>{
+  if(localStorage.getItem(key)==='true'){
+    done++;
+    const card=document.getElementById(id);
+    const badge=document.createElement('span');
+    badge.className='done-badge';badge.textContent='✓ Fait';
+    card.appendChild(badge);
+  }
+});
+const pct=Math.round(done/chapters.length*100);
+document.getElementById('progress-inner').style.width=pct+'%';
+document.getElementById('progress-label').textContent=done+' / '+chapters.length+' chapitres terminés';
+</script>
+</body>
+</html>

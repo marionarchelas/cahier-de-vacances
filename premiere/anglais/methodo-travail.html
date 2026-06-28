@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Méthodo & Travail | Anglais 1re</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<nav>
+  <a href="../../index.html">🏠</a><span class="sep">›</span>
+  <a href="../index.html">1re → Terminale</a><span class="sep">›</span>
+  <a href="index.html">Anglais</a><span class="sep">›</span>
+  <span class="current">Méthodo &amp; Travail</span>
+</nav>
+<div class="hero"><h1>🗓️ Méthodo &amp; Travail</h1><p>Comment travailler efficacement toute l'année pour réussir</p></div>
+
+<div class="container">
+
+<!-- Routine quotidienne -->
+<div class="exercise-section">
+  <div class="exercise-header">📅 Ta routine quotidienne — checklist</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Coche chaque tâche au fur et à mesure que tu la réalises. L'objectif est de créer des <strong>habitudes régulières</strong> qui font progresser sans surcharge.</p>
+    </div>
+
+    <h4 style="margin-bottom:10px;">⏱️ 5 minutes par jour</h4>
+    <label class="check-item" id="ci1">
+      <input type="checkbox" onchange="saveCheck('ci1',this.checked)">
+      <span>Relire les structures et le lexique vus la veille et s'imposer d'écrire <strong>2 phrases</strong> en réutilisant une nouvelle structure + un nouveau mot.</span>
+    </label>
+
+    <h4 style="margin:18px 0 10px;">⏱️ 10 minutes par jour</h4>
+    <label class="check-item" id="ci2">
+      <input type="checkbox" onchange="saveCheck('ci2',this.checked)">
+      <span>Regarder <strong>BBC World News</strong> ou <strong>CNN 10</strong> (sous-titres anglais si besoin)</span>
+    </label>
+    <label class="check-item" id="ci3">
+      <input type="checkbox" onchange="saveCheck('ci3',this.checked)">
+      <span>Prendre <strong>3 à 4 nouveaux mots</strong> réutilisables + noter 1 exemple d'actualité marquant</span>
+    </label>
+    <label class="check-item" id="ci4">
+      <input type="checkbox" onchange="saveCheck('ci4',this.checked)">
+      <span>Compléter sa <strong>fiche de révision thématique</strong> (lexique + exemples)</span>
+    </label>
+
+    <h4 style="margin:18px 0 10px;">⏱️ 20 minutes par semaine</h4>
+    <label class="check-item" id="ci5">
+      <input type="checkbox" onchange="saveCheck('ci5',this.checked)">
+      <span>Lire le résumé d'actu posté par le professeur <strong>en intégralité</strong> (le vocabulaire important est surligné)</span>
+    </label>
+    <label class="check-item" id="ci6">
+      <input type="checkbox" onchange="saveCheck('ci6',this.checked)">
+      <span>Repérer les exemples liés au monde anglo-saxon + les reporter dans ses fiches thématiques</span>
+    </label>
+
+    <h4 style="margin:18px 0 10px;">⏱️ 1 heure par semaine</h4>
+    <label class="check-item" id="ci7">
+      <input type="checkbox" onchange="saveCheck('ci7',this.checked)">
+      <span>Lire et travailler <strong>au moins 1 article de presse</strong> en profondeur (voir méthode ci-dessous)</span>
+    </label>
+  </div>
+</div>
+
+<!-- Méthode article -->
+<div class="exercise-section">
+  <div class="exercise-header">📰 Méthode : exploiter un article de presse</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Un seul article bien exploité = entraînement à la compréhension écrite + exemples d'actualité + vocabulaire complexe + structures réutilisables.</p>
+    </div>
+
+    <div class="card" style="background:#f8fafc;border:1px solid var(--border);margin-bottom:16px;">
+      <h4 style="margin-bottom:12px;color:var(--primary-dark);">Les 4 étapes sur un article</h4>
+      <ol style="padding-left:20px;line-height:2;">
+        <li><strong>Repérages dans le texte</strong> — en gras : lexique complexe / souligné : structures complexes / encadré : exemples réutilisables</li>
+        <li><strong>Lister les nouveaux mots</strong> — chercher traduction + synonyme anglais (noter la phrase d'usage)</li>
+        <li><strong>Reporter les exemples</strong> dans ta base de données de fiches thématiques</li>
+        <li><strong>Reprendre les structures</strong> soulignées et former d'autres phrases toi-même</li>
+      </ol>
+    </div>
+
+    <p><strong>Objectif par article :</strong></p>
+    <ul style="padding-left:20px;line-height:2;">
+      <li>Au moins <strong>6 exemples</strong> réutilisables</li>
+      <li>Au moins <strong>18 nouveaux mots</strong> ou expressions</li>
+      <li>Au moins <strong>15 structures</strong> réutilisables dans d'autres contextes</li>
+    </ul>
+
+    <h4 style="margin:16px 0 10px;">Checklist après lecture d'un article</h4>
+    <label class="check-item" id="ca1">
+      <input type="checkbox" onchange="saveCheck('ca1',this.checked)">
+      <span>J'ai repéré et annoté le lexique complexe (en gras dans mes notes)</span>
+    </label>
+    <label class="check-item" id="ca2">
+      <input type="checkbox" onchange="saveCheck('ca2',this.checked)">
+      <span>J'ai listé ≥ 18 nouveaux mots avec traduction + synonyme anglais</span>
+    </label>
+    <label class="check-item" id="ca3">
+      <input type="checkbox" onchange="saveCheck('ca3',this.checked)">
+      <span>J'ai reporté ≥ 6 exemples dans mes fiches thématiques</span>
+    </label>
+    <label class="check-item" id="ca4">
+      <input type="checkbox" onchange="saveCheck('ca4',this.checked)">
+      <span>J'ai réutilisé ≥ 3 structures en écrivant mes propres phrases</span>
+    </label>
+  </div>
+</div>
+
+<!-- Exercice : organiser ses fiches -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Organiser ses fiches de révision</div>
+  <div class="exercise-body">
+    <div class="question"><p>Classe chaque exemple ci-dessous dans la bonne thématique. Écris la lettre de la thématique dans la case.</p></div>
+
+    <div class="card" style="background:#f8fafc;border:1px solid var(--border);margin-bottom:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div><strong>A</strong> — Environnement</div>
+      <div><strong>B</strong> — Politique / Relations internationales</div>
+      <div><strong>C</strong> — Technologies / IA</div>
+      <div><strong>D</strong> — Santé</div>
+      <div><strong>E</strong> — Éducation</div>
+      <div><strong>F</strong> — Économie / Business</div>
+    </div>
+
+    <div class="answer-line">1. <em>"Over 1,300 pilgrims died during the hajj as temperatures exceeded 50°C."</em> →
+      <input class="answer-input" id="f1" size="4" placeholder="?">
+      <span class="feedback-icon" id="ff1"></span>
+    </div>
+    <div class="answer-line" style="margin-top:8px;">2. <em>"The rise of generative AI raises serious questions about copyright."</em> →
+      <input class="answer-input" id="f2" size="4" placeholder="?">
+      <span class="feedback-icon" id="ff2"></span>
+    </div>
+    <div class="answer-line" style="margin-top:8px;">3. <em>"The UK government has pledged to cut carbon emissions by 68% by 2030."</em> →
+      <input class="answer-input" id="f3" size="4" placeholder="?">
+      <span class="feedback-icon" id="ff3"></span>
+    </div>
+    <div class="answer-line" style="margin-top:8px;">4. <em>"Student loan debt in the US has surpassed $1.7 trillion."</em> →
+      <input class="answer-input" id="f4" size="4" placeholder="?">
+      <span class="feedback-icon" id="ff4"></span>
+    </div>
+    <div class="answer-line" style="margin-top:8px;">5. <em>"The WHO declared antimicrobial resistance one of the top global threats."</em> →
+      <input class="answer-input" id="f5" size="4" placeholder="?">
+      <span class="feedback-icon" id="ff5"></span>
+    </div>
+    <div class="answer-line" style="margin-top:8px;">6. <em>"NATO members agreed to increase defence spending to 2% of GDP."</em> →
+      <input class="answer-input" id="f6" size="4" placeholder="?">
+      <span class="feedback-icon" id="ff6"></span>
+    </div>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <ol>
+        <li><strong>A</strong> (Environnement — chaleur extrême / hajj) &nbsp;—&nbsp; aussi classable en <strong>D</strong> (Santé)</li>
+        <li><strong>C</strong> (Technologies / IA)</li>
+        <li><strong>A</strong> (Environnement — politique climatique)</li>
+        <li><strong>E</strong> (Éducation) &nbsp;—&nbsp; aussi classable en <strong>F</strong> (Économie)</li>
+        <li><strong>D</strong> (Santé)</li>
+        <li><strong>B</strong> (Relations internationales / Politique)</li>
+      </ol>
+      <p style="color:#92400e;">💡 Un exemple peut appartenir à plusieurs thématiques — note-le dans les deux fiches !</p>
+    </div>
+  </div>
+</div>
+
+<!-- Exercice : reformuler avec structures -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — De la lecture à la structure</div>
+  <div class="exercise-body">
+    <div class="question">
+      <p>Extrait d'article : <em>"improving meteorological services would boost the countries where they still lag behind"</em></p>
+      <p>Sur le modèle de la phrase ci-dessus, forme une nouvelle phrase sur <strong>l'éducation</strong> ou la <strong>santé</strong> en réutilisant la structure <em>"improving X would boost Y where they still lag behind"</em>.</p>
+    </div>
+    <textarea class="answer-input" id="struct1" style="min-height:80px;" placeholder="Improving … would boost …"></textarea>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Exemples de réponses</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Exemples</h4>
+      <p><em>"Improving access to quality education would boost developing countries where they still lag behind."</em></p>
+      <p><em>"Improving healthcare infrastructure would boost rural communities where they still lag behind."</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Exercice : autoévaluation -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Bilan de mes outils de révision</div>
+  <div class="exercise-body">
+    <div class="question"><p>Réponds honnêtement à ces questions pour évaluer où tu en es.</p></div>
+
+    <p><strong>1.</strong> Combien de thématiques as-tu déjà dans tes fiches ?</p>
+    <div class="answer-line">
+      <select class="answer-input" id="bilan1">
+        <option value="">Choisir…</option>
+        <option value="0">Aucune — je n'ai pas encore commencé</option>
+        <option value="1">1 à 3 thématiques</option>
+        <option value="2">4 à 6 thématiques</option>
+        <option value="3">7 ou plus</option>
+      </select>
+      <span id="fbilan1" style="margin-left:10px;font-style:italic;color:var(--text-light);"></span>
+    </div>
+
+    <p style="margin-top:14px;"><strong>2.</strong> Combien d'articles as-tu travaillés ce mois-ci ?</p>
+    <div class="answer-line">
+      <select class="answer-input" id="bilan2">
+        <option value="">Choisir…</option>
+        <option value="0">Aucun</option>
+        <option value="1">1 à 2</option>
+        <option value="2">3 à 4 — objectif atteint !</option>
+        <option value="3">5 ou plus — excellent !</option>
+      </select>
+      <span id="fbilan2" style="margin-left:10px;font-style:italic;color:var(--text-light);"></span>
+    </div>
+
+    <p style="margin-top:14px;"><strong>3.</strong> Tu écoutes/regardes l'actualité en anglais :</p>
+    <div class="answer-line">
+      <select class="answer-input" id="bilan3">
+        <option value="">Choisir…</option>
+        <option value="0">Jamais</option>
+        <option value="1">Parfois (1 à 2 fois/semaine)</option>
+        <option value="2">Souvent (3 à 5 fois/semaine)</option>
+        <option value="3">Tous les jours</option>
+      </select>
+      <span id="fbilan3" style="margin-left:10px;font-style:italic;color:var(--text-light);"></span>
+    </div>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkBilan()">✔ Voir mon bilan</button>
+    <div class="correction-box" id="corrBilan">
+      <h4>📊 Ton bilan</h4>
+      <div id="bilanResult"></div>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer ce chapitre comme terminé
+  </label>
+  <a href="index.html" class="btn btn-outline">↩ Retour aux chapitres</a>
+</div>
+</div>
+
+<style>
+.check-item {
+  display:flex;align-items:flex-start;gap:12px;
+  padding:10px 14px;border-radius:8px;margin-bottom:8px;
+  background:#f8fafc;border:1px solid var(--border);cursor:pointer;
+  transition:background .2s;
+}
+.check-item:hover{background:#eff6ff;}
+.check-item input[type=checkbox]{width:18px;height:18px;accent-color:var(--success);flex-shrink:0;margin-top:2px;}
+.check-item.done-item{background:#dcfce7;border-color:#22c55e;}
+</style>
+
+<script>
+const PAGE_KEY='1re-anglais-methodo-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function norm(s){return s.trim().toLowerCase();}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function chk(id,answers){
+  const v=norm(document.getElementById(id).value);
+  const ok=answers.some(a=>v===norm(a));
+  setClass(id,ok);setFI(id,ok);
+}
+
+function checkEx1(){
+  chk('f1',['a','a/d','d/a']);
+  chk('f2',['c']);
+  chk('f3',['a']);
+  chk('f4',['e','e/f','f/e']);
+  chk('f5',['d']);
+  chk('f6',['b']);
+}
+
+function checkBilan(){
+  const scores=[
+    parseInt(document.getElementById('bilan1').value)||0,
+    parseInt(document.getElementById('bilan2').value)||0,
+    parseInt(document.getElementById('bilan3').value)||0
+  ];
+  const total=scores.reduce((a,b)=>a+b,0);
+  const msgs=[
+    ['Aucune thématique — commence dès aujourd\'hui ! Choisis 3 sujets qui t\'intéressent.','1 à 3 thématiques — bon début ! Vise 5 à 7 d\'ici la rentrée.','4 à 6 thématiques — très bien ! Continue à enrichir tes fiches.','7+ thématiques — excellent travail de préparation !'],
+    ['Aucun article — c\'est le moment de commencer. 1 article/semaine suffit.','1 à 2 articles — c\'est un début, vise 1 par semaine.','3 à 4 articles — objectif atteint, continue !','5+ articles — bravo, tu es dans les meilleures dispositions !'],
+    ['Jamais — même 10 min/jour de BBC fera une différence énorme.','Parfois — bien ! Essaie de rendre ça quotidien.','Souvent — très bien ! Encore un peu d\'efforts pour en faire une habitude quotidienne.','Tous les jours — parfait, continue !']
+  ];
+  let html='';
+  scores.forEach((s,i)=>{ html+=`<p>${['📁','📰','🎧'][i]} ${msgs[i][s]}</p>`; });
+  if(total>=7) html+='<p style="color:#14532d;font-weight:700;">🌟 Tu es sur la bonne voie — maintiens ce rythme !</p>';
+  else if(total>=4) html+='<p style="color:#92400e;font-weight:700;">💪 Bon début ! Quelques ajustements et tu seras au top.</p>';
+  else html+='<p style="color:#b91c1c;font-weight:700;">⚡ C\'est le moment de mettre en place la routine — chaque jour compte !</p>';
+  document.getElementById('bilanResult').innerHTML=html;
+  document.getElementById('corrBilan').classList.add('visible');
+}
+
+function saveCheck(id, checked){
+  localStorage.setItem('methodo-check-'+id, checked?'true':'false');
+  document.getElementById(id).classList.toggle('done-item', checked);
+}
+
+// Restore checkboxes
+['ci1','ci2','ci3','ci4','ci5','ci6','ci7','ca1','ca2','ca3','ca4'].forEach(id=>{
+  const el=document.getElementById(id);
+  if(!el) return;
+  const checked=localStorage.getItem('methodo-check-'+id)==='true';
+  el.querySelector('input[type=checkbox]').checked=checked;
+  if(checked) el.classList.add('done-item');
+});
+
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
+</body>
+</html>

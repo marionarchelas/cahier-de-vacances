@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1re → Terminale | Cahier de Vacances</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <a href="../index.html">🏠</a><span class="sep">›</span>
+  <span class="current">1re → Terminale</span>
+</nav>
+<div class="hero"><h1>📚 1re → Terminale</h1><p>Révisions et préparation pour l'année</p></div>
+
+<div class="container">
+  <div class="topic-grid">
+    <a href="anglais/index.html" class="topic-card">
+      <div class="emoji">🇬🇧</div>
+      <h3>Anglais</h3>
+      <p>Structures, vocabulaire enrichi et méthode de travail</p>
+      <span class="btn btn-primary" id="btn-anglais" style="margin-top:8px;display:block;text-align:center;">Commencer</span>
+    </a>
+    <div class="topic-card" style="opacity:.55;cursor:not-allowed;">
+      <div class="emoji">📐</div>
+      <h3>Maths</h3>
+      <p>Bientôt disponible</p>
+      <span class="btn btn-outline" style="pointer-events:none;margin-top:8px;display:block;text-align:center;">Bientôt</span>
+    </div>
+    <div class="topic-card" style="opacity:.55;cursor:not-allowed;">
+      <div class="emoji">🔬</div>
+      <h3>Sciences</h3>
+      <p>Bientôt disponible</p>
+      <span class="btn btn-outline" style="pointer-events:none;margin-top:8px;display:block;text-align:center;">Bientôt</span>
+    </div>
+  </div>
+</div>
+<script>
+const keys=['1re-anglais-structures-utiles-done','1re-anglais-vocabulaire-enrichi-done','1re-anglais-methodo-done'];
+const done=keys.filter(k=>localStorage.getItem(k)==='true').length;
+if(done>0){const b=document.getElementById('btn-anglais');b.textContent=done+'/'+keys.length+' faits';}
+</script>
+</body>
+</html>
