@@ -238,7 +238,7 @@ th { background: #f8fafc; font-weight: 700; }
 
 /* ── VERSION BADGE ─────────────────────────── */
 body::after {
-  content: "v1.1";
+  content: "v1.2";
   position: fixed;
   bottom: 10px;
   right: 12px;
