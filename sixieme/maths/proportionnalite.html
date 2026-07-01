@@ -90,13 +90,17 @@
       <tr><td><input class="answer-input" id="t2_1b" size="4" placeholder="?"></td><td><input class="answer-input" id="t2_2b" size="4" placeholder="?"></td><td>15</td><td><input class="answer-input" id="t2_4b" size="4" placeholder="?"></td></tr>
     </table>
     <br>
-    <p><strong>Tableau 3 — Trouve le coefficient :</strong></p>
+    <p><strong>Tableau 3 — Trouve le coefficient :</strong>
+      × <input class="answer-input" id="t3_coeff" size="5" placeholder="?"><span class="feedback-icon" id="ft3_coeff"></span>
+    </p>
     <table>
       <tr><td><input class="answer-input" id="t3_1t" size="4" placeholder="?"></td><td>6</td><td>8</td><td>10,5</td></tr>
       <tr><td>18</td><td><input class="answer-input" id="t3_2b" size="4" placeholder="?"></td><td>32</td><td><input class="answer-input" id="t3_4b" size="5" placeholder="?"></td></tr>
     </table>
     <br>
-    <p><strong>Tableau 4 — Trouve le coefficient :</strong></p>
+    <p><strong>Tableau 4 — Trouve le coefficient :</strong>
+      × <input class="answer-input" id="t4_coeff" size="5" placeholder="?"><span class="feedback-icon" id="ft4_coeff"></span>
+    </p>
     <table>
       <tr><td>4</td><td>5,5</td><td><input class="answer-input" id="t4_3t" size="4" placeholder="?"></td><td>7,2</td></tr>
       <tr><td>2,4</td><td><input class="answer-input" id="t4_2b" size="4" placeholder="?"></td><td>3,9</td><td><input class="answer-input" id="t4_4b" size="4" placeholder="?"></td></tr>
@@ -251,8 +255,8 @@ function checkEx2() {
   const checks = {
     t1_4t:10, t1_1b:35, t1_2b:56, t1_3b:63,
     t2_3t:10, t2_1b:6,  t2_2b:10.5, t2_4b:18,
-    t3_1t:4.5, t3_2b:24, t3_4b:42,
-    t4_3t:6.5, t4_2b:3.3, t4_4b:4.32
+    t3_coeff:4, t3_1t:4.5, t3_2b:24, t3_4b:42,
+    t4_coeff:0.6, t4_3t:6.5, t4_2b:3.3, t4_4b:4.32
   };
   Object.entries(checks).forEach(([id,val])=>{
     const el=document.getElementById(id);
