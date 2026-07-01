@@ -240,6 +240,68 @@
   </div>
 </div>
 
+<!-- EX 9 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 9 — Nombres croisés</div>
+  <div class="exercise-body">
+    <div style="display:flex;gap:32px;flex-wrap:wrap;align-items:flex-start;">
+      <!-- Grille -->
+      <div>
+        <table style="border-collapse:collapse;width:auto;">
+          <tr>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;font-size:.75rem;color:#64748b;vertical-align:top;padding:2px;">1</td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_A1" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_A2" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_A3" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="background:#1e293b;width:36px;height:36px;"></td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;font-size:.75rem;color:#64748b;vertical-align:top;padding:2px;">B</td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_B1" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_B2" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_B3" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_B4" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;font-size:.75rem;color:#64748b;vertical-align:top;padding:2px;">C</td>
+            <td style="background:#1e293b;width:36px;height:36px;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_C2" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_C3" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_C4" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;font-size:.75rem;color:#64748b;vertical-align:top;padding:2px;">D</td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_D1" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_D2" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+            <td style="background:#1e293b;width:36px;height:36px;"></td>
+            <td style="border:1px solid #94a3b8;width:36px;height:36px;text-align:center;"><input id="g_D4" maxlength="1" style="width:30px;height:30px;text-align:center;border:none;font-size:1.1rem;background:transparent;"></td>
+          </tr>
+        </table>
+      </div>
+      <!-- Indices -->
+      <div style="flex:1;min-width:220px;font-size:.9rem;line-height:1.8;">
+        <p><strong>Horizontalement</strong></p>
+        <p><strong>A –</strong> Multiple de 3 et de 5. Diviseur de 25.</p>
+        <p><strong>B –</strong> Multiple de 10. Diviseur de tous les nombres.</p>
+        <p><strong>C –</strong> Diviseur de 222 autre que lui-même.</p>
+        <p><strong>D –</strong> Multiple de 5 (mais pas de 10) si on lui ajoute 1. Multiple de 12 et 1.</p>
+        <p style="margin-top:10px;"><strong>Verticalement</strong></p>
+        <p><strong>1 –</strong> Nombre palindrome.</p>
+        <p><strong>2 –</strong> Multiple de 100 si on lui ajoute 1.</p>
+        <p><strong>3 –</strong> Multiple de 2 et de 3.</p>
+        <p><strong>4 –</strong> Multiple de 17.</p>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr9')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr9">
+      <h4>✅ Correction</h4>
+      <p>Consulte le <a href="https://mathix.org/cahiers_vacances/corrigevers5e.pdf" target="_blank" rel="noopener" style="color:var(--primary);font-weight:600;">PDF de correction</a> pour la solution complète de la grille.</p>
+      <p style="margin-top:8px;"><strong>Aide :</strong> C = <strong>111</strong> (seul diviseur à 3 chiffres de 222, différent de 222).</p>
+    </div>
+  </div>
+</div>
+
 <div class="page-actions">
   <a href="https://mathix.org/cahiers_vacances/corrigevers5e.pdf" target="_blank" rel="noopener" class="resource-link">📄 Correction globale PDF</a>
   <label class="done-toggle" id="done-label">
