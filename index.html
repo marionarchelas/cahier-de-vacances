@@ -6,6 +6,31 @@
   <title>Cahier de Vacances Interactif</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    #pw-overlay {
+      position: fixed; inset: 0; z-index: 99999;
+      background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    #pw-box {
+      background: #fff; border-radius: 16px; padding: 40px 36px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      text-align: center; max-width: 360px; width: 90%;
+    }
+    #pw-box h2 { font-size: 1.5rem; color: #4338ca; margin-bottom: 8px; }
+    #pw-box p  { color: #64748b; font-size: .95rem; margin-bottom: 24px; }
+    #pw-input  {
+      width: 100%; padding: 12px 16px; border: 2px solid #e2e8f0;
+      border-radius: 10px; font-size: 1rem; margin-bottom: 12px;
+      text-align: center; letter-spacing: .1em;
+    }
+    #pw-input:focus { outline: none; border-color: #6366f1; }
+    #pw-btn {
+      width: 100%; padding: 12px; background: #6366f1; color: #fff;
+      border: none; border-radius: 10px; font-size: 1rem; font-weight: 700;
+      cursor: pointer; transition: background .2s;
+    }
+    #pw-btn:hover { background: #4338ca; }
+    #pw-error { color: #ef4444; font-size: .9rem; margin-top: 10px; display: none; }
     body { background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%); }
     .home-hero {
       text-align: center;
@@ -27,6 +52,17 @@
   </style>
 </head>
 <body>
+  <div id="pw-overlay">
+    <div id="pw-box">
+      <div style="font-size:2.5rem;margin-bottom:12px;">🔒</div>
+      <h2>Cahier de Vacances</h2>
+      <p>Entre le mot de passe pour accéder aux exercices.</p>
+      <input id="pw-input" type="password" placeholder="Mot de passe" autocomplete="off">
+      <button id="pw-btn" onclick="checkPw()">Accéder →</button>
+      <div id="pw-error">Mot de passe incorrect. Réessaie !</div>
+    </div>
+  </div>
+
   <div class="home-hero">
     <div class="sun">☀️</div>
     <h1>Cahier de Vacances<br>Interactif</h1>
@@ -52,5 +88,21 @@
       </a>
     </div>
   </div>
+  <script>
+    const PW = 'revision_61';
+    const overlay = document.getElementById('pw-overlay');
+    if (sessionStorage.getItem('cahier-auth') === '1') overlay.style.display = 'none';
+    document.getElementById('pw-input').addEventListener('keydown', e => { if (e.key === 'Enter') checkPw(); });
+    function checkPw() {
+      if (document.getElementById('pw-input').value === PW) {
+        sessionStorage.setItem('cahier-auth', '1');
+        overlay.style.display = 'none';
+      } else {
+        document.getElementById('pw-error').style.display = 'block';
+        document.getElementById('pw-input').value = '';
+        document.getElementById('pw-input').focus();
+      }
+    }
+  </script>
 </body>
 </html>
