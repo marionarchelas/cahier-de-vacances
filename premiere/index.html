@@ -8,37 +8,50 @@
 </head>
 <body>
 <nav>
-  <a href="../index.html">🏠</a><span class="sep">›</span>
-  <span class="current">1re → Terminale</span>
+  <a href="../index.html">🏠 Accueil</a>
+  <span class="sep">›</span>
+  <span class="current">1<sup>re</sup> → Terminale</span>
 </nav>
-<div class="hero"><h1>📚 1re → Terminale</h1><p>Révisions et préparation pour l'année</p></div>
+
+<div class="hero">
+  <h1>📚 1<sup>re</sup> → Terminale</h1>
+  <p>Documents de préparation et méthodologie pour la rentrée</p>
+</div>
 
 <div class="container">
   <div class="topic-grid">
-    <a href="anglais/index.html" class="topic-card">
-      <div class="emoji">🇬🇧</div>
-      <h3>Anglais</h3>
-      <p>Structures, vocabulaire enrichi et méthode de travail</p>
-      <span class="btn btn-primary" id="btn-anglais" style="margin-top:8px;display:block;text-align:center;">Commencer</span>
+
+    <a href="homework-1e.html" class="topic-card">
+      <div class="topic-icon">📝</div>
+      <h3>Homework – 1re</h3>
+      <div class="topic-sub">Travail à faire pour septembre 2026</div>
     </a>
-    <div class="topic-card" style="opacity:.55;cursor:not-allowed;">
-      <div class="emoji">📐</div>
-      <h3>Maths</h3>
-      <p>Bientôt disponible</p>
-      <span class="btn btn-outline" style="pointer-events:none;margin-top:8px;display:block;text-align:center;">Bientôt</span>
-    </div>
-    <div class="topic-card" style="opacity:.55;cursor:not-allowed;">
-      <div class="emoji">🔬</div>
-      <h3>Sciences</h3>
-      <p>Bientôt disponible</p>
-      <span class="btn btn-outline" style="pointer-events:none;margin-top:8px;display:block;text-align:center;">Bientôt</span>
-    </div>
+
+    <a href="methodo.html" class="topic-card">
+      <div class="topic-icon">🏠</div>
+      <h3>Méthodo – How to work at home</h3>
+      <div class="topic-sub">Conseils de travail à la maison (1re &amp; Tles)</div>
+    </a>
+
+    <a href="structures-utiles.html" class="topic-card">
+      <div class="topic-icon">💬</div>
+      <h3>Useful expressions</h3>
+      <div class="topic-sub">Structures intéressantes (1re &amp; Tles)</div>
+    </a>
+
+    <a href="homework-tles.html" class="topic-card">
+      <div class="topic-icon">📝</div>
+      <h3>Homework – Terminale</h3>
+      <div class="topic-sub">Préparation CDM pour septembre</div>
+    </a>
+
+    <a href="alternatives.html" class="topic-card">
+      <div class="topic-icon">✏️</div>
+      <h3>Alternatives aux mots simples</h3>
+      <div class="topic-sub">Vocabulaire enrichi – toutes classes</div>
+    </a>
+
   </div>
 </div>
-<script>
-const keys=['1re-anglais-structures-utiles-done','1re-anglais-vocabulaire-enrichi-done','1re-anglais-methodo-done'];
-const done=keys.filter(k=>localStorage.getItem(k)==='true').length;
-if(done>0){const b=document.getElementById('btn-anglais');b.textContent=done+'/'+keys.length+' faits';}
-</script>
 </body>
 </html>
