@@ -3,11 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livret de révisions | Histoire-Géo 6e</title>
+  <title>Livret de révisions | Histoire 6e</title>
   <link rel="stylesheet" href="../../style.css">
   <style>
-    .pdf-container { width:100%; height:80vh; min-height:500px; border:none; border-radius:var(--radius); box-shadow:var(--shadow-lg); display:block; }
-    @media (max-width:600px) { .pdf-container { height:70vh; } }
+    .roman-table { border-collapse:collapse; width:100%; margin:12px 0; }
+    .roman-table td, .roman-table th { border:1px solid var(--border); padding:8px 12px; text-align:center; }
+    .roman-table th { background:var(--surface); font-weight:700; }
+    .roman-table input { width:90px; text-align:center; }
+    .choix-group { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .choix-group label { display:flex; align-items:center; gap:6px; padding:6px 12px; border:1px solid var(--border); border-radius:6px; cursor:pointer; background:var(--surface); }
+    .choix-group input[type=radio] { margin:0; }
+    .choix-group label.correct-choice { background:#d1fae5; border-color:#10b981; }
+    .choix-group label.wrong-choice { background:#fee2e2; border-color:#ef4444; }
   </style>
 </head>
 <body>
@@ -15,21 +22,437 @@
   <a href="../../index.html">🏠</a><span class="sep">›</span>
   <a href="../index.html">6e→5e</a><span class="sep">›</span>
   <a href="index.html">Histoire-Géo</a><span class="sep">›</span>
-  <span class="current">Livret de révisions et exercices</span>
+  <span class="current">Livret de révisions</span>
 </nav>
-<div class="hero"><h1>📚 Livret de révisions et exercices</h1><p>Révisions complètes 6e</p></div>
+<div class="hero"><h1>📚 Livret de révisions et exercices</h1><p>Siècles, millénaires, frises et chiffres romains</p></div>
 <div class="container">
-  <div class="card" style="padding:16px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;">
-      <span style="font-weight:700;">📄 Livret_de_révisions_et_exercices_6e.pdf</span>
-      <a href="pdf/Livret_de_révisions_et_exercices_6e.pdf" download class="btn btn-outline" style="font-size:.85rem;padding:7px 14px;">⬇ Télécharger</a>
+
+<div class="card" style="background:#fef9c3;border-left:4px solid #eab308;">
+  <h3 style="color:#713f12;margin-bottom:8px;">📌 Méthode pour trouver le siècle</h3>
+  <p>Pour une date <strong>après J.-C.</strong> : prendre les chiffres des centaines et ajouter 1. Ex : 476 → 4+1 = <strong>Ve siècle</strong></p>
+  <p style="margin-top:6px;">Pour une date <strong>avant J.-C.</strong> : même règle, mais on dit "avant J.-C.". Ex : −323 → 3+1 = <strong>IVe siècle avant J.-C.</strong></p>
+  <p style="margin-top:6px;">Pour le millénaire : 1er mill. = 1 à 999 · 2e mill. = 1000 à 1999 · 3e mill. = 2000 à 2999</p>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Reconnaître le siècle et le millénaire d'une date</div>
+  <div class="exercise-body">
+    <p>Complète le tableau ci-dessous :</p>
+    <table class="roman-table">
+      <thead><tr><th>Date</th><th>Millénaire</th><th>Siècle</th></tr></thead>
+      <tbody>
+        <tr><td>762</td>
+          <td><input class="answer-input" id="t1a" placeholder="?e millénaire"><span class="feedback-icon" id="ft1a"></span></td>
+          <td><input class="answer-input" id="t1b" placeholder="Ex: VIIIe"><span class="feedback-icon" id="ft1b"></span></td>
+        </tr>
+        <tr><td>1492</td>
+          <td><input class="answer-input" id="t2a" placeholder="?e millénaire"><span class="feedback-icon" id="ft2a"></span></td>
+          <td><input class="answer-input" id="t2b" placeholder="Ex: XVe"><span class="feedback-icon" id="ft2b"></span></td>
+        </tr>
+        <tr><td>2030</td>
+          <td><input class="answer-input" id="t3a" placeholder="?e millénaire"><span class="feedback-icon" id="ft3a"></span></td>
+          <td><input class="answer-input" id="t3b" placeholder="Ex: XXIe"><span class="feedback-icon" id="ft3b"></span></td>
+        </tr>
+        <tr><td>2345</td>
+          <td><input class="answer-input" id="t4a" placeholder="?e millénaire"><span class="feedback-icon" id="ft4a"></span></td>
+          <td><input class="answer-input" id="t4b" placeholder="Ex: XXIVe"><span class="feedback-icon" id="ft4b"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <table class="roman-table">
+        <thead><tr><th>Date</th><th>Millénaire</th><th>Siècle</th></tr></thead>
+        <tbody>
+          <tr><td>762</td><td>1er millénaire</td><td>VIIIe siècle</td></tr>
+          <tr><td>1492</td><td>2e millénaire</td><td>XVe siècle</td></tr>
+          <tr><td>2030</td><td>3e millénaire</td><td>XXIe siècle</td></tr>
+          <tr><td>2345</td><td>3e millénaire</td><td>XXIVe siècle</td></tr>
+        </tbody>
+      </table>
     </div>
-    <iframe class="pdf-container" src="pdf/Livret_de_révisions_et_exercices_6e.pdf" title="Livret de révisions et exercices 6e"></iframe>
-  </div>
-  <div class="page-actions">
-    <a href="questions-correction.html" class="btn btn-outline">← Document précédent</a>
-    <a href="index.html" class="btn btn-outline">↩ Retour aux documents</a>
   </div>
 </div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Relier les dates aux siècles</div>
+  <div class="exercise-body">
+    <p>Associe chaque date à son siècle :</p>
+    <div class="answer-line"><label>2016 ap. J.-C. →</label>
+      <input class="answer-input" id="r1" size="22" placeholder="? siècle"><span class="feedback-icon" id="fr1"></span></div>
+    <div class="answer-line"><label>70 ap. J.-C. →</label>
+      <input class="answer-input" id="r2" size="22" placeholder="? siècle"><span class="feedback-icon" id="fr2"></span></div>
+    <div class="answer-line"><label>843 ap. J.-C. →</label>
+      <input class="answer-input" id="r3" size="22" placeholder="? siècle"><span class="feedback-icon" id="fr3"></span></div>
+    <div class="answer-line"><label>753 avant J.-C. →</label>
+      <input class="answer-input" id="r4" size="22" placeholder="? siècle"><span class="feedback-icon" id="fr4"></span></div>
+    <div class="answer-line"><label>206 avant J.-C. →</label>
+      <input class="answer-input" id="r5" size="22" placeholder="? siècle"><span class="feedback-icon" id="fr5"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p>2016 → <strong>XXIe siècle</strong></p>
+      <p>70 → <strong>Ier siècle ap. J.-C.</strong></p>
+      <p>843 → <strong>IXe siècle ap. J.-C.</strong></p>
+      <p>753 avant J.-C. → <strong>VIIIe siècle avant J.-C.</strong></p>
+      <p>206 avant J.-C. → <strong>IIIe siècle avant J.-C.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Situer des personnages dans le temps</div>
+  <div class="exercise-body">
+    <p>Réponds aux questions en utilisant les dates données.</p>
+
+    <div class="question" style="margin-top:10px;"><p><strong>Gudea</strong> a régné de −2125 à −2110.</p></div>
+    <div class="answer-line"><label>Combien d'années a-t-il régné ?</label>
+      <input class="answer-input" id="g1" size="10" placeholder="? ans"><span class="feedback-icon" id="fg1"></span></div>
+    <div class="answer-line"><label>Siècle de Gudea :</label>
+      <input class="answer-input" id="g2" size="22" placeholder="?"><span class="feedback-icon" id="fg2"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>Alexandre le Grand</strong> est né en −356, mort en −323.</p></div>
+    <div class="answer-line"><label>Quel âge avait-il à sa mort ?</label>
+      <input class="answer-input" id="a1" size="10" placeholder="? ans"><span class="feedback-icon" id="fa1"></span></div>
+    <div class="answer-line"><label>Siècle de sa mort :</label>
+      <input class="answer-input" id="a2" size="22" placeholder="?"><span class="feedback-icon" id="fa2"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>Auguste</strong> a régné de −27 à +14.</p></div>
+    <div class="answer-line"><label>Combien d'années a-t-il régné ?</label>
+      <input class="answer-input" id="au1" size="10" placeholder="? ans"><span class="feedback-icon" id="fau1"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>Les livres de la Bible</strong> ont été écrits entre le IXe et le IIe siècle avant J.-C.</p></div>
+    <div class="answer-line"><label>Sur combien de siècles cette rédaction s'est-elle effectuée ?</label>
+      <input class="answer-input" id="b1" size="12" placeholder="? siècles"><span class="feedback-icon" id="fb1"></span></div>
+    <div class="answer-line"><label>Pendant quel millénaire a-t-elle eu lieu ?</label>
+      <input class="answer-input" id="b2" size="22" placeholder="?"><span class="feedback-icon" id="fb2"></span></div>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkEx3()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p><strong>Gudea</strong> : 2125 − 2110 = <strong>15 ans</strong> de règne · <strong>XXIIe siècle avant J.-C.</strong> (2e millénaire avant J.-C.)</p>
+      <p><strong>Alexandre le Grand</strong> : 356 − 323 = <strong>33 ans</strong> à sa mort · <strong>IVe siècle avant J.-C.</strong></p>
+      <p><strong>Auguste</strong> : 27 + 14 = <strong>41 ans</strong> de règne (Ier siècle avant J.-C. et Ier siècle après J.-C.)</p>
+      <p><strong>Bible</strong> : du IXe au IIe siècle = <strong>8 siècles</strong> · <strong>1er millénaire avant J.-C.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 4 — Je connais la frise chronologique</div>
+  <div class="exercise-body">
+    <p>Complète le texte avec les mots : <em>temps, gauche, droite, événement, période, échelle</em></p>
+    <div class="answer-line"><label>Une frise chronologique est une bande graduée qui représente le _____.</label>
+      <input class="answer-input" id="v1" size="16" placeholder="?"><span class="feedback-icon" id="fv1"></span></div>
+    <div class="answer-line"><label>Elle se lit de la _____</label>
+      <input class="answer-input" id="v2" size="14" placeholder="?"><span class="feedback-icon" id="fv2"></span>
+      <label>vers la _____.</label>
+      <input class="answer-input" id="v3" size="14" placeholder="?"><span class="feedback-icon" id="fv3"></span></div>
+    <div class="answer-line"><label>On peut y indiquer un _____ (ayant eu lieu un jour ou une année précise),</label>
+      <input class="answer-input" id="v4" size="16" placeholder="?"><span class="feedback-icon" id="fv4"></span></div>
+    <div class="answer-line"><label>ou une _____ (plusieurs jours, années, siècles…).</label>
+      <input class="answer-input" id="v5" size="16" placeholder="?"><span class="feedback-icon" id="fv5"></span></div>
+    <div class="answer-line"><label>Il faut faire attention à l'_____ (ex : 1 cm = 100 ans).</label>
+      <input class="answer-input" id="v6" size="16" placeholder="?"><span class="feedback-icon" id="fv6"></span></div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4">
+      <h4>✅ Correction</h4>
+      <p>… représente le <strong>temps</strong>. Elle se lit de la <strong>gauche</strong> vers la <strong>droite</strong>.</p>
+      <p>On peut y indiquer un <strong>événement</strong> ou une <strong>période</strong>. Il faut faire attention à l'<strong>échelle</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 4bis -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 5 — Situer des événements dans le temps</div>
+  <div class="exercise-body">
+    <p>Pour chaque événement, indique le siècle et le millénaire.</p>
+
+    <div class="question" style="margin-top:10px;"><p><strong>La bataille de Salamine</strong> (480 avant J.-C.)</p></div>
+    <div class="answer-line"><label>Siècle :</label>
+      <input class="answer-input" id="s1" size="20" placeholder="?"><span class="feedback-icon" id="fs1"></span></div>
+    <div class="answer-line"><label>Millénaire :</label>
+      <input class="answer-input" id="s2" size="20" placeholder="?"><span class="feedback-icon" id="fs2"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>Le traité de Verdun</strong> (843)</p></div>
+    <div class="answer-line"><label>Siècle :</label>
+      <input class="answer-input" id="s3" size="20" placeholder="?"><span class="feedback-icon" id="fs3"></span></div>
+    <div class="answer-line"><label>Millénaire :</label>
+      <input class="answer-input" id="s4" size="20" placeholder="?"><span class="feedback-icon" id="fs4"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>L'empereur Commode</strong> (161 – 192)</p></div>
+    <div class="answer-line"><label>Siècle :</label>
+      <input class="answer-input" id="s5" size="20" placeholder="?"><span class="feedback-icon" id="fs5"></span></div>
+    <div class="answer-line"><label>Millénaire :</label>
+      <input class="answer-input" id="s6" size="20" placeholder="?"><span class="feedback-icon" id="fs6"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>Le savant Archimède</strong> (287 – 212 avant J.-C.)</p></div>
+    <div class="answer-line"><label>Siècle :</label>
+      <input class="answer-input" id="s7" size="20" placeholder="?"><span class="feedback-icon" id="fs7"></span></div>
+    <div class="answer-line"><label>Millénaire :</label>
+      <input class="answer-input" id="s8" size="20" placeholder="?"><span class="feedback-icon" id="fs8"></span></div>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkEx4bis()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr4bis')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr4bis">
+      <h4>✅ Correction</h4>
+      <p><strong>Bataille de Salamine</strong> (480 av. J.-C.) : <strong>Ve siècle avant J.-C.</strong> · <strong>1er millénaire avant J.-C.</strong></p>
+      <p><strong>Traité de Verdun</strong> (843) : <strong>IXe siècle</strong> · <strong>1er millénaire après J.-C.</strong></p>
+      <p><strong>Commode</strong> (161–192) : <strong>IIe siècle après J.-C.</strong> · <strong>1er millénaire après J.-C.</strong></p>
+      <p><strong>Archimède</strong> (287–212 av. J.-C.) : <strong>IIIe siècle avant J.-C.</strong> · <strong>1er millénaire avant J.-C.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 5 — Chiffres romains vers arabes -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 6 — Chiffres romains → chiffres arabes</div>
+  <div class="exercise-body">
+    <div class="card" style="background:var(--surface);padding:10px 16px;margin-bottom:14px;font-size:.9rem;">
+      <strong>Rappel :</strong> I=1 · V=5 · X=10 · L=50 · C=100 · D=500 · M=1000<br>
+      Soustraction : IV=4, IX=9, XL=40, XC=90, CD=400, CM=900
+    </div>
+    <table class="roman-table">
+      <thead><tr><th>Chiffre romain</th><th>Chiffre arabe</th></tr></thead>
+      <tbody id="roman-to-arabic-body"></tbody>
+    </table>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx5()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr5')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr5">
+      <h4>✅ Correction</h4>
+      <table class="roman-table">
+        <thead><tr><th>Chiffre romain</th><th>Chiffre arabe</th></tr></thead>
+        <tbody>
+          <tr><td>CCCLIV</td><td>354</td></tr>
+          <tr><td>DCLXXVII</td><td>677</td></tr>
+          <tr><td>MCCIX</td><td>1209</td></tr>
+          <tr><td>LXIV</td><td>64</td></tr>
+          <tr><td>DLXXIV</td><td>574</td></tr>
+          <tr><td>DCXL</td><td>640</td></tr>
+          <tr><td>CCLV</td><td>255</td></tr>
+          <tr><td>MLXXXVI</td><td>1086</td></tr>
+          <tr><td>CXVI</td><td>116</td></tr>
+          <tr><td>MCCL</td><td>1250</td></tr>
+          <tr><td>XLVIII</td><td>48</td></tr>
+          <tr><td>DXIX</td><td>519</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- EX 6 — Arabes vers romains -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 7 — Chiffres arabes → chiffres romains</div>
+  <div class="exercise-body">
+    <table class="roman-table">
+      <thead><tr><th>Chiffre arabe</th><th>Chiffre romain</th></tr></thead>
+      <tbody id="arabic-to-roman-body"></tbody>
+    </table>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx6()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr6')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr6">
+      <h4>✅ Correction</h4>
+      <table class="roman-table">
+        <thead><tr><th>Chiffre arabe</th><th>Chiffre romain</th></tr></thead>
+        <tbody>
+          <tr><td>1361</td><td>MCCCLXI</td></tr>
+          <tr><td>2699</td><td>MMDCXCIX</td></tr>
+          <tr><td>648</td><td>DCXLVIII</td></tr>
+          <tr><td>555</td><td>DLV</td></tr>
+          <tr><td>79</td><td>LXXIX</td></tr>
+          <tr><td>3000</td><td>MMM</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- EX 7 — QCM chiffres romains -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 8 — Quel est le bon chiffre romain ?</div>
+  <div class="exercise-body">
+    <p><strong>1. Le nombre 19 en chiffres romains :</strong></p>
+    <div class="choix-group" id="qcm1">
+      <label><input type="radio" name="qcm1" value="IXX"> IXX</label>
+      <label><input type="radio" name="qcm1" value="XIX"> XIX</label>
+      <label><input type="radio" name="qcm1" value="XVIIII"> XVIIII</label>
+    </div>
+    <p style="margin-top:14px;"><strong>2. Le nombre 44 en chiffres romains :</strong></p>
+    <div class="choix-group" id="qcm2">
+      <label><input type="radio" name="qcm2" value="XXXXIV"> XXXXIV</label>
+      <label><input type="radio" name="qcm2" value="XLIV"> XLIV</label>
+      <label><input type="radio" name="qcm2" value="XLIIII"> XLIIII</label>
+    </div>
+    <p style="margin-top:14px;"><strong>3. Le nombre 66 en chiffres romains :</strong></p>
+    <div class="choix-group" id="qcm3">
+      <label><input type="radio" name="qcm3" value="LXVI"> LXVI</label>
+      <label><input type="radio" name="qcm3" value="IXLVII"> IXLVII</label>
+      <label><input type="radio" name="qcm3" value="LXVII"> LXVII</label>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="checkEx7()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr7')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr7">
+      <h4>✅ Correction</h4>
+      <p>1. <strong>XIX</strong> (= 10 + 9)</p>
+      <p>2. <strong>XLIV</strong> (= 50 − 10 + 5 − 1)</p>
+      <p>3. <strong>LXVI</strong> (= 50 + 10 + 5 + 1)</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer comme terminé
+  </label>
+  <a href="questions-introductives.html" class="btn btn-outline">← Exercice précédent</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour</a>
+</div>
+</div>
+
+<script>
+const PAGE_KEY = '6e-hg-livret-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function norm(s){return s.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+function setClass(id,ok){const el=document.getElementById(id);if(!el)return;el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+
+// Build roman→arabic table
+const r2a=[['CCCLIV',354],['DCLXXVII',677],['MCCIX',1209],['LXIV',64],['DLXXIV',574],['DCXL',640],['CCLV',255],['MLXXXVI',1086],['CXVI',116],['MCCL',1250],['XLVIII',48],['DXIX',519]];
+const tbody=document.getElementById('roman-to-arabic-body');
+r2a.forEach(([roman],i)=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td>${roman}</td><td><input class="answer-input" id="r2a${i}" size="10" placeholder="?"><span class="feedback-icon" id="fr2a${i}"></span></td>`;
+  tbody.appendChild(tr);
+});
+
+// Build arabic→roman table
+const a2r=[[1361,'MCCCLXI'],[2699,'MMDCXCIX'],[648,'DCXLVIII'],[555,'DLV'],[79,'LXXIX'],[3000,'MMM']];
+const tbody2=document.getElementById('arabic-to-roman-body');
+a2r.forEach(([arabic],i)=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td>${arabic}</td><td><input class="answer-input" id="a2r${i}" size="14" placeholder="?"><span class="feedback-icon" id="fa2r${i}"></span></td>`;
+  tbody2.appendChild(tr);
+});
+
+function checkEx1(){
+  const checks=[
+    {id:'t1a',vals:['1er','1']},
+    {id:'t1b',vals:['viii','8']},
+    {id:'t2a',vals:['2e','2']},
+    {id:'t2b',vals:['xv','15']},
+    {id:'t3a',vals:['3e','3']},
+    {id:'t3b',vals:['xxi','21']},
+    {id:'t4a',vals:['3e','3']},
+    {id:'t4b',vals:['xxiv','24']},
+  ];
+  checks.forEach(({id,vals})=>{
+    const v=norm(document.getElementById(id).value);
+    const ok=vals.some(a=>v.includes(norm(a))); setClass(id,ok); setFI(id,ok);
+  });
+}
+function checkEx2(){
+  const checks=[
+    {id:'r1',correct:'xxi'},{id:'r2',correct:'i'},{id:'r3',correct:'ix'},{id:'r4',correct:'viii'},{id:'r5',correct:'iii'}
+  ];
+  checks.forEach(({id,correct})=>{
+    const v=norm(document.getElementById(id).value);
+    const ok=v.includes(correct); setClass(id,ok); setFI(id,ok);
+  });
+}
+function checkEx3(){
+  const g1=parseInt(document.getElementById('g1').value);
+  const ok_g1=g1===15; setClass('g1',ok_g1); setFI('g1',ok_g1);
+  const g2v=norm(document.getElementById('g2').value);
+  const ok_g2=g2v.includes('xxii')&&g2v.includes('avant'); setClass('g2',ok_g2); setFI('g2',ok_g2);
+  const a1=parseInt(document.getElementById('a1').value);
+  const ok_a1=a1===33; setClass('a1',ok_a1); setFI('a1',ok_a1);
+  const a2v=norm(document.getElementById('a2').value);
+  const ok_a2=a2v.includes('iv')&&a2v.includes('avant'); setClass('a2',ok_a2); setFI('a2',ok_a2);
+  const au1=parseInt(document.getElementById('au1').value);
+  const ok_au1=au1===41; setClass('au1',ok_au1); setFI('au1',ok_au1);
+  const b1=parseInt(document.getElementById('b1').value);
+  const ok_b1=b1===8; setClass('b1',ok_b1); setFI('b1',ok_b1);
+  const b2v=norm(document.getElementById('b2').value);
+  const ok_b2=(b2v.includes('1')||b2v.includes('1er')||b2v.includes('premier'))&&b2v.includes('avant'); setClass('b2',ok_b2); setFI('b2',ok_b2);
+}
+function checkEx4(){
+  const checks=[
+    {id:'v1',vals:['temps']},
+    {id:'v2',vals:['gauche']},
+    {id:'v3',vals:['droite']},
+    {id:'v4',vals:['evenement','event']},
+    {id:'v5',vals:['periode']},
+    {id:'v6',vals:['echelle']},
+  ];
+  checks.forEach(({id,vals})=>{
+    const v=norm(document.getElementById(id).value);
+    const ok=vals.some(a=>v.includes(norm(a))); setClass(id,ok); setFI(id,ok);
+  });
+}
+function checkEx4bis(){
+  const checks=[
+    {id:'s1',vals:['v ','ve','5']},{id:'s2',vals:['1']},
+    {id:'s3',vals:['ix','9']},{id:'s4',vals:['1']},
+    {id:'s5',vals:['ii','2']},{id:'s6',vals:['1']},
+    {id:'s7',vals:['iii','3']},{id:'s8',vals:['1']},
+  ];
+  const avant={s1:true,s2:true,s7:true,s8:true};
+  checks.forEach(({id,vals})=>{
+    const v=norm(document.getElementById(id).value);
+    let ok=vals.some(a=>v.includes(norm(a)));
+    if(avant[id]) ok=ok&&v.includes('avant');
+    else ok=ok&&!v.includes('avant');
+    setClass(id,ok); setFI(id,ok);
+  });
+}
+function checkEx5(){
+  r2a.forEach(([,arabic],i)=>{
+    const v=document.getElementById('r2a'+i).value.trim();
+    const ok=parseInt(v)===arabic; setClass('r2a'+i,ok); setFI('r2a'+i,ok);
+  });
+}
+function checkEx6(){
+  a2r.forEach(([,roman],i)=>{
+    const v=document.getElementById('a2r'+i).value.trim().toUpperCase();
+    const ok=v===roman; setClass('a2r'+i,ok); setFI('a2r'+i,ok);
+  });
+}
+function checkEx7(){
+  const correct={qcm1:'XIX',qcm2:'XLIV',qcm3:'LXVI'};
+  Object.entries(correct).forEach(([name,ans])=>{
+    const selected=document.querySelector(`input[name="${name}"]:checked`);
+    const labels=document.querySelectorAll(`#${name} label`);
+    labels.forEach(lbl=>{
+      const val=lbl.querySelector('input').value;
+      lbl.classList.remove('correct-choice','wrong-choice');
+      if(val===ans) lbl.classList.add('correct-choice');
+      else if(selected&&selected.value===val) lbl.classList.add('wrong-choice');
+    });
+  });
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
 </body>
 </html>

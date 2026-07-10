@@ -3,34 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Questions introductives | Histoire-Géo 6e</title>
+  <title>Introduction – Lire le temps | Histoire 6e</title>
   <link rel="stylesheet" href="../../style.css">
-  <style>
-    .pdf-container { width:100%; height:80vh; min-height:500px; border:none; border-radius:var(--radius); box-shadow:var(--shadow-lg); display:block; }
-    @media (max-width:600px) { .pdf-container { height:70vh; } }
-  </style>
 </head>
 <body>
 <nav>
   <a href="../../index.html">🏠</a><span class="sep">›</span>
   <a href="../index.html">6e→5e</a><span class="sep">›</span>
   <a href="index.html">Histoire-Géo</a><span class="sep">›</span>
-  <span class="current">Questions introductives</span>
+  <span class="current">Introduction – Lire le temps</span>
 </nav>
-<div class="hero"><h1>❓ Questions introductives</h1><p>Histoire – questions de cours</p></div>
+<div class="hero"><h1>⏳ Introduction – Lire le temps en Histoire</h1><p>Siècles, millénaires et chiffres romains</p></div>
 <div class="container">
-  <div class="card" style="padding:16px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;">
-      <span style="font-weight:700;">📄 HISTOIRE-_questions_introductives.pdf</span>
-      <a href="pdf/HISTOIRE-_questions_introductives.pdf" download class="btn btn-outline" style="font-size:.85rem;padding:7px 14px;">⬇ Télécharger</a>
+
+<div class="card" style="background:#fef9c3;border-left:4px solid #eab308;">
+  <h3 style="color:#713f12;margin-bottom:10px;">📌 Rappels</h3>
+  <ul style="padding-left:20px;line-height:2;">
+    <li><strong>1 siècle</strong> = 100 ans &nbsp;|&nbsp; <strong>1 millénaire</strong> = 1 000 ans = 10 siècles</li>
+    <li>Le point de départ du calendrier = la naissance de Jésus-Christ (an 1)</li>
+    <li>Les années <strong>avant J.-C.</strong> se comptent à rebours (plus le chiffre est grand, plus c'est ancien)</li>
+    <li>Les siècles s'écrivent en <strong>chiffres romains</strong> : I II III IV V VI VII VIII IX X XI XII...</li>
+  </ul>
+</div>
+
+<!-- EX 1 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 1 — Lire le temps en Histoire</div>
+  <div class="exercise-body">
+
+    <div class="question"><p><strong>1.</strong> Quel événement sert de point de départ au calcul des années et des siècles ?</p></div>
+    <textarea class="answer-input" id="e1q1" style="min-height:55px;" placeholder="Écris ta réponse…"></textarea>
+
+    <div class="question" style="margin-top:14px;"><p><strong>2.</strong> Le temps a-t-il commencé par cet événement ? Justifie ta réponse.</p></div>
+    <textarea class="answer-input" id="e1q2" style="min-height:55px;" placeholder="Écris ta réponse…"></textarea>
+
+    <div class="question" style="margin-top:14px;"><p><strong>3.</strong> Combien d'années y a-t-il dans un siècle ?</p></div>
+    <div class="answer-line"><input class="answer-input" id="e1q3" size="8" placeholder="?"><span> ans</span><span class="feedback-icon" id="fe1q3"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>4.</strong> Combien de siècles comprend un millénaire ?</p></div>
+    <div class="answer-line"><input class="answer-input" id="e1q4" size="8" placeholder="?"><span> siècles</span><span class="feedback-icon" id="fe1q4"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>5.</strong> Quel siècle est compris entre −300 et −200 ?</p></div>
+    <div class="answer-line"><input class="answer-input" id="e1q5" size="20" placeholder="Ex: IIe siècle avant J.-C."><span class="feedback-icon" id="fe1q5"></span></div>
+
+    <div class="question" style="margin-top:14px;"><p><strong>6.</strong> Quel siècle est compris entre 300 et 400 ?</p></div>
+    <div class="answer-line"><input class="answer-input" id="e1q6" size="20" placeholder="Ex: IVe siècle après J.-C."><span class="feedback-icon" id="fe1q6"></span></div>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkEx1()">✔ Vérifier 3, 4, 5, 6</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr1')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr1">
+      <h4>✅ Correction</h4>
+      <p><strong>1.</strong> C'est la <strong>naissance de Jésus-Christ</strong> (= Année 1).</p>
+      <p><strong>2.</strong> Non, le temps a commencé avant puisqu'il y a des années <strong>avant J.-C.</strong></p>
+      <p><strong>3.</strong> <strong>100 ans</strong></p>
+      <p><strong>4.</strong> <strong>10 siècles</strong></p>
+      <p><strong>5.</strong> <strong>IIIe siècle avant J.-C.</strong> (3e siècle)</p>
+      <p><strong>6.</strong> <strong>IVe siècle après J.-C.</strong> (4e siècle)</p>
     </div>
-    <iframe class="pdf-container" src="pdf/HISTOIRE-_questions_introductives.pdf" title="Questions introductives"></iframe>
-  </div>
-  <div class="page-actions">
-    <a href="revisions-lecon.html" class="btn btn-outline">← Document précédent</a>
-    <a href="index.html" class="btn btn-outline">↩ Retour aux documents</a>
-    <a href="questions-correction.html" class="btn btn-secondary">Document suivant →</a>
   </div>
 </div>
+
+<!-- EX 2 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 2 — Les chiffres romains</div>
+  <div class="exercise-body">
+    <div class="question"><p>En histoire, on utilise les chiffres romains pour désigner les siècles et les millénaires.</p></div>
+
+    <div class="answer-line"><label>1. Écris en chiffre romain le 7e siècle :</label>
+      <input class="answer-input" id="e2q1" size="12" placeholder="?"><span class="feedback-icon" id="fe2q1"></span></div>
+    <div class="answer-line"><label>2. Écris en chiffre romain le 18e siècle :</label>
+      <input class="answer-input" id="e2q2" size="12" placeholder="?"><span class="feedback-icon" id="fe2q2"></span></div>
+    <div class="answer-line"><label>3. Écris en chiffre arabe le IXe siècle :</label>
+      <input class="answer-input" id="e2q3" size="12" placeholder="?"><span class="feedback-icon" id="fe2q3"></span></div>
+    <div class="answer-line"><label>4. Écris en chiffre arabe le XXIe siècle :</label>
+      <input class="answer-input" id="e2q4" size="12" placeholder="?"><span class="feedback-icon" id="fe2q4"></span></div>
+
+    <br>
+    <button class="btn btn-primary" onclick="checkEx2()">✔ Vérifier</button>
+    <button class="btn btn-outline" onclick="toggleCorr('corr2')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr2">
+      <h4>✅ Correction</h4>
+      <p><strong>1.</strong> VIIe siècle</p>
+      <p><strong>2.</strong> XVIIIe siècle</p>
+      <p><strong>3.</strong> 9e siècle</p>
+      <p><strong>4.</strong> 21e siècle</p>
+    </div>
+  </div>
+</div>
+
+<!-- EX 3 -->
+<div class="exercise-section">
+  <div class="exercise-header">Exercice 3 — Les grandes périodes de l'histoire</div>
+  <div class="exercise-body">
+    <div class="question"><p>Quelles périodes de l'histoire sont étudiées en 6e ?</p></div>
+    <textarea class="answer-input" id="e3q1" style="min-height:60px;" placeholder="Écris ta réponse…"></textarea>
+    <br><br>
+    <button class="btn btn-outline" onclick="toggleCorr('corr3')">💡 Voir la correction</button>
+    <div class="correction-box" id="corr3">
+      <h4>✅ Correction</h4>
+      <p>En 6e, on étudie la <strong>Préhistoire</strong> et l'<strong>Antiquité</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-actions">
+  <label class="done-toggle" id="done-label">
+    <input type="checkbox" id="done-check" onchange="toggleDone()">
+    Marquer comme terminé
+  </label>
+  <a href="livret-revisions.html" class="btn btn-secondary">Exercice suivant →</a>
+  <a href="index.html" class="btn btn-outline">↩ Retour</a>
+</div>
+</div>
+
+<script>
+const PAGE_KEY = '6e-hg-intro-done';
+function toggleCorr(id){document.getElementById(id).classList.toggle('visible');}
+function norm(s){return s.trim().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+function setClass(id,ok){const el=document.getElementById(id);el.classList.toggle('correct',ok);el.classList.toggle('incorrect',!ok);}
+function setFI(id,ok){const fi=document.getElementById('f'+id);if(fi)fi.textContent=ok?'✅':'❌';}
+function checkEx1(){
+  const q3=parseInt(document.getElementById('e1q3').value);
+  const ok3=q3===100; setClass('e1q3',ok3); setFI('e1q3',ok3);
+  const q4=parseInt(document.getElementById('e1q4').value);
+  const ok4=q4===10; setClass('e1q4',ok4); setFI('e1q4',ok4);
+  const q5=norm(document.getElementById('e1q5').value);
+  const ok5=q5.includes('iii')&&q5.includes('avant'); setClass('e1q5',ok5); setFI('e1q5',ok5);
+  const q6=norm(document.getElementById('e1q6').value);
+  const ok6=(q6.includes('iv')||q6.includes('4'))&&(q6.includes('apres')||!q6.includes('avant')); setClass('e1q6',ok6); setFI('e1q6',ok6);
+}
+function checkEx2(){
+  const answers={e2q1:['viie','vii'],e2q2:['xviiie','xviii'],e2q3:['9','9e','9eme'],e2q4:['21','21e','21eme']};
+  Object.entries(answers).forEach(([id,vals])=>{
+    const v=norm(document.getElementById(id).value);
+    const ok=vals.some(a=>v.includes(norm(a))); setClass(id,ok); setFI(id,ok);
+  });
+}
+const dc=document.getElementById('done-check'),dl=document.getElementById('done-label');
+dc.checked=localStorage.getItem(PAGE_KEY)==='true';
+if(dc.checked)dl.classList.add('checked');
+function toggleDone(){localStorage.setItem(PAGE_KEY,dc.checked?'true':'false');dl.classList.toggle('checked',dc.checked);}
+</script>
 </body>
 </html>
