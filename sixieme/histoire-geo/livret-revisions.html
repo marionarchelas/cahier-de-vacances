@@ -112,21 +112,25 @@
   <div class="exercise-body">
     <p>Réponds aux questions en utilisant les dates données.</p>
 
-    <div class="question" style="margin-top:10px;"><p><strong>Gudea</strong> a régné de −2125 à −2110.</p></div>
+    <div class="question" style="margin-top:10px;"><p><strong>Gudea</strong>, roi de la cité de Lagash, règne de 2125 à 2110 avant J.-C.</p></div>
     <div class="answer-line"><label>Combien d'années a-t-il régné ?</label>
       <input class="answer-input" id="g1" size="10" placeholder="? ans"><span class="feedback-icon" id="fg1"></span></div>
-    <div class="answer-line"><label>Siècle de Gudea :</label>
+    <div class="answer-line"><label>À quel siècle a-t-il vécu ?</label>
       <input class="answer-input" id="g2" size="22" placeholder="?"><span class="feedback-icon" id="fg2"></span></div>
+    <div class="answer-line"><label>À quel millénaire a-t-il vécu ?</label>
+      <input class="answer-input" id="g3" size="22" placeholder="?"><span class="feedback-icon" id="fg3"></span></div>
 
-    <div class="question" style="margin-top:14px;"><p><strong>Alexandre le Grand</strong> est né en −356, mort en −323.</p></div>
-    <div class="answer-line"><label>Quel âge avait-il à sa mort ?</label>
+    <div class="question" style="margin-top:14px;"><p><strong>Alexandre le Grand</strong> est né en 356 avant J.-C., il est mort en 323 avant J.-C.</p></div>
+    <div class="answer-line"><label>À quel âge est-il mort ?</label>
       <input class="answer-input" id="a1" size="10" placeholder="? ans"><span class="feedback-icon" id="fa1"></span></div>
-    <div class="answer-line"><label>Siècle de sa mort :</label>
+    <div class="answer-line"><label>À quel siècle a-t-il vécu ?</label>
       <input class="answer-input" id="a2" size="22" placeholder="?"><span class="feedback-icon" id="fa2"></span></div>
 
-    <div class="question" style="margin-top:14px;"><p><strong>Auguste</strong> a régné de −27 à +14.</p></div>
-    <div class="answer-line"><label>Combien d'années a-t-il régné ?</label>
+    <div class="question" style="margin-top:14px;"><p><strong>L'empereur Auguste</strong> a régné de 27 avant J.-C. à 14.</p></div>
+    <div class="answer-line"><label>Combien d'années fut-il empereur ?</label>
       <input class="answer-input" id="au1" size="10" placeholder="? ans"><span class="feedback-icon" id="fau1"></span></div>
+    <div class="answer-line"><label>À quels siècles a-t-il vécu ?</label>
+      <input class="answer-input" id="au2" size="30" placeholder="?"><span class="feedback-icon" id="fau2"></span></div>
 
     <div class="question" style="margin-top:14px;"><p><strong>Les livres de la Bible</strong> ont été écrits entre le IXe et le IIe siècle avant J.-C.</p></div>
     <div class="answer-line"><label>Sur combien de siècles cette rédaction s'est-elle effectuée ?</label>
@@ -318,6 +322,12 @@
   </div>
 </div>
 
+<div class="card" style="margin-top:24px;">
+  <h3 style="margin-bottom:10px;">📄 Consulter le PDF original</h3>
+  <p style="margin-bottom:12px;color:var(--muted);">Tu peux consulter ou télécharger la fiche d'origine :</p>
+  <a href="pdf/Livret_de_révisions_et_exercices_6e.pdf" target="_blank" rel="noopener" class="btn btn-outline">📄 Ouvrir le PDF « Livret de révisions et exercices 6e »</a>
+</div>
+
 <div class="page-actions">
   <label class="done-toggle" id="done-label">
     <input type="checkbox" id="done-check" onchange="toggleDone()">
@@ -383,12 +393,16 @@ function checkEx3(){
   const ok_g1=g1===15; setClass('g1',ok_g1); setFI('g1',ok_g1);
   const g2v=norm(document.getElementById('g2').value);
   const ok_g2=g2v.includes('xxii')&&g2v.includes('avant'); setClass('g2',ok_g2); setFI('g2',ok_g2);
+  const g3v=norm(document.getElementById('g3').value);
+  const ok_g3=g3v.includes('2')&&g3v.includes('avant'); setClass('g3',ok_g3); setFI('g3',ok_g3);
   const a1=parseInt(document.getElementById('a1').value);
   const ok_a1=a1===33; setClass('a1',ok_a1); setFI('a1',ok_a1);
   const a2v=norm(document.getElementById('a2').value);
   const ok_a2=a2v.includes('iv')&&a2v.includes('avant'); setClass('a2',ok_a2); setFI('a2',ok_a2);
   const au1=parseInt(document.getElementById('au1').value);
   const ok_au1=au1===41; setClass('au1',ok_au1); setFI('au1',ok_au1);
+  const au2v=norm(document.getElementById('au2').value);
+  const ok_au2=au2v.includes('i')&&(au2v.includes('avant')&&(au2v.includes('apres')||au2v.includes('ap'))); setClass('au2',ok_au2); setFI('au2',ok_au2);
   const b1=parseInt(document.getElementById('b1').value);
   const ok_b1=b1===8; setClass('b1',ok_b1); setFI('b1',ok_b1);
   const b2v=norm(document.getElementById('b2').value);
